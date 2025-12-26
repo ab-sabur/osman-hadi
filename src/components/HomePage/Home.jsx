@@ -30,6 +30,7 @@ import { getYouTubeID } from "@/utils/ytId";
 import DiscussionVideo from "./DiscussionVideo";
 import SpeechesVideo from "./SpeechesVideo";
 import PoetryVideo from "./PoetryVideo";
+import { osmanarchiveImages } from "../../../public/images/images";
 
 const Home = () => {
   return (
@@ -40,7 +41,7 @@ const Home = () => {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-t from-[#050000] via-transparent to-black/80 z-10" />
           <img
-            src="/static/header.webp"
+            src="/static/osman.webp"
             className="w-full h-full object-cover opacity-25 grayscale"
             alt="Revolution Background"
           />
@@ -134,14 +135,14 @@ const Home = () => {
               </div>
               <h4 className="text-4xl font-black">বিপ্লবী ও সমন্বয়ক</h4>
               <p className="text-zinc-400 text-lg leading-relaxed">
-                ইনকিলাব মঞ্চের মুখপাত্র হিসেবে তিনি বাংলাদেশের সার্বভৌমত্ব
-                রক্ষায় আপোষহীন ভূমিকা পালন করেছেন। জুলাই বিপ্লবের অন্যতম
-                অগ্রসেনানী।
+                ২০২৪ সালের জুলাই বিপ্লব চলাকালে ওসমান হাদী ঢাকার রামপুরা এলাকায়
+                সমন্বয়কের দায়িত্ব পালন করেন। তিনি মাঠপর্যায়ের সংগঠন ও আন্দোলনে
+                সরাসরি যুক্ত ছিলেন। এই সময়েই তিনি জাতীয়ভাবে পরিচিত মুখ হয়ে ওঠেন।
               </p>
             </div>
             <div className="relative mt-8 rounded-2xl overflow-hidden grayscale group-hover:grayscale-0 transition-all">
               <img
-                src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=600"
+                src="/static/osman-hadi.jpg"
                 alt="Activity"
                 className="w-full object-cover"
               />
@@ -166,10 +167,12 @@ const Home = () => {
           {/* Identity: The Scholar */}
           <div className="md:col-span-1 bg-zinc-900/50 border border-white/5 rounded-[2.5rem] p-8 hover:bg-zinc-800 transition-all text-center md:text-left">
             <Award className="text-red-600 mb-6 mx-auto md:mx-0" size={40} />
-            <h4 className="text-xl font-bold mb-2">শিক্ষাবিদ</h4>
+            <h4 className="text-xl font-bold mb-2">শিক্ষকতা পেশা</h4>
             <p className="text-zinc-400 text-sm">
-              ইউনিভার্সিটি অফ স্কলারস-এর প্রভাষক হিসেবে তিনি তরুণ প্রজন্মের
-              আদর্শ ছিলেন।
+              পড়াশোনা শেষে ওসমান হাদী ঢাকার বেসরকারি বিশ্ববিদ্যালয় University of
+              Scholars-এর ইংরেজি বিভাগে প্রভাষক হিসেবে কর্মরত ছিলেন। শিক্ষকতার
+              পাশাপাশি তিনি চিন্তাশীল লেখক ও রাজনৈতিক বিশ্লেষক হিসেবে পরিচিতি
+              লাভ করেন।
             </p>
           </div>
 
@@ -266,8 +269,8 @@ const Home = () => {
             {/* Main Featured Image */}
             <div className="md:col-span-6 md:row-span-4 relative group rounded-[2.5rem] overflow-hidden border border-white/5">
               <img
-                src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=800"
-                className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-1000"
+                src={osmanarchiveImages[0].url}
+                className="w-full h-full object-cover group-hover:grayscale-0 group-hover:scale-110 transition-all duration-1000"
                 alt="Main Archive"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-60 group-hover:opacity-100 transition-opacity" />
@@ -284,15 +287,15 @@ const Home = () => {
             {/* Top Right Vertical */}
             <div className="md:col-span-3 md:row-span-3 relative group rounded-[2.5rem] overflow-hidden border border-white/5">
               <img
-                src="https://images.unsplash.com/photo-1512485694743-9c9538b4e6e0?q=80&w=600"
-                className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                src={osmanarchiveImages[1].url}
+                className="w-full h-full object-cover group-hover:grayscale-0 transition-all duration-700"
                 alt="Portrait"
               />
               <div className="absolute inset-0 bg-red-700/20 opacity-0 group-hover:opacity-100 transition-opacity" />
             </div>
 
             {/* Middle Square */}
-            <div className="md:col-span-3 md:row-span-2 relative group rounded-[2.5rem] overflow-hidden border border-white/5 bg-zinc-950 flex flex-col items-center justify-center p-8 text-center border-dashed border-zinc-800">
+            <Link href={`/gallery`} className="md:col-span-3 md:row-span-2 relative group rounded-[2.5rem] overflow-hidden border border-white/5 bg-zinc-950 flex flex-col items-center justify-center p-8 text-center border-dashed border-zinc-800">
               <History
                 size={48}
                 className="text-zinc-800 mb-4 group-hover:text-red-600 transition-colors"
@@ -300,14 +303,16 @@ const Home = () => {
               <p className="text-zinc-600 font-bold uppercase tracking-widest text-[10px]">
                 Total Collection
               </p>
-              <h3 className="text-5xl font-black text-white mt-2">৫০০+</h3>
-            </div>
+              <h3 className="text-5xl font-black text-white mt-2">
+                {osmanarchiveImages.length}+
+              </h3>
+            </Link>
 
             {/* Bottom Wide */}
             <div className="md:col-span-6 md:row-span-2 relative group rounded-[2.5rem] overflow-hidden border border-white/5">
               <img
-                src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=800"
-                className="w-full h-full object-cover grayscale opacity-40 group-hover:opacity-100 transition-all"
+                src={osmanarchiveImages[2].url}
+                className="w-full h-full object-cover opacity-40 group-hover:opacity-100 transition-all"
                 alt="Wide Archive"
               />
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-0 group-hover:scale-100 transition-all">
@@ -321,8 +326,17 @@ const Home = () => {
             <div className="md:col-span-3 md:row-span-1 relative group rounded-[2.5rem] overflow-hidden border border-white/5">
               <div className="absolute inset-0 bg-red-700 mix-blend-multiply opacity-20" />
               <img
-                src="https://images.unsplash.com/photo-1478737270239-2fccd27ee086?q=80&w=400"
-                className="w-full h-full object-cover grayscale"
+                src={osmanarchiveImages[3].url}
+                className="w-full h-full object-cover"
+                alt="Detail"
+              />
+            </div>
+            {/* Smallest Detail */}
+            <div className="md:col-span-3 md:row-span-1 relative group rounded-[2.5rem] overflow-hidden border border-white/5">
+              <div className="absolute inset-0 bg-red-700 mix-blend-multiply opacity-20" />
+              <img
+                src={osmanarchiveImages[4].url}
+                className="w-full h-full object-cover"
                 alt="Detail"
               />
             </div>
@@ -357,53 +371,11 @@ const Home = () => {
       {/* SECTION 02: INTELLECTUAL WARFARE (With Navigation Controls) */}
       <SpeechesVideo />
 
-      {/* 10. THE INTEGRITY TIMELINE */}
-      <section className="py-32 px-6 max-w-5xl mx-auto">
-        <div className="text-center mb-24">
-          <h2 className="text-4xl md:text-7xl font-black mb-6 tracking-tighter">
-            বিপ্লবীর পথচলা
-          </h2>
-          <p className="text-red-600 uppercase tracking-[0.5em] text-xs font-black">
-            Road to Martyrdom
-          </p>
-        </div>
-
-        <div className="space-y-32 relative">
-          <div className="absolute left-1/2 top-0 bottom-0 w-px bg-red-900/20 -translate-x-1/2" />
-
-          <TimelineItem
-            year="২০১০"
-            title="শিক্ষাজীবনের সূচনা"
-            side="left"
-            desc="ঢাকা বিশ্ববিদ্যালয়ের রাষ্ট্রবিজ্ঞান বিভাগে ভর্তি হয়ে ছাত্র রাজনীতি ও অধিকার আদায়ে সম্পৃক্ততা।"
-          />
-          <TimelineItem
-            year="২০২২"
-            title="ইনকিলাব মঞ্চের জন্ম"
-            side="right"
-            desc="তরুণদের সাথে নিয়ে দেশের সার্বভৌমত্ব রক্ষায় একটি প্ল্যাটফর্মের প্রয়োজনীয়তা অনুভব করেন।"
-          />
-          <TimelineItem
-            year="২০২৪"
-            title="জুলাই অভ্যুত্থান"
-            side="left"
-            desc="সমন্বয়ক হিসেবে রাজপথে নেতৃত্ব দেন এবং ইনকিলাব মঞ্চের লক্ষ্য জনগণের সামনে তুলে ধরেন।"
-          />
-          <TimelineItem
-            year="২০২৫"
-            title="সর্বোচ্চ ত্যাগ"
-            side="right"
-            desc="আততায়ীর হামলায় শাহাদাত বরণ। তার মৃত্যু একটি নক্ষত্রের পতন নয়, বরং হাজারো ওসমান হাদীর জন্ম।"
-            highlight
-          />
-        </div>
-      </section>
-
       {/* 11. SECTION 03: POETIC RESISTANCE (Video Edition) */}
       <PoetryVideo />
 
       {/* 13. TRIBUTE GUESTBOOK */}
-      <section className="py-40 text-center max-w-4xl mx-auto px-6 relative">
+      <section className="py-32 text-center max-w-4xl mx-auto px-6 relative">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-red-900/10 blur-[100px] -z-10" />
         <Heart className="mx-auto text-red-600 mb-10 animate-pulse" size={80} />
         <h2 className="text-5xl md:text-7xl font-black mb-8 tracking-tighter">
@@ -606,40 +578,6 @@ export const CompactVideo = ({ title, url }) => (
       <Play size={16} fill="currentColor" />
     </div>
   </Link>
-);
-
-export const TimelineItem = ({ year, title, desc, side, highlight }) => (
-  <div
-    className={`flex w-full ${
-      side === "left" ? "flex-row text-right" : "flex-row-reverse text-left"
-    } items-center group relative`}
-  >
-    <div
-      className={`w-1/2 ${
-        side === "left" ? "pr-16" : "pl-16"
-      } transition-all duration-500 group-hover:translate-y-[-10px]`}
-    >
-      <span
-        className={`text-4xl md:text-6xl font-black tracking-tighter ${
-          highlight ? "text-red-600" : "text-zinc-800 group-hover:text-zinc-600"
-        }`}
-      >
-        {year}
-      </span>
-      <h4 className="text-2xl font-black mt-3 mb-3 text-white tracking-tight">
-        {title}
-      </h4>
-      <p className="text-zinc-500 text-lg leading-relaxed font-medium">
-        {desc}
-      </p>
-    </div>
-    <div
-      className={`absolute left-1/2 -translate-x-1/2 w-6 h-6 bg-black border-4 ${
-        highlight ? "border-red-600" : "border-zinc-800"
-      } rounded-full group-hover:scale-150 transition-all z-10 shadow-[0_0_20px_rgba(185,28,28,0.2)]`}
-    />
-    <div className="w-1/2" />
-  </div>
 );
 
 export default Home;

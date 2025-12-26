@@ -2,14 +2,12 @@ import React from "react";
 import Link from "next/link";
 import {
   Camera,
-  ChevronLeft,
-  ChevronRight,
   Maximize2,
   Image as ImageIcon,
 } from "lucide-react";
 
-// ... Paste your driveImages array here or import it
-import { driveImages } from "../../../public/images/imageDrive";
+// ... Paste your osmanarchiveImages array here or import it
+import { osmanarchiveImages } from "../../../public/images/images";
 import Pagination from "@/components/common/Pagination";
 
 const ITEMS_PER_PAGE = 24;
@@ -18,9 +16,9 @@ export default async function GalleryPage({ searchParams }) {
   const resolvedParams = await searchParams;
   const currentPage = Number(resolvedParams.page) || 1;
 
-  const totalPages = Math.ceil(driveImages.length / ITEMS_PER_PAGE);
+  const totalPages = Math.ceil(osmanarchiveImages.length / ITEMS_PER_PAGE);
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
-  const currentImages = driveImages.slice(
+  const currentImages = osmanarchiveImages.slice(
     startIndex,
     startIndex + ITEMS_PER_PAGE
   );
@@ -54,7 +52,7 @@ export default async function GalleryPage({ searchParams }) {
                 Total Assets
               </span>
               <span className="text-2xl font-black text-red-600 tabular-nums">
-                {driveImages.length}
+                {osmanarchiveImages.length}
               </span>
             </div>
             <div className="w-px h-10 bg-white/5" />

@@ -44,33 +44,37 @@ export const videoCategories = [
       ...electionCampaign,
     ],
   },
-  { id: "Speeches", label: "বক্তৃতা (Speeches)", videos: speeches },
-  { id: "Protests", label: "আন্দোলন (Protests)", videos: rajpoth },
+  { id: "Speeches", label: "ভাষণ (Speeches)", videos: speeches },
+  { id: "Protests", label: "রাজপথের আন্দোলন (Protests)", videos: rajpoth },
   { id: "Interviews", label: "সাক্ষাৎকার (Interviews)", videos: interview },
-  { id: "Poetry", label: "কবিতা আবৃত্তি (Poetry)", videos: kobita },
+  { id: "Poetry", label: "আবৃত্তি (Recitation)", videos: kobita },
   { id: "TalkShow", label: "টক শো (Talk Show)", videos: talkshow },
-  { id: "Biography", label: "জন্ম বৃত্তান্ত (Biography)", videos: biography },
-  { id: "Lecture", label: "বক্তৃতা (Lecture)", videos: lecture },
-  { id: "Activities", label: "কার্যক্রম (Activities)", videos: activities },
-  { id: "Discussion", label: "আলোচনা (Discussion)", videos: discussion },
+  { id: "Biography", label: "জীবনী (Biography)", videos: biography },
+  { id: "Lecture", label: "শিক্ষা ও লেকচার (Lecture)", videos: lecture },
+  {
+    id: "Activities",
+    label: "সাংস্কৃতিক কার্যক্রম (Activities)",
+    videos: activities,
+  },
+  { id: "Discussion", label: "মুক্ত আলোচনা (Discussion)", videos: discussion },
   {
     id: "PressConference",
-    label: "সংবাদ সম্মেলন (Press conference)",
+    label: "সংবাদ সম্মেলন (Press Conference)",
     videos: pressConference,
   },
   {
     id: "peoplesLove",
-    label: "মানুষের ভালোবাসা (Peoples Love)",
+    label: "জনগণের ভালোবাসা (People's Love)",
     videos: peoplesLove,
   },
   {
     id: "song",
-    label: "গান (Songs)",
+    label: "সঙ্গীত (Songs)",
     videos: songs,
   },
   {
     id: "procharona",
-    label: "প্রচারণা (Campaign)",
+    label: "নির্বাচনী প্রচারণা (Campaign)",
     videos: electionCampaign,
   },
 ];
@@ -283,5 +287,5 @@ export const getThumbnailSrc = (video) => {
   }
 
   // 3. Fallback image if nothing is found
-  return "/static/header.webp";
+  return "/static/osman.webp";
 };

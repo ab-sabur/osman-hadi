@@ -96,11 +96,11 @@ export const pressConference = [
     drive_url:
       "https://drive.google.com/file/d/1OZCMyAtroFGALo_Pcke4WwXdatB8GSnl/view?usp=drive_link",
     source_title:
-      "রুমিন ফারহানার কঠোর সমালোচনা করলেন ইনকিলাব মঞ্চের হাদী | Politics | Dhaka post News",
+      "রুমিন ফারহানার কঠোর সমালোচনা করলেন ইনকিলাব মঞ্চের হাদি | Politics | Dhaka post News",
     yt_source_url: "https://www.youtube.com/watch?v=0mN3KloPEgw",
     yt_metadata: {
       title:
-        "রুমিন ফারহানার কঠোর সমালোচনা করলেন ইনকিলাব মঞ্চের হাদী | Politics | Dhaka post News",
+        "রুমিন ফারহানার কঠোর সমালোচনা করলেন ইনকিলাব মঞ্চের হাদি | Politics | Dhaka post News",
       duration: "5:07",
       upload_date: "20250712",
       view_count: 930695,
@@ -132,11 +132,11 @@ export const pressConference = [
     drive_url:
       "https://drive.google.com/file/d/17z30D4O5gR359xPTeKdZlw9IvuLa8FX9/view?usp=drive_link",
     source_title:
-      "৫০০ এর কম ভোট পেলে দুয়েক দিন মন খারাপ থাকবে: ওসমান হাদী| Sharif Osman Hadi | Inqilab Manch | IIttefaq",
+      "৫০০ এর কম ভোট পেলে দুয়েক দিন মন খারাপ থাকবে: ওসমান হাদি| Sharif Osman Hadi | Inqilab Manch | IIttefaq",
     yt_source_url: "https://www.youtube.com/watch?v=z1m7EdlfP40",
     yt_metadata: {
       title:
-        "৫০০ এর কম ভোট পেলে দুয়েক দিন মন খারাপ থাকবে: ওসমান হাদী| Sharif Osman Hadi | Inqilab Manch | Ittefaaq",
+        "৫০০ এর কম ভোট পেলে দুয়েক দিন মন খারাপ থাকবে: ওসমান হাদি| Sharif Osman Hadi | Inqilab Manch | Ittefaaq",
       duration: "3:41",
       upload_date: "20251107",
       view_count: 78680,
@@ -186,11 +186,11 @@ export const pressConference = [
     drive_url:
       "https://drive.google.com/file/d/1Q8kFCzaD3mZ30CI58cBWNP5CKY2O5Ad0/view?usp=drive_link",
     source_title:
-      "হাসিনা প্রতিরক্ষা ব্যবস্থা ভারতের কাছে বর্গা দিয়েছিল: হাদী | Sharif Osman Hadi | Kaler Kantho    ",
+      "হাসিনা প্রতিরক্ষা ব্যবস্থা ভারতের কাছে বর্গা দিয়েছিল: হাদি | Sharif Osman Hadi | Kaler Kantho    ",
     yt_source_url: "https://www.youtube.com/watch?v=c5ByhgFp7wY",
     yt_metadata: {
       title:
-        "হাসিনা প্রতিরক্ষা ব্যবস্থা ভারতের কাছে বর্গা দিয়েছিল: হাদী | Sharif Osman Hadi | Kaler Kantho",
+        "হাসিনা প্রতিরক্ষা ব্যবস্থা ভারতের কাছে বর্গা দিয়েছিল: হাদি | Sharif Osman Hadi | Kaler Kantho",
       duration: "4:04",
       upload_date: "20250723",
       view_count: 8120,
@@ -258,11 +258,11 @@ export const pressConference = [
     drive_url:
       "https://drive.google.com/file/d/10JTIt6rg0I9wnd7IyL_hwBzofbKAvDDI/view?usp=drive_link",
     source_title:
-      "বর্তমানে সরকার ও সেনাবাহিনী মুখোমুখি অবস্থানে রয়েছে: শরীফ ওসমান হাদী | Inqilab Manch | Channel   l 24",
+      "বর্তমানে সরকার ও সেনাবাহিনী মুখোমুখি অবস্থানে রয়েছে: শরীফ ওসমান হাদি | Inqilab Manch | Channel   l 24",
     yt_source_url: "https://www.youtube.com/watch?v=RrX1JbBgkEQ",
     yt_metadata: {
       title:
-        "বর্তমানে সরকার ও সেনাবাহিনী মুখোমুখি অবস্থানে রয়েছে: শরীফ ওসমান হাদী | Inqilab Manch | Channel 24",
+        "বর্তমানে সরকার ও সেনাবাহিনী মুখোমুখি অবস্থানে রয়েছে: শরীফ ওসমান হাদি | Inqilab Manch | Channel 24",
       duration: "5:23",
       upload_date: "20250524",
       view_count: 119923,

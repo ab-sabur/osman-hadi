@@ -95,10 +95,10 @@ export const peoplesLove = [
     fb_url: "",
     drive_url:
       "https://drive.google.com/file/d/1X84fBNsPNc7NcNj3iOf0bIPaHSUkd1Q6/view?usp=drive_link",
-    source_title: "ওসমান হাদীকে নিয়ে গোপন তথ্য দিলেন শায়খ আহমাদুল্লাহ।",
+    source_title: "ওসমান হাদিকে নিয়ে গোপন তথ্য দিলেন শায়খ আহমাদুল্লাহ।",
     yt_source_url: "https://www.youtube.com/watch?v=Jj4oEA8cFgI",
     yt_metadata: {
-      title: "ওসমান হাদীকে নিয়ে গোপন তথ্য দিলেন শায়খ আহমাদুল্লাহ।",
+      title: "ওসমান হাদিকে নিয়ে গোপন তথ্য দিলেন শায়খ আহমাদুল্লাহ।",
       duration: "8:54",
       upload_date: "20251219",
       view_count: 141971,
@@ -128,11 +128,11 @@ export const peoplesLove = [
     drive_url:
       "https://drive.google.com/file/d/1X84fBNsPNc7NcNj3iOf0bIPaHSUkd1Q6/view?usp=drive_link",
     source_title:
-      "ওসমান হাদীকে নিয়ে শায়খ আহমাদুল্লাহ অগ্নিঝড়া বক্তব্য দিলেন | Osman Hadi | Shaikh Ahmadullah",
+      "ওসমান হাদিকে নিয়ে শায়খ আহমাদুল্লাহ অগ্নিঝড়া বক্তব্য দিলেন | Osman Hadi | Shaikh Ahmadullah",
     yt_source_url: "https://www.youtube.com/watch?v=2DvMaGmeTW8",
     yt_metadata: {
       title:
-        "ওসমান হাদীকে নিয়ে শায়খ আহমাদুল্লাহ অগ্নিঝড়া বক্তব্য দিলেন | Osman Hadi | Shaikh Ahmadullah",
+        "ওসমান হাদিকে নিয়ে শায়খ আহমাদুল্লাহ অগ্নিঝড়া বক্তব্য দিলেন | Osman Hadi | Shaikh Ahmadullah",
       duration: "31:25",
       upload_date: "20251220",
       view_count: 1164,

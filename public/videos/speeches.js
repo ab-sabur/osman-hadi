@@ -42,11 +42,11 @@ export const speeches = [
     drive_url:
       "https://drive.google.com/file/d/1wvZRCtpJ8WfQHwU2cyN_pzQERHYGHeK7/view?usp=drive_link",
     source_title:
-      "যে বক্তব্যের কারণে ওসমান হাদীকে শহীদ করা হয়েছে | Osman Hadi Vairal Video | Inqilab Manch News  s",
+      "যে বক্তব্যের কারণে ওসমান হাদিকে শহীদ করা হয়েছে | Osman Hadi Vairal Video | Inqilab Manch News  s",
     yt_source_url: "https://www.youtube.com/watch?v=E46azHBZkjc",
     yt_metadata: {
       title:
-        "যে বক্তব্যের কারণে ওসমান হাদীকে শহীদ করা হয়েছে | Osman Hadi Vairal Video | Inqilab Manch News",
+        "যে বক্তব্যের কারণে ওসমান হাদিকে শহীদ করা হয়েছে | Osman Hadi Vairal Video | Inqilab Manch News",
       duration: "11:27",
       upload_date: "20251212",
       view_count: 4347772,
@@ -94,11 +94,11 @@ export const speeches = [
     drive_url:
       "https://drive.google.com/file/d/15oWzvjrxDbFdYf-l2ouBeefona8ZOyWJ/view?usp=drive_link",
     source_title:
-      "বিএনপিকে উদ্দেশ্য করে যা বললেন শরীফ ওসমান হাদী | Sharif Osman Hadi | Awami League Ban | Ekhon   TV",
+      "বিএনপিকে উদ্দেশ্য করে যা বললেন শরীফ ওসমান হাদি | Sharif Osman Hadi | Awami League Ban | Ekhon   TV",
     yt_source_url: "https://www.youtube.com/watch?v=UXQOGrv69OQ",
     yt_metadata: {
       title:
-        "বিএনপিকে উদ্দেশ্য করে যা বললেন শরীফ ওসমান হাদী | Sharif Osman Hadi | Awami League Ban | Ekhon TV",
+        "বিএনপিকে উদ্দেশ্য করে যা বললেন শরীফ ওসমান হাদি | Sharif Osman Hadi | Awami League Ban | Ekhon TV",
       duration: "5:31",
       upload_date: "20250509",
       view_count: 253987,
@@ -112,11 +112,11 @@ export const speeches = [
     drive_url:
       "https://drive.google.com/file/d/1BeY_xmejt5wb75k_YwyPqmeIKXb2NzEs/view?usp=drive_link",
     source_title:
-      "ঢাকা ৮ আসনে সেলফি তুললেই পেছনে আব্বাস ভাই বা হেলাল ভাইয়ের পোষ্টার থাকে: হাদী | Sharif Osman Ha  adi",
+      "ঢাকা ৮ আসনে সেলফি তুললেই পেছনে আব্বাস ভাই বা হেলাল ভাইয়ের পোষ্টার থাকে: হাদি | Sharif Osman Ha  adi",
     yt_source_url: "https://www.youtube.com/watch?v=oQCWcLAiIMY",
     yt_metadata: {
       title:
-        "ঢাকা ৮ আসনে সেলফি তুললেই পেছনে আব্বাস ভাই বা হেলাল ভাইয়ের পোষ্টার থাকে: হাদী | Sharif Osman Hadi",
+        "ঢাকা ৮ আসনে সেলফি তুললেই পেছনে আব্বাস ভাই বা হেলাল ভাইয়ের পোষ্টার থাকে: হাদি | Sharif Osman Hadi",
       duration: "2:08",
       upload_date: "20251130",
       view_count: 15168,
@@ -166,11 +166,11 @@ export const speeches = [
     drive_url:
       "https://drive.google.com/file/d/1pePH1qBe3l0UWQa54mtDTTLVIa5Au9Wv/view?usp=drive_link",
     source_title:
-      "'নারায়ে তাকবির' শুধুমাত্র হুজুরদের শ্লোগান নয়_ শরিফ ওসমান হাদী @NagorikTV",
+      "'নারায়ে তাকবির' শুধুমাত্র হুজুরদের শ্লোগান নয়_ শরিফ ওসমান হাদি @NagorikTV",
     yt_source_url: "https://www.youtube.com/watch?v=bXG0wZ84Q58",
     yt_metadata: {
       title:
-        '"নারায়ে তাকবির" শুধুমাত্র হুজুরদের শ্লোগান নয়_  শরিফ ওসমান হাদী @NagorikTV',
+        '"নারায়ে তাকবির" শুধুমাত্র হুজুরদের শ্লোগান নয়_  শরিফ ওসমান হাদি @NagorikTV',
       duration: "2:29",
       upload_date: "20250314",
       view_count: 12101,
@@ -255,11 +255,11 @@ export const speeches = [
     drive_url:
       "https://drive.google.com/file/d/1gwdg4kWlXevT8i65uhZOa2132GxQy7PI/view?usp=drive_link",
     source_title:
-      "ঢাকা - ৮ আসনের প্রার্থীরা ছিচকে চোর : ওসমান হাদী | Business Bangladesh",
+      "ঢাকা - ৮ আসনের প্রার্থীরা ছিচকে চোর : ওসমান হাদি | Business Bangladesh",
     yt_source_url: "https://www.youtube.com/watch?v=OykypVzuYTs",
     yt_metadata: {
       title:
-        "ঢাকা - ৮ আসনের প্রার্থীরা ছিচকে চোর : ওসমান হাদী | Business Bangladesh",
+        "ঢাকা - ৮ আসনের প্রার্থীরা ছিচকে চোর : ওসমান হাদি | Business Bangladesh",
       duration: "6:18",
       upload_date: "20251128",
       view_count: 276650,
@@ -469,7 +469,7 @@ export const speeches = [
     fb_url: "https://www.facebook.com/reel/802160259541698",
     drive_url:
       "https://drive.google.com/file/d/18lmHQn2naUKyfeOPmU4qaz2aYTQwsYbM/view?usp=drive_link",
-    source_title: "ওসমান হাদী না থাকলেও হাজার ওসমান জন্ম নিবে বাংলাদেশে! ",
+    source_title: "ওসমান হাদি না থাকলেও হাজার ওসমান জন্ম নিবে বাংলাদেশে! ",
     yt_source_url: "",
   },
   {

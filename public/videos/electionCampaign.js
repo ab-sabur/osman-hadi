@@ -251,11 +251,11 @@ export const electionCampaign = [
     drive_url:
       "https://drive.google.com/file/d/1AK358Daxrb22ouPS5rsAjEN5L_V0h6gm/view?usp=sharing",
     source_title:
-      "শাহবাগ থেকে নির্বাচনের প্রচারনা শুরু করলেন হাদী | Osman Hadi | Political Speech | Daily Jugant       tor",
+      "শাহবাগ থেকে নির্বাচনের প্রচারনা শুরু করলেন হাদি | Osman Hadi | Political Speech | Daily Jugant       tor",
     yt_source_url: "https://www.youtube.com/watch?v=QUc0AX8Nh10",
     yt_metadata: {
       title:
-        "শাহবাগ থেকে নির্বাচনের প্রচারনা শুরু করলেন হাদী | Osman Hadi | Political Speech | Daily Jugantor",
+        "শাহবাগ থেকে নির্বাচনের প্রচারনা শুরু করলেন হাদি | Osman Hadi | Political Speech | Daily Jugantor",
       duration: "4:35",
       upload_date: "20250919",
       view_count: 12921,
@@ -287,11 +287,11 @@ export const electionCampaign = [
     drive_url:
       "https://drive.google.com/file/d/1uuvbF2eoU4Uz8d0NHvR-On3_YSgCl5SZ/view?usp=sharing",
     source_title:
-      "ভ্যানে চড়ে নির্বাচনী প্রচারণায় ঢাকা ৮ আসনের প্রার্থী ওসমান হাদী | Osman-Hadi | Dhaka-8 | Jagon         news",
+      "ভ্যানে চড়ে নির্বাচনী প্রচারণায় ঢাকা ৮ আসনের প্রার্থী ওসমান হাদি | Osman-Hadi | Dhaka-8 | Jagon         news",
     yt_source_url: "https://www.youtube.com/watch?v=edFpOxaeMxs",
     yt_metadata: {
       title:
-        "ভ্যানে চড়ে নির্বাচনী প্রচারণায় ঢাকা ৮ আসনের প্রার্থী ওসমান হাদী | Osman-Hadi | Dhaka-8 | Jagonews",
+        "ভ্যানে চড়ে নির্বাচনী প্রচারণায় ঢাকা ৮ আসনের প্রার্থী ওসমান হাদি | Osman-Hadi | Dhaka-8 | Jagonews",
       duration: "31",
       upload_date: "20251128",
       view_count: 5788,
@@ -305,11 +305,11 @@ export const electionCampaign = [
     drive_url:
       "https://drive.google.com/file/d/16yvxor_iyS34PaVvY5-YhccmfBCmuHtl/view?usp=sharing",
     source_title:
-      "জনসংযোগ করছেন ইনকিলাব মঞ্চের হাদী | Osman Hadi | Election Campaign Activities | Kaler Kantho",
+      "জনসংযোগ করছেন ইনকিলাব মঞ্চের হাদি | Osman Hadi | Election Campaign Activities | Kaler Kantho",
     yt_source_url: "https://www.youtube.com/watch?v=-6x3sZ3abEQ",
     yt_metadata: {
       title:
-        "জনসংযোগ করছেন ইনকিলাব মঞ্চের হাদী | Osman Hadi | Election Campaign Activities | Kaler Kantho",
+        "জনসংযোগ করছেন ইনকিলাব মঞ্চের হাদি | Osman Hadi | Election Campaign Activities | Kaler Kantho",
       duration: "4:13",
       upload_date: "20250920",
       view_count: 1010,
@@ -323,11 +323,11 @@ export const electionCampaign = [
     drive_url:
       "https://drive.google.com/file/d/1CR2K_7t-W01fH6uV6uPZ2zqxu7_Df9MK/view?usp=sharing",
     source_title:
-      "নির্বাচনী প্রচারণায় ওসমান হাদী | Osman Hadi Election Campaign 2025",
+      "নির্বাচনী প্রচারণায় ওসমান হাদি | Osman Hadi Election Campaign 2025",
     yt_source_url: "https://www.youtube.com/watch?v=v0fSYzis6WI",
     yt_metadata: {
       title:
-        "নির্বাচনী প্রচারণায় ওসমান হাদী | Osman Hadi Election Campaign 2025",
+        "নির্বাচনী প্রচারণায় ওসমান হাদি | Osman Hadi Election Campaign 2025",
       duration: "11:22",
       upload_date: "20251128",
       view_count: 144,
@@ -358,10 +358,10 @@ export const electionCampaign = [
     fb_url: "",
     drive_url:
       "https://drive.google.com/file/d/1CR2K_7t-W01fH6uV6uPZ2zqxu7_Df9MK/view?usp=sharing",
-    source_title: "নির্বাচনী প্রচারণায় ওসমান হাদী | Shorif Osman Hadi",
+    source_title: "নির্বাচনী প্রচারণায় ওসমান হাদি | Shorif Osman Hadi",
     yt_source_url: "https://www.youtube.com/watch?v=YM2dDL_V-QI",
     yt_metadata: {
-      title: "নির্বাচনী প্রচারণায় ওসমান হাদী | Shorif Osman Hadi",
+      title: "নির্বাচনী প্রচারণায় ওসমান হাদি | Shorif Osman Hadi",
       duration: "6",
       upload_date: "20250921",
       view_count: 21398,
@@ -374,10 +374,10 @@ export const electionCampaign = [
     fb_url: "",
     drive_url:
       "https://drive.google.com/file/d/17PvR1Y8fs2ExrYFiGHx6BU0dzTuzrclZ/view?usp=sharing",
-    source_title: "নির্বাচনী প্রচারণায় ব্যস্ত ওসমান হাদী",
+    source_title: "নির্বাচনী প্রচারণায় ব্যস্ত ওসমান হাদি",
     yt_source_url: "https://www.youtube.com/watch?v=s2yuk5TK0pA",
     yt_metadata: {
-      title: "নির্বাচনী প্রচারণায় ব্যস্ত ওসমান হাদী",
+      title: "নির্বাচনী প্রচারণায় ব্যস্ত ওসমান হাদি",
       duration: "11",
       upload_date: "20251115",
       view_count: 1658,

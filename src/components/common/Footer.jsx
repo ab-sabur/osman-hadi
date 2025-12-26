@@ -16,7 +16,7 @@ const Footer = () => {
               </h1>
             </div>
             <p className="text-zinc-500 max-w-md leading-relaxed text-lg">
-              এই ওয়েবসাইটটি শহীদ শরীফ ওসমান বিন হাদীর স্মৃতি এবং তার আদর্শকে
+              এই ওয়েবসাইটটি শহীদ শরীফ ওসমান বিন হাদির স্মৃতি এবং তার আদর্শকে
               ধারণ করে তৈরি একটি ডিজিটাল সংগ্রহশালা। তার দর্শন ছড়িয়ে পড়ুক
               প্রতিটি প্রান্তে।
             </p>
@@ -93,7 +93,7 @@ const Footer = () => {
         </div>
 
         <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-zinc-700 text-xs font-black uppercase tracking-widest">
-          <p>© ২০২৫ ওসমান হাদী মেমোরিয়াল আর্কাইভ। সর্বস্বত্ব সংরক্ষিত।</p>
+          <p>© ২০২৫ ওসমান হাদি মেমোরিয়াল আর্কাইভ। সর্বস্বত্ব সংরক্ষিত।</p>
           <div className="flex gap-10">
             <Link
               target="_blank"

@@ -59,7 +59,7 @@ export const rajpoth = [
     fb_url: "https://www.facebook.com/reel/1774591849865536",
     drive_url:
       "https://drive.google.com/file/d/1-DtxMt65c7d9BKTWWPVhx5mgWr5LFhQ4/view?usp=drive_link",
-    source_title: "মধ্যরাতে লাঠি হাতে মহড়ায় শরীফ ওসমান হাদী || Manabzamin",
+    source_title: "মধ্যরাতে লাঠি হাতে মহড়ায় শরীফ ওসমান হাদি || Manabzamin",
     yt_source_url: "",
   },
 ];

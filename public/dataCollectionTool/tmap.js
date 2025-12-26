@@ -31,11 +31,11 @@ const driveData = [
   },
   {
     title:
-      "জনসংযোগ করছেন ইনকিলাব মঞ্চের হাদী ｜ Osman Hadi ｜ Election Campaign Activities ｜ Kaler Kantho [-6x3sZ3abEQ].mkv",
+      "জনসংযোগ করছেন ইনকিলাব মঞ্চের হাদি ｜ Osman Hadi ｜ Election Campaign Activities ｜ Kaler Kantho [-6x3sZ3abEQ].mkv",
     url: "https://drive.google.com/file/d/16yvxor_iyS34PaVvY5-YhccmfBCmuHtl/view?usp=sharing",
   },
   {
-    title: "নির্বাচনী প্রচারণায় ব্যস্ত ওসমান হাদী [s2yuk5TK0pA].mkv",
+    title: "নির্বাচনী প্রচারণায় ব্যস্ত ওসমান হাদি [s2yuk5TK0pA].mkv",
     url: "https://drive.google.com/file/d/17PvR1Y8fs2ExrYFiGHx6BU0dzTuzrclZ/view?usp=sharing",
   },
   {
@@ -55,12 +55,12 @@ const driveData = [
   },
   {
     title:
-      "শাহবাগ থেকে নির্বাচনের প্রচারনা শুরু করলেন হাদী ｜ Osman Hadi ｜ Political Speech ｜ Daily Jugantor [QUc0AX8Nh10].mkv",
+      "শাহবাগ থেকে নির্বাচনের প্রচারনা শুরু করলেন হাদি ｜ Osman Hadi ｜ Political Speech ｜ Daily Jugantor [QUc0AX8Nh10].mkv",
     url: "https://drive.google.com/file/d/1AK358Daxrb22ouPS5rsAjEN5L_V0h6gm/view?usp=sharing",
   },
   {
     title:
-      "নির্বাচনী প্রচারণায় ওসমান হাদী ｜ Shorif Osman Hadi [YM2dDL_V-QI].mkv",
+      "নির্বাচনী প্রচারণায় ওসমান হাদি ｜ Shorif Osman Hadi [YM2dDL_V-QI].mkv",
     url: "https://drive.google.com/file/d/1CR2K_7t-W01fH6uV6uPZ2zqxu7_Df9MK/view?usp=sharing",
   },
   {
@@ -95,7 +95,7 @@ const driveData = [
   },
   {
     title:
-      "নির্বাচনী প্রচারণায় ওসমান হাদী ｜ Osman Hadi Election Campaign 2025 [v0fSYzis6WI].mkv",
+      "নির্বাচনী প্রচারণায় ওসমান হাদি ｜ Osman Hadi Election Campaign 2025 [v0fSYzis6WI].mkv",
     url: "https://drive.google.com/file/d/1ONBXyVqifE-Uui-IlWX_E_tJu8vCuo2d/view?usp=sharing",
   },
   {
@@ -219,7 +219,7 @@ const driveData = [
   },
   {
     title:
-      "ভ্যানে চড়ে নির্বাচনী প্রচারণায় ঢাকা ৮ আসনের প্রার্থী ওসমান হাদী ｜ Osman-Hadi ｜ Dhaka-8 ｜ Jagonews [edFpOxaeMxs].mkv",
+      "ভ্যানে চড়ে নির্বাচনী প্রচারণায় ঢাকা ৮ আসনের প্রার্থী ওসমান হাদি ｜ Osman-Hadi ｜ Dhaka-8 ｜ Jagonews [edFpOxaeMxs].mkv",
     url: "https://drive.google.com/file/d/1uuvbF2eoU4Uz8d0NHvR-On3_YSgCl5SZ/view?usp=sharing",
   },
   {

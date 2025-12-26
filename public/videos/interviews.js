@@ -22,11 +22,11 @@ export const interview = [
     drive_url:
       "https://drive.google.com/file/d/1-q978UhiUi76-8caL_rHM5chiJsB3jHu/view?usp=drive_link",
     source_title:
-      "হাসিনার উসকানিতে নিজেদের জীবন ধ্বংস কইরেন না: ওসমান হাদী | Osman Hadi | BanglaVision",
+      "হাসিনার উসকানিতে নিজেদের জীবন ধ্বংস কইরেন না: ওসমান হাদি | Osman Hadi | BanglaVision",
     yt_source_url: "https://www.youtube.com/watch?v=hpRcLOQKHU4",
     yt_metadata: {
       title:
-        "হাসিনার উসকানিতে নিজেদের জীবন ধ্বংস কইরেন না: ওসমান হাদী | Osman Hadi | BanglaVision",
+        "হাসিনার উসকানিতে নিজেদের জীবন ধ্বংস কইরেন না: ওসমান হাদি | Osman Hadi | BanglaVision",
       duration: "4:14",
       upload_date: "20251113",
       view_count: 57577,
@@ -93,11 +93,11 @@ export const interview = [
     drive_url:
       "https://drive.google.com/file/d/1kBrbsfwMCV3LILzt-Qt-fIYUPNYazYiP/view?usp=drive_link",
     source_title:
-      "শূন্য টাকায় নির্বাচন করতে চায় হাদী | Osman Hadi | Political Speech | Daily Jugantor",
+      "শূন্য টাকায় নির্বাচন করতে চায় হাদি | Osman Hadi | Political Speech | Daily Jugantor",
     yt_source_url: "https://www.youtube.com/watch?v=6LUsQ-Y_NiU",
     yt_metadata: {
       title:
-        "শূন্য টাকায় নির্বাচন করতে চায় হাদী | Osman Hadi | Political Speech | Daily Jugantor",
+        "শূন্য টাকায় নির্বাচন করতে চায় হাদি | Osman Hadi | Political Speech | Daily Jugantor",
       duration: "3:51",
       upload_date: "20250920",
       view_count: 18904,
@@ -183,11 +183,11 @@ export const interview = [
     drive_url:
       "https://drive.google.com/file/d/1zRJTuSi51g9Ym7z0h5u9lx_tRm8Hs9e3/view?usp=drive_link",
     source_title:
-      "আ. লীগকে আ'গু'নে পু'ড়ি'য়ে মারা ওয়াজিব কিন্তু আমরা সেটা করবো না: ওসমান হাদী | Hadi | Channel  l 24",
+      "আ. লীগকে আ'গু'নে পু'ড়ি'য়ে মারা ওয়াজিব কিন্তু আমরা সেটা করবো না: ওসমান হাদি | Hadi | Channel  l 24",
     yt_source_url: "https://www.youtube.com/watch?v=J6ZqF2KALek",
     yt_metadata: {
       title:
-        "আ. লীগকে আ'গু'নে পু'ড়ি'য়ে মারা ওয়াজিব কিন্তু আমরা সেটা করবো না: ওসমান হাদী | Hadi | Channel 24",
+        "আ. লীগকে আ'গু'নে পু'ড়ি'য়ে মারা ওয়াজিব কিন্তু আমরা সেটা করবো না: ওসমান হাদি | Hadi | Channel 24",
       duration: "5:15",
       upload_date: "20251113",
       view_count: 179100,
@@ -413,7 +413,7 @@ export const interview = [
     fb_url: "https://www.facebook.com/reel/919763097887285",
     drive_url:
       "https://drive.google.com/file/d/1W82ODEXp0CMxjtaKLuCyZ0OVgz81FulO/view?usp=drive_link",
-    source_title: "জুলাই আন্দোলনের ভয়াবহ ঘটনা শুনুন হাদী ভাই এর মুখে",
+    source_title: "জুলাই আন্দোলনের ভয়াবহ ঘটনা শুনুন হাদি ভাই এর মুখে",
     yt_source_url: "",
   },
   {

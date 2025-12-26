@@ -199,11 +199,11 @@ export const discussion = [
     drive_url:
       "https://drive.google.com/file/d/1heSekiksc8kOomDpRiYVROBmDs0seTEi/view?usp=drive_link",
     source_title:
-      "ঢাকা ৮ এর ওসমান হাদী- নির্বাচন ভাবনা এবং জুলাই সনদের বাংলাদেশের স্বপ্ন। ব্যরিস্টার ফুয়াদের সাথ      থে আলাপ",
+      "ঢাকা ৮ এর ওসমান হাদি- নির্বাচন ভাবনা এবং জুলাই সনদের বাংলাদেশের স্বপ্ন। ব্যরিস্টার ফুয়াদের সাথ      থে আলাপ",
     yt_source_url: "https://www.youtube.com/watch?v=Ge1qWV7RPJg",
     yt_metadata: {
       title:
-        "ঢাকা ৮ এর ওসমান হাদী- নির্বাচন ভাবনা এবং জুলাই সনদের বাংলাদেশের স্বপ্ন। ব্যরিস্টার ফুয়াদের সাথে আলা      াপ",
+        "ঢাকা ৮ এর ওসমান হাদি- নির্বাচন ভাবনা এবং জুলাই সনদের বাংলাদেশের স্বপ্ন। ব্যরিস্টার ফুয়াদের সাথে আলা      াপ",
       duration: "1:18:58",
       upload_date: "20250613",
       view_count: 119042,

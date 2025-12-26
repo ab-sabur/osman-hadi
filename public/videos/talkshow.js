@@ -78,11 +78,11 @@ export const talkshow = [
     drive_url:
       "https://drive.google.com/file/d/1yA_gPWPYeDrMbf0iXgO2NUSI8p-xzCkg/view?usp=drive_link",
     source_title:
-      "ঐকমত্য কমিশন ও গণভোট নিয়ে তর্কে ওসমান হাদী একাই তিনজনকে শুয়ে দিলেন। Talk Show fight |",
+      "ঐকমত্য কমিশন ও গণভোট নিয়ে তর্কে ওসমান হাদি একাই তিনজনকে শুয়ে দিলেন। Talk Show fight |",
     yt_source_url: "https://www.youtube.com/watch?v=AVXyTjot3EE",
     yt_metadata: {
       title:
-        "ঐকমত্য কমিশন ও গণভোট  নিয়ে তর্কে ওসমান হাদী একাই তিনজনকে শুয়ে দিলেন। Talk Show fight |",
+        "ঐকমত্য কমিশন ও গণভোট  নিয়ে তর্কে ওসমান হাদি একাই তিনজনকে শুয়ে দিলেন। Talk Show fight |",
       duration: "27:26",
       upload_date: "20251101",
       view_count: 46724,
@@ -258,11 +258,11 @@ export const talkshow = [
     drive_url:
       "https://drive.google.com/file/d/1ADDxVVIJWI_ddfJOFTRkW-0DCO9j0qmA/view?usp=drive_link",
     source_title:
-      "মাসুদ কামাল কে সাংবাদিকতা শেখালেন হাদী | নাহিদ-হাসনাতদের নিয়ে কামালের সমালোচনা | Khaled Mohiudddin",
+      "মাসুদ কামাল কে সাংবাদিকতা শেখালেন হাদি | নাহিদ-হাসনাতদের নিয়ে কামালের সমালোচনা | Khaled Mohiudddin",
     yt_source_url: "https://www.youtube.com/watch?v=r_an-edZzlA",
     yt_metadata: {
       title:
-        "মাসুদ কামাল কে সাংবাদিকতা শেখালেন হাদী | নাহিদ-হাসনাতদের নিয়ে কামালের সমালোচনা | Khaled Mohiuddin",
+        "মাসুদ কামাল কে সাংবাদিকতা শেখালেন হাদি | নাহিদ-হাসনাতদের নিয়ে কামালের সমালোচনা | Khaled Mohiuddin",
       duration: "8:20",
       upload_date: "20250819",
       view_count: 258776,

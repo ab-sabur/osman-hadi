@@ -55,7 +55,7 @@ const Home = () => {
             <h1 className="text-5xl md:text-8xl font-black text-white tracking-tighter leading-none">
               শহীদ শরীফ ওসমান <br />
               <span className="text-red-600 drop-shadow-[0_0_30px_rgba(220,38,38,0.5)]">
-                বিন হাদী
+                বিন হাদি
               </span>
             </h1>
           </div>
@@ -108,7 +108,7 @@ const Home = () => {
             <Zap size={18} /> Identity Matrix
           </h3>
           <h2 className="text-3xl md:text-6xl font-black leading-tight">
-            বিবিধ পরিচয়ে ওসমান হাদী
+            বিবিধ পরিচয়ে ওসমান হাদি
           </h2>
         </div>
 
@@ -128,7 +128,7 @@ const Home = () => {
                   বিপ্লবী ও সমন্বয়ক
                 </h4>
                 <p className="text-zinc-400 text-base md:text-lg leading-relaxed">
-                  ২০২৪ সালের জুলাই বিপ্লব চলাকালে ওসমান হাদী ঢাকার রামপুরা
+                  ২০২৪ সালের জুলাই বিপ্লব চলাকালে ওসমান হাদি ঢাকার রামপুরা
                   এলাকায় সমন্বয়কের দায়িত্ব পালন করেন। তিনি মাঠপর্যায়ের সংগঠন
                   ও আন্দোলনে সরাসরি যুক্ত ছিলেন।
                 </p>
@@ -368,7 +368,7 @@ const Home = () => {
           <div className="mt-12 flex items-center justify-center gap-6">
             <div className="h-px w-16 bg-red-700/50" />
             <p className="font-black text-red-600 tracking-[0.5em] uppercase text-sm">
-              শহীদ ওসমান হাদী
+              শহীদ ওসমান হাদি
             </p>
             <div className="h-px w-16 bg-red-700/50" />
           </div>

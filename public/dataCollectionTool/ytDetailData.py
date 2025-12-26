@@ -3,23 +3,24 @@ import json
 
 # আপনার দেওয়া ইন্টারভিউ ডেটা
 interviews = [
+
   {
-    "category": "Talk Show",
+    "category": "Interview",
     "yt_personal_url": "",
-    "fb_url": "",
-    "drive_url": "",
-    "source_title":
-      "ডিসেম্বরের শুরুতে তফসিল | রাজনীতি | Rajniti | 28 August 2025 | Jamuna TV",
-    "yt_source_url": "https://www.youtube.com/watch?v=qcMkD62HErQ",
+    "fb_url": "https://www.facebook.com/reel/2400017240436767",
+    "drive_url":
+      "https://drive.google.com/file/d/1Mz0aryzTXpzolSfcVEON5Rwfisv5LZFA/view?usp=drive_link",
+    "source_title": "The Journey Towards Our Dream❤️",
+    "yt_source_url": "",
   },
   {
-    "category": "Talk Show",
+    "category": "Interview",
     "yt_personal_url": "",
     "fb_url": "",
     "drive_url": "",
     "source_title":
-      "'দ্যা হট সিটের' মুখোমুখিতে যা বলেছিলেন ওসমান হাদি l Osman Hadi l The Hot Seat l Talkshow",
-    "yt_source_url": "https://www.youtube.com/watch?v=MDSsFeI4Jq0",
+      "জুলাইয়ের স্মৃতিচারণ করতে গিয়ে কাঁদলেন ইনকিলাব মঞ্চের ওসমান হাদি",
+    "yt_source_url": "https://www.youtube.com/watch?v=OHrnAAgIw6g",
   },
 ]
 

@@ -539,4 +539,22 @@ export const pressConference = [
       channel: "Daily Ittefaq",
     },
   },
+  {
+    category: "Press Conference",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1ja6PKJKIEZ8xvpDD60esBcqTaKQ465rH/view?usp=drive_link",
+    source_title:
+      "এ জুলাই কোনো রাজনৈতিক দলের হাতে ছেড়ে দেওয়া হবে না: ওসমান হাদি | inqilab moncho | NEWS24",
+    yt_source_url: "https://www.youtube.com/watch?v=v01r-NtM0bQ",
+    yt_metadata: {
+      title:
+        "এ জুলাই কোনো রাজনৈতিক দলের হাতে ছেড়ে দেওয়া হবে না: ওসমান হাদি | inqilab moncho |  NEWS24",
+      duration: "2:20",
+      upload_date: "20250701",
+      view_count: 30117,
+      channel: "NEWS24",
+    },
+  },
 ];

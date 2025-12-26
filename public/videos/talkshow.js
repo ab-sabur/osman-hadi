@@ -554,4 +554,179 @@ export const talkshow = [
       channel: "Deepto News",
     },
   },
+  {
+    category: "Talk Show",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1hv9emWs_K49VSnykXzFUkJt1EPLmtBjv/view?usp=drive_link",
+    source_title:
+      "কে কার পকেটে? | মুক্তবাক | Muktobak | ২০ আগস্ট ২০২৫ | Channel 24",
+    yt_source_url: "https://www.youtube.com/watch?v=BQidd5fO68E",
+    yt_metadata: {
+      title: "কে কার পকেটে? | মুক্তবাক | Muktobak | ২০ আগস্ট ২০২৫ | Channel 24",
+      duration: "47:23",
+      upload_date: "20250820",
+      view_count: 246672,
+      channel: "Channel 24",
+    },
+  },
+  {
+    category: "Talk Show",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1kPqH9Y2ngJWzdmGXNNVOfGbrbhk_4HMZ/view?usp=drive_link",
+    source_title:
+      "নভেম্বর পলিটিক্স | রাজনীতি | Rajniti | 2 November 2025 | Jamuna TV",
+    yt_source_url: "https://www.youtube.com/watch?v=fro-SywXyBU",
+    yt_metadata: {
+      title:
+        "নভেম্বর পলিটিক্স | রাজনীতি | Rajniti | 2 November 2025 | Jamuna TV",
+      duration: "50:57",
+      upload_date: "20251102",
+      view_count: 389075,
+      channel: "Jamuna TV",
+    },
+  },
+  {
+    category: "Talk Show",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1c1g6YxQel0ebqoxKcPeY_OdVyWBHj2Sy/view?usp=drive_link",
+    source_title:
+      "ইলেকশন কি হবে? | রাজনীতি | Rajniti | 21 September 2025 | Jamuna TV",
+    yt_source_url: "https://www.youtube.com/watch?v=F-ZfPb63Go0",
+    yt_metadata: {
+      title:
+        "ইলেকশন কি হবে? | রাজনীতি | Rajniti | 21 September 2025 | Jamuna TV",
+      duration: "51:07",
+      upload_date: "20250921",
+      view_count: 402279,
+      channel: "Jamuna TV",
+    },
+  },
+  {
+    category: "Talk Show",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1e_e9MCS7j-Sp_TI2GQU9bbPZtZtRxIwP/view?usp=drive_link",
+    source_title:
+      "জুলাই গণঅভ্যুত্থান : কতটা বদলেছে বাংলাদেশ? July Movement | Gonotontrer Songlap | Rtv Talkshow",
+    yt_source_url: "https://www.youtube.com/watch?v=5HbIkMp_k60",
+    yt_metadata: {
+      title:
+        "জুলাই গণঅভ্যুত্থান : কতটা বদলেছে বাংলাদেশ? July Movement | Gonotontrer Songlap | Rtv Talkshow",
+      duration: "1:15:38",
+      upload_date: "20250702",
+      view_count: 27227,
+      channel: "Rtv News",
+    },
+  },
+  {
+    category: "Talk Show",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1-x6ro5eJX4muiJpSE_5uMiLIp1A8MYWf/view?usp=drive_link",
+    source_title: "ভোটের আনুষ্ঠানিকতা শুরু | Desh Shonglap | Desh TV",
+    yt_source_url: "https://www.youtube.com/watch?v=ZAKn9c0yZc4",
+    yt_metadata: {
+      title: "ভোটের আনুষ্ঠানিকতা শুরু  | Desh Shonglap | Desh TV",
+      duration: "1:41:19",
+      upload_date: "20251213",
+      view_count: 30541,
+      channel: "Desh TV News",
+    },
+  },
+  {
+    category: "Talk Show",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1zvyaDKt7i4liQyNP-6_ivuG5Pb2yJZax/view?usp=drive_link",
+    source_title:
+      "অন্তর্বর্তী সরকারের অধীনেই নির্বাচন? | Desh Samprotik | Talk Show | Desh TV",
+    yt_source_url: "https://www.youtube.com/watch?v=Ljp6LNbgEQ4",
+    yt_metadata: {
+      title:
+        "অন্তর্বর্তী সরকারের অধীনেই নির্বাচন? | Desh Samprotik | Talk Show | Desh TV",
+      duration: "30:17",
+      upload_date: "20251008",
+      view_count: 40120,
+      channel: "Desh TV News",
+    },
+  },
+  {
+    category: "Talk Show",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/19U81SfiRwucOHCmcuKPk6ZTOfOuTNPIH/view?usp=drive_link",
+    source_title:
+      "ডাকসু জাকসু এবং অতঃপর | টাইমলাইন বাংলাদেশ | Timeline Bangladesh.",
+    yt_source_url: "https://www.youtube.com/watch?v=6qNt7IDTOiI",
+    yt_metadata: {
+      title: "ডাকসু জাকসু এবং অতঃপর | টাইমলাইন বাংলাদেশ | Timeline Bangladesh.",
+      duration: "56:36",
+      upload_date: "20250913",
+      view_count: 187255,
+      channel: "GTV News",
+    },
+  },
+  {
+    category: "Talk Show",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1H5okqWAedQrg1_kMwe8r0nXjoAlSZ-xE/view?usp=drive_link",
+    source_title:
+      "সেই জুলাই....এই জুলাই | সংবাদ সংলাপ | Songbad Songlap | Gtv News",
+    yt_source_url: "https://www.youtube.com/watch?v=1rUCkVibxCA",
+    yt_metadata: {
+      title: "সেই জুলাই....এই জুলাই | সংবাদ সংলাপ | Songbad Songlap | Gtv News",
+      duration: "50:34",
+      upload_date: "20250702",
+      view_count: 2222,
+      channel: "GTV News",
+    },
+  },
+  {
+    category: "Talk Show",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1mVKM61BudByfMkTOMcJbN878wDTZe0wM/view?usp=drive_link",
+    source_title:
+      "এখনই আওয়ামী প্রশ্নের সুরাহা হবে? টাইমলাইন বাংলাদেশ | Timeline Bangladesh.",
+    yt_source_url: "https://www.youtube.com/watch?v=GyY2p-eayWM",
+    yt_metadata: {
+      title:
+        "এখনই আওয়ামী প্রশ্নের সুরাহা হবে?  টাইমলাইন বাংলাদেশ | Timeline Bangladesh.",
+      duration: "53:42",
+      upload_date: "20250510",
+      view_count: 54558,
+      channel: "GTV News",
+    },
+  },
+  {
+    category: "Talk Show",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1yc-HZw2nMgdpKzJG8_W-HcRwusbjJwVC/view?usp=drive_link",
+    source_title:
+      "সংস্কৃতির শত্রু: সংস্কৃতির মিত্র | টাইমলাইন বাংলাদেশ | Timeline Bangladesh | talk show.",
+    yt_source_url: "https://www.youtube.com/watch?v=SXTqe9sdUXY",
+    yt_metadata: {
+      title:
+        "সংস্কৃতির শত্রু: সংস্কৃতির মিত্র | টাইমলাইন বাংলাদেশ | Timeline Bangladesh | talk show.",
+      duration: "54:32",
+      upload_date: "20250415",
+      view_count: 7453,
+      channel: "GTV News",
+    },
+  },
 ];

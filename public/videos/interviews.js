@@ -586,4 +586,21 @@ export const interview = [
     source_title: "The Journey Towards Our Dream❤️",
     yt_source_url: "",
   },
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1PMVpJ5OWJTGokeuTJoowFOQnSb0mMBH8/view?usp=drive_link",
+    source_title:
+      "জুলাইয়ের স্মৃতিচারণ করতে গিয়ে কাঁদলেন ইনকিলাব মঞ্চের ওসমান হাদি",
+    yt_source_url: "https://www.youtube.com/watch?v=OHrnAAgIw6g",
+    yt_metadata: {
+      title: "জুলাইয়ের স্মৃতিচারণ করতে গিয়ে কাঁদলেন ইনকিলাব মঞ্চের ওসমান হাদি",
+      duration: "14:58",
+      upload_date: "20250319",
+      view_count: 353216,
+      channel: "Daily Jugantor",
+    },
+  },
 ];

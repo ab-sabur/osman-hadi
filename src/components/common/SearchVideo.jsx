@@ -10,15 +10,14 @@ export default function SearchField() {
   const { replace } = useRouter();
   const [isPending, startTransition] = useTransition();
 
-  // ১. সার্চের জন্য লোকাল স্টেট
   const [searchTerm, setSearchTerm] = useState(
     searchParams.get("search") || ""
   );
 
-  // ২. ইউআরএল আপডেট করার কমন ফাংশন
+  // URL আপডেট ফাংশন
   function updateURL(key, value) {
     const params = new URLSearchParams(searchParams);
-    params.set("page", "1"); // প্রতিবার ফিল্টারে পেজ ১ এ রিসেট হবে
+    params.set("page", "1");
 
     if (value) {
       params.set(key, value);
@@ -31,17 +30,23 @@ export default function SearchField() {
     });
   }
 
-  // ৩. শুধুমাত্র সার্চের জন্য useEffect ডিবounce লজিক
+  // লজিক ১: টাইপ করলে ইউআরএল আপডেট হবে (Debounce)
   useEffect(() => {
-    // যদি ইনপুট ভ্যালু আর ইউআরএল প্যারামিটার ভিন্ন হয়, তবেই আপডেট করবে
     const timer = setTimeout(() => {
       if (searchTerm !== (searchParams.get("search") || "")) {
         updateURL("search", searchTerm);
       }
-    }, 500); // ৫০০ মিলি-সেকেন্ড অপেক্ষা করবে
-
-    return () => clearTimeout(timer); // ক্লিনিআপ ফাংশন
+    }, 500);
+    return () => clearTimeout(timer);
   }, [searchTerm]);
+
+  // লজিক ২: ইউআরএল চেঞ্জ হলে (যেমন ব্যাক বাটন বা রিসেট) ইনপুট আপডেট হবে
+  useEffect(() => {
+    const fromURL = searchParams.get("search") || "";
+    if (fromURL !== searchTerm) {
+      setSearchTerm(fromURL);
+    }
+  }, [searchParams]); // watch the params
 
   return (
     <div className="flex flex-col md:flex-row gap-4 w-full md:w-2/3 items-stretch">
@@ -65,7 +70,7 @@ export default function SearchField() {
 
       {/* Sort Dropdown: এটিতে কোনো ডিবounce নেই, ক্লিক করলেই কাজ করবে */}
       <select
-        defaultValue={searchParams.get("sort") || "views"}
+        value={searchParams.get("sort") || "views"}
         onChange={(e) => updateURL("sort", e.target.value)}
         className="bg-zinc-950 flex-1 border border-white/5 rounded-2xl px-4 py-4 text-xs font-black tracking-widest uppercase text-zinc-400 focus:outline-none focus:border-red-600/50 transition-all cursor-pointer"
       >

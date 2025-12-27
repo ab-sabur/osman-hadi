@@ -14,6 +14,7 @@ import {
   Briefcase,
   Crosshair,
 } from "lucide-react";
+import AchievementSection from "@/components/common/Achivement";
 
 /**
  * ENHANCED BIODATA - SHAHEED OSMAN HADI MEMORIAL
@@ -92,6 +93,8 @@ const AboutPage = () => {
             sub="Beside National Poet"
           />
         </div>
+
+        <AchievementSection />
 
         {/* 3. BIOGRAPHICAL SUMMARY */}
         <section className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">

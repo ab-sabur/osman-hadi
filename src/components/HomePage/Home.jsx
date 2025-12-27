@@ -22,6 +22,8 @@ import DiscussionVideo from "./DiscussionVideo";
 import SpeechesVideo from "./SpeechesVideo";
 import PoetryVideo from "./PoetryVideo";
 import { osmanarchiveImages } from "../../../public/images/images";
+import AchievementSection from "../common/Achivement";
+import OsmanAboutSection from "../common/OsmanAbout";
 
 const Home = () => {
   return (
@@ -362,6 +364,8 @@ const Home = () => {
         </div>
       </section>
 
+      <OsmanAboutSection />
+
       {/* 7. SECTION 01: FRONTLINE BATTLES */}
       <DiscussionVideo />
 
@@ -388,6 +392,8 @@ const Home = () => {
 
       {/* SECTION 02: INTELLECTUAL WARFARE (With Navigation Controls) */}
       <SpeechesVideo />
+
+      <AchievementSection from="home" />
 
       {/* 11. SECTION 03: POETIC RESISTANCE (Video Edition) */}
       <PoetryVideo />

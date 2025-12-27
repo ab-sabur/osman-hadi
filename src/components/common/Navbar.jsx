@@ -27,6 +27,7 @@ const Navbar = () => {
     { name: "জীবনী", href: "/bio" },
     { name: "ছবি", href: "/gallery" },
     { name: "ভিডিও", href: "/videos" },
+    { name: "উক্তি", href: "/quotes" },
   ];
 
   return (

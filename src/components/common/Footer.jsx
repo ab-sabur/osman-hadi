@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import SocialFooter from "./SocilaFooter";
 
 const Footer = () => {
   return (
@@ -33,7 +34,10 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/bio" className="hover:text-red-500 transition-colors">
+                <Link
+                  href="/bio"
+                  className="hover:text-red-500 transition-colors"
+                >
                   Biography
                 </Link>
               </li>
@@ -91,6 +95,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+        <SocialFooter />
 
         <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-zinc-700 text-xs font-black uppercase tracking-widest">
           <p>© ২০২৫ ওসমান হাদি মেমোরিয়াল আর্কাইভ। সর্বস্বত্ব সংরক্ষিত।</p>

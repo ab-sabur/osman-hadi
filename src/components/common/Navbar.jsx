@@ -24,6 +24,7 @@ const Navbar = () => {
   }, [mobileMenuOpen]);
 
   const navLinks = [
+    { name: "হোম", href: "/" },
     { name: "জীবনী", href: "/bio" },
     { name: "ছবি", href: "/gallery" },
     { name: "ভিডিও", href: "/videos" },

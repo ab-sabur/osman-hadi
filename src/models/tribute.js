@@ -5,7 +5,9 @@ const tributeSchema = new Schema({
   relation: {
     type: String,
     default: "সাধারণ নাগরিক",
-  }, // e.g., Student, Family, Comrade
+  },
+  position: { type: String, trim: true },
+  tributeType: { type: String, default: "স্মৃতিচারণ" },
   message: { type: String, required: true },
   is_approved: { type: Boolean, default: false },
   createDate: { type: Object },

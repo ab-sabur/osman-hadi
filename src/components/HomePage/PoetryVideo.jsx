@@ -2,13 +2,12 @@ import { ArrowRight, Play } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import { SectionHeader } from "./Home";
-import { getYouTubeID } from "@/utils/ytId";
 import { kobita } from "../../../public/videos/poetry";
 import { getThumbnailSrc } from "@/utils/getThumbnail";
 
 const PoetryVideo = () => {
   return (
-    <section className="py-20 md:py-32 bg-[#050000] px-6 relative overflow-hidden">
+    <section className="py-12 md:py-20 bg-[#050000] px-6 relative overflow-hidden">
       {/* Subtle background glow */}
       <div className="absolute top-1/2 left-0 w-72 md:w-96 h-72 md:h-96 bg-red-900/10 blur-[100px] md:blur-[120px] -z-10" />
 

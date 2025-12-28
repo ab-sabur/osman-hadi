@@ -7,7 +7,7 @@ import { Play } from "lucide-react";
 
 const DiscussionVideo = () => {
   return (
-    <section className="max-w-[1400px] mx-auto py-20 md:py-32 px-6 bg-black">
+    <section className="max-w-[1400px] mx-auto py-12 md:py-20 px-6 bg-black">
       <div className="mx-auto">
         <SectionHeader
           number="01"

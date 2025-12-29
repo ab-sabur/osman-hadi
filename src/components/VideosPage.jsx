@@ -122,12 +122,23 @@ const VideosPage = ({ resolvedParams }) => {
                 className="group relative bg-zinc-950 border border-white/10 rounded-3xl overflow-hidden hover:border-red-600/50 transition-all shadow-xl"
               >
                 <div className="relative aspect-video overflow-hidden">
-                  <img
-                    src={getThumbnailSrc(video)}
-                    referrerPolicy="no-referrer"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-60 group-hover:opacity-100"
-                    alt={video.source_title}
-                  />
+                  <div className="relative w-full h-full overflow-hidden bg-black group">
+                    {/* The Background (Always Cover, blurs on hover) */}
+                    <img
+                      src={getThumbnailSrc(video)}
+                      referrerPolicy="no-referrer"
+                      alt={video.source_title}
+                      className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-40 blur-sm group-hover:blur-md transition-all duration-500"
+                    />
+
+                    {/* The Foreground (Hidden Cover, becomes Contain on hover) */}
+                    <img
+                      src={getThumbnailSrc(video)}
+                      referrerPolicy="no-referrer"
+                      alt={video.source_title}
+                      className="relative w-full h-full object-contain transition-all duration-300 scale-0 scale-100"
+                    />
+                  </div>
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all">
                     <div className="w-16 h-16 bg-red-700 rounded-full flex items-center justify-center shadow-2xl scale-75 group-hover:scale-100 transition-all">
                       <Play fill="white" size={24} />

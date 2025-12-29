@@ -16,8 +16,13 @@
 # next.js
 /.next/
 /out/
-credentials.json
+
 .env
+
+# Google Drive API Secrets
+credentials.json
+token.pickle
+*.pickle
 
 # production
 /build

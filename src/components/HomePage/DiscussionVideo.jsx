@@ -1,7 +1,7 @@
 import React from "react";
 import { SectionHeader } from "./Home";
 import Link from "next/link";
-import { discussion } from "../../../public/videos/discussion";
+import discussion from "../../../public/videos/discussion.json";
 import { getYouTubeID } from "@/utils/ytId";
 import { Play } from "lucide-react";
 
@@ -18,24 +18,25 @@ const DiscussionVideo = () => {
         {/* Grid: Stacks on mobile, 2 columns on Large screens */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-12 mt-10 md:mt-16">
           {/* Main Featured Video */}
+          
           <FeaturedVideo
-            title={discussion[0].source_title}
-            url={discussion[0].yt_source_url}
+            title={discussion?.length && discussion[0].source_title}
+            url={discussion?.length && discussion[0].yt_source_url}
           />
 
           {/* Sidebar Videos */}
           <div className="flex flex-col gap-4 md:gap-6">
             <CompactVideo
-              title={discussion[1].source_title}
-              url={discussion[1].yt_source_url}
+              title={discussion?.length && discussion[1].source_title}
+              url={discussion?.length && discussion[1].yt_source_url}
             />
             <CompactVideo
-              title={discussion[2].source_title}
-              url={discussion[2].yt_source_url}
+              title={discussion?.length && discussion[2].source_title}
+              url={discussion?.length && discussion[2].yt_source_url}
             />
             <CompactVideo
-              title={discussion[3].source_title}
-              url={discussion[3].yt_source_url}
+              title={discussion?.length && discussion[3].source_title}
+              url={discussion?.length && discussion[3].yt_source_url}
             />
 
             {/* View All Button */}
@@ -62,7 +63,7 @@ export const FeaturedVideo = ({ title, url }) => (
     <div className="aspect-video relative overflow-hidden">
       <img
         src={`https://i.ytimg.com/vi/${getYouTubeID(url)}/hqdefault.jpg`}
-        className="w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-1000 group-hover:scale-105"
+        className="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-all duration-1000 group-hover:scale-105"
         alt={title}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent" />
@@ -90,7 +91,7 @@ export const CompactVideo = ({ title, url }) => (
     <div className="w-24 h-16 md:w-32 md:h-20 bg-black rounded-lg md:rounded-2xl overflow-hidden shrink-0 border border-white/10">
       <img
         src={`https://i.ytimg.com/vi/${getYouTubeID(url)}/hqdefault.jpg`}
-        className="w-full h-full object-cover grayscale group-hover:grayscale-0 opacity-30 group-hover:opacity-60 transition-opacity"
+        className="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity"
         alt="thumbnail"
       />
     </div>

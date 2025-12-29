@@ -2,7 +2,7 @@ import { ArrowRight, Play } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import { SectionHeader } from "./Home";
-import { kobita } from "../../../public/videos/poetry";
+import kobita from "../../../public/videos/poetry.json";
 import { getThumbnailSrc } from "@/utils/getThumbnail";
 
 const PoetryVideo = () => {
@@ -37,66 +37,67 @@ const PoetryVideo = () => {
 
         {/* Right Side: Creative Video List */}
         <div className="w-full lg:w-2/3 space-y-4 md:space-y-6">
-          {kobita.slice(0, 3).map((video, i) => {
-            return (
-              <Link
-                key={i}
-                href={`/videos/${encodeURIComponent(video.source_title)}`}
-                className="group relative flex items-center justify-between gap-4 p-6 md:p-10 rounded-[1.5rem] md:rounded-[2.5rem] bg-zinc-950/50 border border-white/10 hover:border-red-700/50 transition-all duration-500 cursor-pointer overflow-hidden"
-              >
-                {/* Hover Image Reveal Logic */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500 -z-10">
-                  <img
-                    src={getThumbnailSrc(video)}
-                    className="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-700"
-                    alt=""
-                  />
-                </div>
-
-                <div className="flex items-center gap-4 md:gap-8 z-10 min-w-0">
-                  {/* The Index Number - Smaller on mobile */}
-                  <span className="text-zinc-800 font-black text-3xl md:text-5xl group-hover:text-red-700/40 transition-colors shrink-0">
-                    0{i + 1}
-                  </span>
-
-                  <div className="min-w-0">
-                    <span className="text-[8px] md:text-[10px] font-black uppercase tracking-[0.3em] text-red-600 mb-1 md:mb-2 block opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all">
-                      {video.category || "Poetry"}
-                    </span>
-                    <h5 className="text-base md:text-lg font-black tracking-tighter group-hover:translate-x-2 transition-transform duration-500 truncate md:whitespace-normal">
-                      {video.source_title}
-                    </h5>
-                  </div>
-                </div>
-
-                {/* Right Side: Thumbnail & Play */}
-                <div className="flex items-center gap-3 md:gap-6 z-10 shrink-0">
-                  {/* Hide thumbnail on small mobile, show on tablet+ */}
-                  <div className="hidden sm:block w-24 md:w-32 aspect-video rounded-lg md:rounded-xl overflow-hidden border border-white/10 scale-0 group-hover:scale-100 transition-all duration-500 shadow-2xl">
+          {kobita?.length &&
+            kobita.slice(0, 3).map((video, i) => {
+              return (
+                <Link
+                  key={i}
+                  href={`/videos/${encodeURIComponent(video.source_title)}`}
+                  className="group relative flex items-center justify-between gap-4 p-6 md:p-10 rounded-[1.5rem] md:rounded-[2.5rem] bg-zinc-950/50 border border-white/10 hover:border-red-700/50 transition-all duration-500 cursor-pointer overflow-hidden"
+                >
+                  {/* Hover Image Reveal Logic */}
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500 -z-10">
                     <img
                       src={getThumbnailSrc(video)}
-                      className="w-full h-full object-cover"
-                      alt={video.source_title}
+                      className="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-700"
+                      alt=""
                     />
                   </div>
 
-                  <div className="flex flex-col items-end">
-                    <span className="text-[8px] md:text-[10px] text-zinc-500 font-black mb-1 md:mb-2">
-                      {video.length || "0:00"}
+                  <div className="flex items-center gap-4 md:gap-8 z-10 min-w-0">
+                    {/* The Index Number - Smaller on mobile */}
+                    <span className="text-zinc-800 font-black text-3xl md:text-5xl group-hover:text-red-700/40 transition-colors shrink-0">
+                      0{i + 1}
                     </span>
-                    <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl md:rounded-2xl bg-zinc-900 flex items-center justify-center text-zinc-600 group-hover:bg-red-700 group-hover:text-white group-hover:rotate-[360deg] transition-all duration-700 shadow-xl">
-                      <Play size={16} fill="currentColor" />
+
+                    <div className="min-w-0">
+                      <span className="text-[8px] md:text-[10px] font-black uppercase tracking-[0.3em] text-red-600 mb-1 md:mb-2 block opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all">
+                        {video.category || "Poetry"}
+                      </span>
+                      <h5 className="text-base md:text-lg font-black tracking-tighter group-hover:translate-x-2 transition-transform duration-500 truncate md:whitespace-normal">
+                        {video.source_title}
+                      </h5>
                     </div>
                   </div>
-                </div>
 
-                {/* Background overlay */}
-                <div
-                  className={`absolute inset-0 bg-red-950 translate-y-full group-hover:translate-y-0 transition-transform duration-500 -z-20 opacity-30`}
-                />
-              </Link>
-            );
-          })}
+                  {/* Right Side: Thumbnail & Play */}
+                  <div className="flex items-center gap-3 md:gap-6 z-10 shrink-0">
+                    {/* Hide thumbnail on small mobile, show on tablet+ */}
+                    <div className="hidden sm:block w-24 md:w-32 aspect-video rounded-lg md:rounded-xl overflow-hidden border border-white/10 transition-all duration-500 shadow-2xl">
+                      <img
+                        src={getThumbnailSrc(video)}
+                        className="w-full h-full object-cover"
+                        alt={video.source_title}
+                      />
+                    </div>
+
+                    <div className="flex flex-col items-end">
+                      <span className="text-[8px] md:text-[10px] text-zinc-500 font-black mb-1 md:mb-2">
+                        {video.length || "0:00"}
+                      </span>
+                      <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl md:rounded-2xl bg-zinc-900 flex items-center justify-center text-zinc-600 group-hover:bg-red-700 group-hover:text-white group-hover:rotate-[360deg] transition-all duration-700 shadow-xl">
+                        <Play size={16} fill="currentColor" />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Background overlay */}
+                  <div
+                    className={`absolute inset-0 bg-red-950 translate-y-full group-hover:translate-y-0 transition-transform duration-500 -z-20 opacity-30`}
+                  />
+                </Link>
+              );
+            })}
         </div>
       </div>
     </section>

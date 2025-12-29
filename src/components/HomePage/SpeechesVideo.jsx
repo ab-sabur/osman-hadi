@@ -1,8 +1,7 @@
 import React from "react";
 import { SectionHeader } from "./Home";
-import { Play, ArrowRight, MonitorPlay } from "lucide-react"; // Added icons
-import { getYouTubeID } from "@/utils/ytId";
-import { speeches } from "../../../public/videos/speeches";
+import { Play, ArrowRight, MonitorPlay } from "lucide-react";
+import speeches from "../../../public/videos/speeches.json";
 import Link from "next/link";
 import { getThumbnailSrc } from "@/utils/getThumbnail";
 
@@ -21,33 +20,31 @@ const SpeechesVideo = () => {
         id="intellectual-scroll"
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 pb-10"
       >
-        {speeches.slice(0, 6).map((item, index) => (
-          <Link
-            href={`/videos/${encodeURIComponent(item.source_title)}`}
-            key={index}
-            className="group cursor-pointer"
-          >
-            <div className="aspect-video bg-zinc-950 overflow-hidden relative border border-white/10 group-hover:border-red-700 transition-all rounded-[2rem]">
-              <img
-                src={getThumbnailSrc(item)}
-                className="w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
-                alt={`Speech ${item.source_title}`}
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-90" />
-              <div className="absolute bottom-8 left-8 right-8">
-                <p className="text-red-600 text-[10px] font-black tracking-widest uppercase mb-2">
-                  SPEECH COLLECTION 0{index + 1}
-                </p>
-                <h4 className="text-lg font-black leading-tight line-clamp-2">
-                  {item.source_title}
-                </h4>
+        {speeches?.length &&
+          speeches.slice(0, 6).map((item, index) => (
+            <Link
+              href={`/videos/${encodeURIComponent(item.source_title)}`}
+              key={index}
+              className="group cursor-pointer"
+            >
+              <div className="aspect-video bg-zinc-950 overflow-hidden relative border border-white/10 group-hover:border-red-700 transition-all rounded-[2rem]">
+                <img
+                  src={getThumbnailSrc(item)}
+                  className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-all duration-700"
+                  alt={`Speech ${item.source_title}`}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-90" />
+                <div className="absolute bottom-3 left-3">
+                  <h4 className="text-lg font-black leading-tight line-clamp-1 md:line-clamp-2">
+                    {item.source_title}
+                  </h4>
+                </div>
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-red-700 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all scale-75 group-hover:scale-100 shadow-2xl">
+                  <Play fill="white" size={24} />
+                </div>
               </div>
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-red-700 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all scale-75 group-hover:scale-100 shadow-2xl">
-                <Play fill="white" size={24} />
-              </div>
-            </div>
-          </Link>
-        ))}
+            </Link>
+          ))}
       </div>
 
       {/* --- WATCH MORE BUTTON SECTION --- */}

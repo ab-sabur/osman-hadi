@@ -796,5 +796,43 @@
       "upload_date": "20251219",
       "view_count": 193415
     }
+  },
+  {
+    "category": "Interview",
+    "yt_personal_url": "",
+    "fb_url": "https://www.facebook.com/reel/635049353026369",
+    "drive_url": "https://drive.google.com/file/d/1jvG9RXgCosQfk064FYkyVN-NkaaQRzhn/view?usp=drivesdk",
+    "source_title": "বেগম জিয়াকে নিয়ে হা'দি তার শেষ টকশো তে যা বলেছিলেন",
+    "yt_source_url": "",
+    "fetched_metadata": {
+      "title": "বেগম জিয়াকে নিয়ে হা'দি তার শেষ টকশো তে যা বলেছিলেন",
+      "duration": "47",
+      "width": 1080,
+      "height": 1920,
+      "aspect_ratio": 0.56,
+      "uploader": "Global TV Bangladesh",
+      "thumbnail_url": "https://scontent.fdac182-1.fna.fbcdn.net/v/t15.5256-10/606619435_882689570928418_8886682507054429519_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=109&ccb=1-7&_nc_sid=be8305&_nc_ohc=mpn26KMEVTEQ7kNvwFXuS7N&_nc_oc=AdlIXBW9bk1HeTc601mURxMGAzc75pRpBF8J4BS0I5EF9ApcFD1mdxGQba9h1I1oq_E&_nc_zt=23&_nc_ht=scontent.fdac182-1.fna&_nc_gid=R3qXbiHSXxCkdJlGW_f_7A&oh=00_Aflac7O-dIcVJQKe3wShVoVhW-Wix8VpgzqqnSZLvi3vUw&oe=695B47A0",
+      "upload_date": "20251230",
+      "view_count": 203546
+    }
+  },
+  {
+    "category": "Interview",
+    "yt_personal_url": "",
+    "fb_url": "",
+    "drive_url": "",
+    "source_title": "চট্টগ্রাম গণসংযোগে শহীদ ওয়াসিমের বাবার সাথে সাক্ষাৎ ও তাদের আক্ষেপ",
+    "yt_source_url": "https://www.youtube.com/watch?v=LyU0Q1R7vEo",
+    "fetched_metadata": {
+      "title": "চট্টগ্রাম গণসংযোগে শহীদ ওয়াসিমের বাবার সাথে সাক্ষাৎ ও তাদের আক্ষেপ",
+      "duration": "2:48",
+      "width": null,
+      "height": null,
+      "aspect_ratio": null,
+      "uploader": "ইনকিলাব মঞ্চ",
+      "thumbnail_url": "https://i.ytimg.com/vi/LyU0Q1R7vEo/maxresdefault.jpg",
+      "upload_date": "20250416",
+      "view_count": 146
+    }
   }
 ]

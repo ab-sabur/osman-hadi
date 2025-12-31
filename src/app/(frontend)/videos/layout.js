@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "ওসমান হাদীর জীবনের বিভিন্ন মুহূর্তের ভিডিও সমূহ। প্রতিটি ফ্রেম একটি নীরব বিপ্লব, প্রতিটি ভিডিও একটি জীবন্ত ইতিহাস।",
   alternates: {
-    canonical: "https://sharif-osman-hadi.netlify.app/videos",
+    canonical: "https://sharifosmanhadi.info/videos",
   },
 };
 

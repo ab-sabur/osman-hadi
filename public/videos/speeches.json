@@ -644,5 +644,24 @@
       "upload_date": "20251228",
       "view_count": 300127
     }
+  },
+  {
+    "category": "Speech",
+    "yt_personal_url": "",
+    "fb_url": "",
+    "drive_url": "",
+    "source_title": "চট্টগ্রাম সমাবেশের সমাপনী বক্তব্য",
+    "yt_source_url": "https://www.youtube.com/watch?v=9AczV1BbnRI",
+    "fetched_metadata": {
+      "title": "চট্টগ্রাম সমাবেশের সমাপনী বক্তব্য",
+      "duration": "2:56",
+      "width": null,
+      "height": null,
+      "aspect_ratio": null,
+      "uploader": "ইনকিলাব মঞ্চ",
+      "thumbnail_url": "https://i.ytimg.com/vi/9AczV1BbnRI/maxresdefault.jpg",
+      "upload_date": "20250407",
+      "view_count": 129
+    }
   }
 ]

@@ -1,7 +1,7 @@
 import Home from "@/components/HomePage/Home";
 
 export async function generateMetadata() {
-  const canonicalUrl = `https://sharif-osman-hadi.netlify.app/`;
+  const canonicalUrl = `https://sharifosmanhadi.info/`;
   return {
     alternates: {
       canonical: canonicalUrl,

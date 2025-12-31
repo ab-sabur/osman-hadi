@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "ওসমান হাদীর জীবনের বিভিন্ন মুহূর্তের ছবি সমূহ। প্রতিটি ফ্রেম একটি নীরব বিপ্লব, প্রতিটি ছবি একটি জীবন্ত ইতিহাস।",
   alternates: {
-    canonical: "https://sharif-osman-hadi.netlify.app/gallery",
+    canonical: "https://sharifosmanhadi.info/gallery",
   },
 };
 

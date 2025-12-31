@@ -31,14 +31,18 @@ def get_gdrive_service():
 # --- THE MAIN DOWNLOAD & UPLOAD FUNCTION ---
 def process_video_to_drive(url, folder_id=None):
     unique_id = uuid.uuid4().hex
-    # We use a fixed temp name to make tracking easier
     temp_download_name = f"video_{unique_id}"
 
     ydl_opts = {
-        "format": "bestvideo[height<=1080]+bestaudio/best",
+        # 'best' format ensures a single file if ffmpeg is missing,
+        # but merge_output ensures mp4 if ffmpeg exists.
+        "format": "bestvideo[height<=1080]+bestaudio/best/best",
         "merge_output_format": "mp4",
         "outtmpl": f"{temp_download_name}.%(ext)s",
-        "quiet": False,  # Changed to False to see what's happening
+        "quiet": False,
+        # Adding User-Agent to prevent 403 errors
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        # "cookiefile": "cookies.txt", # Uncomment this if you still get 403 error
     }
 
     try:
@@ -46,21 +50,39 @@ def process_video_to_drive(url, folder_id=None):
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             print(f"মেটাডেটা সংগ্রহ ও ডাউনলোড শুরু হচ্ছে: {url}")
             info = ydl.extract_info(url, download=True)
-            # The actual file created by yt-dlp
-            final_filename = f"{temp_download_name}.mp4"
+
+            # Get the exact filename yt-dlp created
+            downloaded_file = ydl.prepare_filename(info)
+
+            # In case of merging, the extension might change to .mp4
+            # even if prepare_filename says .mkv or .webm
+            base, _ = os.path.splitext(downloaded_file)
+            final_filename = f"{base}.mp4"
+
+            # Check if the .mp4 version exists, otherwise use the direct filename
+            if not os.path.exists(final_filename):
+                if os.path.exists(downloaded_file):
+                    final_filename = downloaded_file
+                else:
+                    # Search for any file starting with our unique_id in case of mismatch
+                    files = [
+                        f for f in os.listdir(".") if f.startswith(temp_download_name)
+                    ]
+                    if files:
+                        final_filename = files[0]
+                    else:
+                        return {"error": "ডাউনলোড ফাইলটি খুঁজে পাওয়া যায়নি।"}
 
         # 2. WAIT FOR FILE RELEASE
-        # Sometimes FFmpeg takes a second to finish merging
-        print("ফাইল প্রসেসিং চেক করা হচ্ছে...")
-        time.sleep(5)
-
-        if not os.path.exists(final_filename):
-            return {"error": f"ফাইলটি খুঁজে পাওয়া যায়নি: {final_filename}"}
+        print(f"ফাইল নিশ্চিত করা হয়েছে: {final_filename}")
+        time.sleep(2)
 
         # 3. UPLOAD
         service = get_gdrive_service()
+        video_title = info.get("title", "Uploaded_Video")
+
         file_metadata = {
-            "name": info.get("title", "Uploaded_Video"),
+            "name": f"{video_title}.mp4",
             "parents": [folder_id] if folder_id else [],
         }
 
@@ -72,8 +94,14 @@ def process_video_to_drive(url, folder_id=None):
             .execute()
         )
 
-        print("সাফল্যের সাথে সম্পন্ন হয়েছে!")
+        # 4. CLEANUP (Optional: delete local file after upload)
+        if os.path.exists(final_filename):
+            os.remove(final_filename)
+            print("লোকাল ফাইল মুছে ফেলা হয়েছে।")
+
+        print("সাফল্যের সাথে সম্পন্ন হয়েছে!")
         return file.get("webViewLink")
 
     except Exception as e:
-        return ""
+        print(f"Error occurred: {str(e)}")
+        return {"error": str(e)}

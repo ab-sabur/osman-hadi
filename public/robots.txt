@@ -5,7 +5,7 @@ Disallow: /login
 Disallow: /admin
 
 # Host
-Host: https://sharif-osman-hadi.netlify.app
+Host: https://sharifosmanhadi.info
 
 # Sitemaps
-Sitemap: https://sharif-osman-hadi.netlify.app/sitemap.xml
+Sitemap: https://sharifosmanhadi.info/sitemap.xml

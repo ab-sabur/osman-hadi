@@ -3,7 +3,7 @@ import React from "react";
 
 export async function generateMetadata({ params }) {
   const { video } = await params;
-  const canonicalUrl = `https://sharif-osman-hadi.netlify.app/videos/${video}`;
+  const canonicalUrl = `https://sharifosmanhadi.info/videos/${video}`;
   return {
     title: decodeURIComponent(video),
     alternates: {

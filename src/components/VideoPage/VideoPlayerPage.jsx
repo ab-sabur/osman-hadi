@@ -243,7 +243,7 @@ const VideoPlayerPage = async ({ params, searchParams }) => {
               {/* ShareSection Component */}
               <ShareSection
                 title={video.source_title}
-                url={`https://sharif-osman-hadi.netlify.app/videos/${encodeURIComponent(
+                url={`https://sharifosmanhadi.info/videos/${encodeURIComponent(
                   videoTitle
                 )}`}
                 thumbnail={getThumbnailSrc(video)}

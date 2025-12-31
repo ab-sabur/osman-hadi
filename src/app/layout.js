@@ -30,31 +30,31 @@ export default function RootLayout({ children }) {
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content="https://sharif-osman-hadi.netlify.app/"
+          content="https://sharifosmanhadi.info/"
         />
         <meta
           property="og:image"
-          content="https://sharif-osman-hadi.netlify.app/static/osman.webp"
+          content="https://sharifosmanhadi.info/static/osman.webp"
         />
         <link
           rel="alternate"
           hrefLang="bn"
-          href="https://sharif-osman-hadi.netlify.app/"
+          href="https://sharifosmanhadi.info/"
         />
         <link
           rel="alternate"
           hrefLang="en"
-          href="https://sharif-osman-hadi.netlify.app/en/"
+          href="https://sharifosmanhadi.info/en/"
         />
         <link
           rel="alternate"
           hrefLang="x-default"
-          href="https://sharif-osman-hadi.netlify.app/"
+          href="https://sharifosmanhadi.info/"
         />
         <meta property="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:url"
-          content="https://sharif-osman-hadi.netlify.app/"
+          content="https://sharifosmanhadi.info/"
         />
         <meta
           property="twitter:title"
@@ -66,7 +66,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           property="twitter:image"
-          content="https://sharif-osman-hadi.netlify.app/static/osman.webp"
+          content="https://sharifosmanhadi.info/static/osman.webp"
         />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
@@ -125,7 +125,7 @@ export default function RootLayout({ children }) {
               "@type": "CollegeOrUniversity",
               name: "University of Dhaka",
             },
-            image: "https://sharif-osman-hadi.netlify.app/static/osman.webp",
+            image: "https://sharifosmanhadi.info/static/osman.webp",
             description:
               "Prominent leader of the 2024 July Revolution in Bangladesh and spokesperson of Inqilab Moncho.",
             honorificPrefix: "Shaheed",

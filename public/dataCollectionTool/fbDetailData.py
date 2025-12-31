@@ -54,6 +54,7 @@ def run_file(file_name):
     for item in interviews:
         # যদি ইউটিউব ইউআরএল থাকে তবে সেটি ব্যবহার করবে, নাহলে ফেসবুক ইউআরএল দেখবে
         target_url = item.get("yt_source_url") or item.get("fb_url")
+        title = item.get("source_title")
         metadata = item.get("fetched_metadata", {})
 
         if target_url:
@@ -62,7 +63,7 @@ def run_file(file_name):
             new_item = {**item}
             drive_url = item.get("drive_url")
             if not drive_url:
-                drive_url = process_video_to_drive(target_url)
+                drive_url = process_video_to_drive(target_url, metadata.get("title"))
             new_item["fetched_metadata"] = metadata
             new_item["drive_url"] = drive_url
             updated_interviews.append(new_item)

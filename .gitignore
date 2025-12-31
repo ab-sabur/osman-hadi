@@ -13,7 +13,7 @@
 # testing
 /coverage
 
-/git rm -r ffmpeg-8.0.1-essentials_build
+ffmpeg-8.0.1-essentials_build
 
 # next.js
 /.next/

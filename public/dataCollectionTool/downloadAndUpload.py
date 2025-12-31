@@ -1,8 +1,6 @@
-import yt_dlp
 import os
 import pickle
 import time
-import uuid
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 from google_auth_oauthlib.flow import InstalledAppFlow
@@ -28,62 +26,40 @@ def get_gdrive_service():
     return build("drive", "v3", credentials=creds)
 
 
-def process_video_to_drive(url, folder_id=None):
-    unique_id = uuid.uuid4().hex
-    temp_download_name = f"video_{unique_id}"
-
-    # আপনার পিসির FFmpeg বিন ফোল্ডারের সঠিক পাথ
-    ffmpeg_path = (
-        r"D:\osman_hadi\public\dataCollectionTool\ffmpeg-8.0.1-essentials_build\bin"
-    )
-
-    ydl_opts = {
-        # 'bestvideo+bestaudio' ব্যবহার করলে সবচেয়ে হাই-কোয়ালিটি পাওয়া যাবে
-        # এটি যেকোনো ফরম্যাট (mkv/webm/mp4) হতে পারে
-        "format": "bestvideo[height<=1080]+bestaudio/best",
-        "outtmpl": f"{temp_download_name}.%(ext)s",
-        "ffmpeg_location": ffmpeg_path,
-        "quiet": False,
-        "noplaylist": True,
-        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-    }
-
+def process_video_to_drive(url, title, folder_id=None):
+    """
+    ম্যানুয়ালি ডাউনলোড করা ফাইল টাইটেল দিয়ে খুঁজে বের করে ড্রাইভে আপলোড করবে।
+    """
     try:
-        # ১. ডাউনলোড এবং অটোমেটিক মার্জিং (FFmpeg এর মাধ্যমে)
-        with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-            print(f"ডাউনলোড শুরু হচ্ছে: {url}")
-            info = ydl.extract_info(url, download=True)
+        # ১. টাইটেলের প্রথম ৩টি শব্দ নেওয়া
+        words = title.split()
+        search_query = " ".join(words[:4]).lower()
+        print(f"সার্চ করা হচ্ছে: '{search_query}' সংবলিত ফাইল...")
 
-            # yt-dlp মার্জ করার পর যে ফাইলটি তৈরি করেছে তার সঠিক পাথ এবং নাম
-            final_filename = ydl.prepare_filename(info)
+        final_filename = None
 
-            # ইউটিউব অনেক সময় মার্জ করার পর এক্সটেনশন পরিবর্তন করে ফেলে (যেমন .mkv)
-            # তাই আসল ফাইলটি চেক করে নিচ্ছি
-            base, _ = os.path.splitext(final_filename)
-            for file in os.listdir("."):
-                if file.startswith(temp_download_name) and not file.endswith(".part"):
+        # ২. বর্তমান ডিরেক্টরিতে ফাইল খোঁজা
+        for file in os.listdir("."):
+            # শুধুমাত্র ভিডিও ফাইল চেক করা (mp4, mkv, webm) এবং নাম মেলানো
+            if file.lower().endswith((".mp4", ".mkv", ".webm")):
+                if search_query in file.lower():
                     final_filename = file
                     break
 
-        if not os.path.exists(final_filename):
-            return {"error": "ডাউনলোড করা ফাইলটি সিস্টেমে পাওয়া যায়নি।"}
+        if not final_filename:
+            return ""
 
-        print(f"ফাইল প্রস্তুত: {final_filename}")
-        time.sleep(2)  # ফাইল লক রিলিজ হওয়ার জন্য সময়
+        print(f"ফাইল খুঁজে পাওয়া গেছে: {final_filename}")
 
-        # ২. গুগল ড্রাইভ আপলোড
+        # ৩. গুগল ড্রাইভ আপলোড
         service = get_gdrive_service()
-        video_title = info.get("title", "Uploaded_Video")
-        # ভিডিওর অরিজিনাল এক্সটেনশন বের করা
-        _, original_ext = os.path.splitext(final_filename)
 
         file_metadata = {
-            "name": f"{video_title}{original_ext}",
+            "name": final_filename,  # লোকাল ফাইলের নামেই ড্রাইভে সেভ হবে
             "parents": [folder_id] if folder_id else [],
         }
 
-        print(f"ড্রাইভে আপলোড হচ্ছে: {video_title}")
-        # mimetype অটোমেটিক ডিটেক্ট করার জন্য None রাখা হয়েছে
+        print(f"গুগল ড্রাইভে আপলোড শুরু হচ্ছে...")
         media = MediaFileUpload(final_filename, resumable=True)
         file = (
             service.files()
@@ -93,16 +69,6 @@ def process_video_to_drive(url, folder_id=None):
 
         drive_url = file.get("webViewLink")
         print(f"সফলভাবে আপলোড হয়েছে! লিঙ্ক: {drive_url}")
-
-        # ৩. ক্লিনআপ
-        try:
-            time.sleep(2)
-            for f in os.listdir("."):
-                if f.startswith(temp_download_name):
-                    os.remove(f)
-            print("লোকাল ক্লিনআপ সম্পন্ন।")
-        except Exception as ce:
-            print(f"ক্লিনআপ ওয়ার্নিং: {ce}")
 
         return drive_url
 

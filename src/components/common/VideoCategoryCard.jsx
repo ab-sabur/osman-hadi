@@ -63,9 +63,9 @@ const VideoCategoryCards = () => {
 
                 {/* Bottom Row: Label */}
                 <div className="space-y-1">
-                  <h4 className="text-xl font-black text-zinc-400 group-hover:text-white transition-colors duration-500 tracking-tighter leading-none">
+                  <p className="text-xl font-black text-zinc-400 group-hover:text-white transition-colors duration-500 tracking-tighter leading-none">
                     {cat.label.split("(")[0]} {/* Bengali Part */}
-                  </h4>
+                  </p>
                   <p className="text-[10px] font-bold text-zinc-600 uppercase tracking-[0.2em]">
                     {cat.label.split("(")[1]?.split(")")[0] || cat.id}{" "}
                     Collection

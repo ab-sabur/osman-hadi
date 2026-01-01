@@ -16,10 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title:
-    "শহীদ শরীফ ওসমান হাদি স্মৃতি আর্কাইভ | Shaheed Sharif Osman Hadi Memorial Archive",
+  title: "শহীদ ওসমান হাদি আর্কাইভ | Shaheed Osman Hadi Archive",
   description:
-    "Official photo and video memorial archive of Sharif Osman Hadi (1993–2025). Explore the legacy, political struggle, and speeches of the Inqilab Moncho spokesperson and July Revolution martyr. | শরীফ ওসমান বিন হাদির অফিসিয়াল মেমোরিয়াল আর্কাইভ। ইনকিলাব মঞ্চের মুখপাত্র ও জুলাই বিপ্লবের শহিদের জীবন, সংগ্রাম, সচিত্র ইতিহাস, দুর্লভ ছবি ও ভিডিওর এক অনন্য ডিজিটাল সংগ্রহশালা।",
+    "Memorial Archive of Sharif Osman Hadi | ইনকিলাব মঞ্চের মুখপাত্র শরীফ ওসমান হাদির আর্কাইভ, জীবনী, ছবি ও ভিডিওর ডিজিটাল সংগ্রহশালা",
 };
 
 export default function RootLayout({ children }) {
@@ -28,10 +27,7 @@ export default function RootLayout({ children }) {
       <head>
         <meta name="robots" content="index, follow" />
         <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://sharifosmanhadi.info/"
-        />
+        <meta property="og:url" content="https://sharifosmanhadi.info/" />
         <meta
           property="og:image"
           content="https://sharifosmanhadi.info/static/osman.webp"
@@ -51,18 +47,16 @@ export default function RootLayout({ children }) {
           hrefLang="x-default"
           href="https://sharifosmanhadi.info/"
         />
+        <link rel="apple-touch-icon" href="/static/apple-touch-icon.png" />
         <meta property="twitter:card" content="summary_large_image" />
-        <meta
-          property="twitter:url"
-          content="https://sharifosmanhadi.info/"
-        />
+        <meta property="twitter:url" content="https://sharifosmanhadi.info/" />
         <meta
           property="twitter:title"
           content="Shaheed Sharif Osman Hadi Official Archive"
         />
         <meta
           property="twitter:description"
-          content="Official photo and video memorial of the July Revolution martyr and Inqilab Moncho spokesperson."
+          content="Memorial Archive of Sharif Osman Hadi | ইনকিলাব মঞ্চের মুখপাত্র শরীফ ওসমান হাদির আর্কাইভ, জীবনী, ছবি ও ভিডিওর ডিজিটাল সংগ্রহশালা"
         />
         <meta
           property="twitter:image"
@@ -72,11 +66,11 @@ export default function RootLayout({ children }) {
         <meta property="og:type" content="article" />
         <meta
           property="og:title"
-          content="Shaheed Sharif Osman Hadi | শহীদ শরীফ ওসমান হাদি"
+          content="শহীদ ওসমান হাদি আর্কাইভ | Shaheed Osman Hadi Archive"
         />
         <meta
           property="og:description"
-          content="Official photo and video memorial archive of Sharif Osman Hadi (1993–2025). Explore the legacy, political struggle, and speeches of the Inqilab Moncho spokesperson and July Revolution martyr. | শরীফ ওসমান বিন হাদির অফিসিয়াল মেমোরিয়াল আর্কাইভ। ইনকিলাব মঞ্চের মুখপাত্র ও জুলাই বিপ্লবের শহিদের জীবন, সংগ্রাম, সচিত্র ইতিহাস, দুর্লভ ছবি ও ভিডিওর এক অনন্য ডিজিটাল সংগ্রহশালা।"
+          content="Memorial Archive of Sharif Osman Hadi | ইনকিলাব মঞ্চের মুখপাত্র শরীফ ওসমান হাদির আর্কাইভ, জীবনী, ছবি ও ভিডিওর ডিজিটাল সংগ্রহশালা।"
         />
         <meta property="og:site_name" content="Shaheed Sharif Osman Hadi" />
         <meta
@@ -127,7 +121,7 @@ export default function RootLayout({ children }) {
             },
             image: "https://sharifosmanhadi.info/static/osman.webp",
             description:
-              "Prominent leader of the 2024 July Revolution in Bangladesh and spokesperson of Inqilab Moncho.",
+              "Memorial Archive of Shaheed Osman Hadi | ইনকিলাব মঞ্চের মুখপাত্র শহীদ ওসমান হাদির আর্কাইভ, জীবনী, ছবি ও ভিডিওর ডিজিটাল সংগ্রহশালা।",
             honorificPrefix: "Shaheed",
           })}
         </Script>

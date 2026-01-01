@@ -82,7 +82,7 @@ const ImagesPage = ({ resolvedParams }) => {
                     <img
                       src={img.url}
                       className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-40 blur-sm group-hover:blur-md transition-all duration-500"
-                      alt=""
+                      alt={`${img?.title}-${idx}`}
                     />
 
                     {/* The Foreground (Hidden Cover, becomes Contain on hover) */}
@@ -102,9 +102,9 @@ const ImagesPage = ({ resolvedParams }) => {
                   <p className="text-[10px] font-black uppercase tracking-widest text-red-600 mb-1">
                     Archive Item #{startIndex + idx + 1}
                   </p>
-                  <h4 className="text-sm font-bold truncate text-white/80 group-hover:text-white">
+                  <p className="text-sm font-bold truncate text-white/80 group-hover:text-white">
                     {img.title || "Untitled Fragment"}
-                  </h4>
+                  </p>
                 </div>
               </div>
             );

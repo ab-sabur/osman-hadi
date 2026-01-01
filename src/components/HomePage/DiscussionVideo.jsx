@@ -75,9 +75,9 @@ export const FeaturedVideo = ({ title, url }) => (
     </div>
 
     <div className="p-8 md:p-12">
-      <h3 className="text-xl md:text-3xl font-black mb-4 leading-tight group-hover:text-red-500 transition-colors line-clamp-2 md:line-clamp-none">
+      <p className="text-xl md:text-3xl font-black mb-4 leading-tight group-hover:text-red-500 transition-colors line-clamp-2 md:line-clamp-none">
         {title}
-      </h3>
+      </p>
     </div>
   </Link>
 );
@@ -97,11 +97,10 @@ export const CompactVideo = ({ title, url }) => (
     </div>
 
     <div className="flex-1 min-w-0">
-      {" "}
       {/* min-w-0 is vital for line-clamp to work in flex */}
-      <h5 className="font-black text-sm md:text-lg leading-tight line-clamp-2 group-hover:text-white transition-colors">
+      <p className="font-black text-sm md:text-lg leading-tight line-clamp-2 group-hover:text-white transition-colors">
         {title}
-      </h5>
+      </p>
     </div>
 
     {/* Play Icon: Hides on very small screens to save space, or remains small */}

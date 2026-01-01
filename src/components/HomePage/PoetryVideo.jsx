@@ -40,7 +40,7 @@ const PoetryVideo = () => {
                     <img
                       src={getThumbnailSrc(video)}
                       className="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-700"
-                      alt=""
+                      alt="thumbnail"
                     />
                   </div>
 
@@ -54,9 +54,9 @@ const PoetryVideo = () => {
                       <span className="text-[8px] md:text-[10px] font-black uppercase tracking-[0.3em] text-red-600 mb-1 md:mb-2 block opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all">
                         {video.category || "Poetry"}
                       </span>
-                      <h5 className="text-base md:text-lg font-black tracking-tighter group-hover:translate-x-2 transition-transform duration-500 truncate md:whitespace-normal">
+                      <p className="text-base md:text-lg font-black tracking-tighter group-hover:translate-x-2 transition-transform duration-500 truncate md:whitespace-normal">
                         {video.source_title}
-                      </h5>
+                      </p>
                     </div>
                   </div>
 
@@ -92,7 +92,7 @@ const PoetryVideo = () => {
             href={`/videos?category=Poetry`}
             className="w-full sm:w-fit mx-auto lg:mx-0 mt-8 flex items-center justify-center gap-3 p-4 md:p-5 border border-red-900/50 text-red-600 font-black hover:bg-red-700 hover:text-white transition-all uppercase tracking-[0.2em] md:tracking-[0.3em] text-[10px] rounded-2xl active:scale-95 group"
           >
-            সবগুলো ভিডিও দেখুন
+            কবিতার ভিডিও গুলো দেখুন
             <ArrowRight
               size={18}
               className="group-hover:translate-x-2 transition-transform"

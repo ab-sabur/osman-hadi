@@ -69,7 +69,7 @@ const Home = () => {
 
           {/* 4. Quote */}
           <div className="max-w-2xl mb-4">
-            <h2 className="text-sm md:text-3xl font-medium italic text-zinc-200 leading-relaxed">
+            <div className="text-sm md:text-3xl font-medium italic text-zinc-200 leading-relaxed">
               <span className="text-red-600 text-4xl mr-2 font-serif relative bottom-[-15px]">
                 “
               </span>
@@ -77,7 +77,7 @@ const Home = () => {
               <span className="text-red-600 text-4xl ml-2 font-serif relative bottom-[-15px]">
                 ”
               </span>
-            </h2>
+            </div>
           </div>
 
           {/* 5. Action Buttons */}
@@ -112,7 +112,7 @@ const Home = () => {
         <div className="mb-8 md:mb-12">
           <h2 className="text-2xl md:text-4xl font-black leading-tight">
             <span className="text-red-600 text-[10px] md:text-xs relative -bottom-0">
-              The multi-dimensional identity of Sharif Osman Hadi
+              Multi-dimensional identity of Osman Hadi
             </span>
             <br />
             শরীফ ওসমান হাদির বহুমাত্রিক পরিচয়
@@ -179,7 +179,6 @@ const Home = () => {
           <div className="md:col-span-1 bg-zinc-900/40 border border-white/10 rounded-[2rem] md:rounded-[2.5rem] p-8 hover:bg-zinc-800/60 transition-all flex flex-col justify-center">
             <Award className="text-red-600 mb-6" size={40} />
             <h4 className="text-lg md:text-xl font-bold mb-2">
-              {" "}
               <span className="text-red-600 text-[10px] md:text-xs relative -bottom-0">
                 Teaching profession
               </span>
@@ -314,9 +313,9 @@ const Home = () => {
               <p className="text-zinc-600 font-bold uppercase tracking-widest text-[10px]">
                 মোট ছবি (Total Images)
               </p>
-              <h3 className="text-5xl font-black text-white mt-2">
+              <div className="text-5xl font-black text-white mt-2">
                 {osmanarchiveImages.length}+
-              </h3>
+              </div>
             </Link>
 
             <div className="md:col-span-3 md:row-span-2 relative group rounded-[2.5rem] overflow-hidden border border-white/10">
@@ -371,12 +370,12 @@ const Home = () => {
         <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/brushed-alum.png')] opacity-5" />
         <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
           <Quote className="text-red-700 mx-auto mb-10 opacity-40" size={80} />
-          <h2 className="text-2xl md:text-3xl font-serif italic leading-tight text-zinc-100">
+          <p className="text-2xl md:text-3xl font-serif italic leading-tight text-zinc-100">
             &quot;সবাই যখন মৃত্যুটাকে ভীষণ ভয় পায়, আমি তখন হাসতে হাসতে আল্লাহর
             কাছে ভীষণ সন্তুষ্টি নিয়ে পৌছাতে চাই। যে আমি নুন্যতম একটা জীবন লিড
             করতে পারলাম। আমি একটা ইনসাফের হাসি নিয়ে আমি আমার আল্লাহর কাছে পাঁছাত
             পেরেছি&quot;
-          </h2>
+          </p>
           <div className="mt-12 flex items-center justify-center gap-6">
             <div className="h-px w-16 bg-red-700/50" />
             <p className="font-black text-red-600 tracking-[0.5em] uppercase text-sm">

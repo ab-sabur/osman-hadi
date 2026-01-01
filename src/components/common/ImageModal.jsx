@@ -113,7 +113,7 @@ const ImageGalleryModal = ({ isOpen, onClose, images, initialIndex }) => {
           <img
             key={currentIndex}
             src={activeImg?.url}
-            alt={activeImg?.title}
+            alt={`${activeImg?.title}-image`}
             style={{
               animation:
                 direction === "right"

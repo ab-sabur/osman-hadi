@@ -4,9 +4,6 @@ import {
   Flame,
   MessageCircle,
   ArrowUpRight,
-  Shield,
-  Heart,
-  Scale,
 } from "lucide-react";
 
 /**
@@ -163,7 +160,7 @@ const QuotesPage = () => {
             <Flame size={18} /> শব্দ যখন আগ্নেয়াস্ত্র
           </div>
           <h1 className="text-3xl md:text-5xl font-black tracking-tighter leading-[0.85] mb-8">
-            অমর{" "}
+            ওসমান হাদির অমর{" "}
             <span className="text-red-700 underline decoration-red-900/30 underline-offset-8">
               বাণী
             </span>
@@ -236,10 +233,10 @@ const QuotesPage = () => {
             className="mx-auto text-red-700 opacity-20 mb-8"
             size={60}
           />
-          <h2 className="text-3xl md:text-5xl font-black tracking-tighter mb-8">
+          <p className="text-3xl md:text-5xl font-black tracking-tighter mb-8">
             লড়াই চলবে <br />{" "}
             <span className="text-red-700">কেয়ামত পর্যন্ত</span>
-          </h2>
+          </p>
           <div className="w-24 h-1 bg-red-700 mx-auto mb-12 rounded-full" />
           <p className="text-zinc-500 text-lg md:text-xl max-w-2xl mx-auto mb-12 font-medium leading-relaxed">
             শহীদ শরীফ ওসমান বিন হাদীর এই প্রতিটি বাক্য আগামীর ইনসাফ কায়েমের পথে

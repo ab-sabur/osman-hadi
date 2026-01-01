@@ -57,9 +57,9 @@ const OsmanAboutSection = () => {
               <div className="text-[10px] font-black uppercase tracking-widest text-zinc-600 mb-2 block">
                 {item.label}
               </div>
-              <h4 className="text-xl md:text-2xl font-black mb-4 group-hover:text-red-500 transition-colors">
+              <p className="text-xl md:text-2xl font-black mb-4 group-hover:text-red-500 transition-colors">
                 {item.title}
-              </h4>
+              </p>
               <p className="text-zinc-500 text-sm leading-relaxed">
                 {item.desc}
               </p>

@@ -164,9 +164,9 @@ const VideosPage = ({ resolvedParams }) => {
                       {formatUploadDate(video?.fetched_metadata?.upload_date)}
                     </span>
                   </div>
-                  <h4 className="text-xl font-bold leading-tight line-clamp-2 group-hover:text-red-500 transition-colors">
+                  <p className="text-xl font-bold leading-tight line-clamp-2 group-hover:text-red-500 transition-colors">
                     {video.source_title}
-                  </h4>
+                  </p>
                 </div>
               </Link>
             ))}
@@ -193,9 +193,9 @@ const VideosPage = ({ resolvedParams }) => {
               </div>
             </div>
 
-            <h3 className="text-2xl font-black uppercase tracking-tighter mb-2">
+            <p className="text-2xl font-black uppercase tracking-tighter mb-2">
               No Matches Found
-            </h3>
+            </p>
             <p className="text-zinc-500 max-w-sm mx-auto text-sm leading-relaxed mb-10">
               The archive could not locate any files matching{" "}
               <span className="text-red-600 font-bold">

@@ -53,11 +53,12 @@ const Navbar = () => {
               height={45}
               className="object-cover rounded-sm"
               src="/static/hadi.jpg"
+              alt="Osman Hadi"
             />
             <div>
-              <h1 className="text-lg text-white font-black tracking-tighter leading-none">
+              <h3 className="text-lg text-white font-black tracking-tighter leading-none">
                 ওসমান হাদি
-              </h1>
+              </h3>
               <p className="text-[10px] text-red-500 font-bold uppercase tracking-[0.2em]">
                 স্মৃতি আর্কাইভ
               </p>

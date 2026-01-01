@@ -8,7 +8,7 @@ module.exports = {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/login", "/admin"],
+        disallow: ["/login", "/admin", "/*?*"],
       },
     ],
   },

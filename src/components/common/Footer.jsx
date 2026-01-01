@@ -17,6 +17,7 @@ const Footer = () => {
                 height={45}
                 className="object-cover rounded-sm"
                 src="/static/hadi.jpg"
+                alt="Osman Hadi"
               />
               <div>
                 <h3 className="text-lg text-white font-black tracking-tighter leading-none">

@@ -35,9 +35,9 @@ const SpeechesVideo = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-90" />
                 <div className="absolute bottom-3 left-3">
-                  <h4 className="text-lg font-black leading-tight line-clamp-1 md:line-clamp-2">
+                  <p className="text-lg font-black leading-tight line-clamp-1 md:line-clamp-2">
                     {item.source_title}
-                  </h4>
+                  </p>
                 </div>
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-red-700 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all scale-75 group-hover:scale-100 shadow-2xl">
                   <Play fill="white" size={24} />

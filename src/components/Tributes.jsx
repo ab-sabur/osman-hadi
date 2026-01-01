@@ -28,10 +28,10 @@ const Tributes = ({ tributes, totalPages, currentPage }) => {
               <span className="w-12 h-px bg-red-600 hidden md:block"></span>
               Digital Memorial
             </h3>
-            <h2 className="text-3xl md:text-5xl font-black tracking-tighter leading-none italic">
-              শ্রদ্ধাঞ্জলি <br />
+            <h1 className="text-3xl md:text-5xl font-black tracking-tighter leading-none italic">
+              ওসমান হাদির প্রতি শ্রদ্ধাঞ্জলি <br />
               <span className="text-zinc-800 not-italic">আর্কাইভ</span>
-            </h2>
+            </h1>
           </div>
           <Link
             href="/tributes/add"
@@ -66,9 +66,9 @@ const Tributes = ({ tributes, totalPages, currentPage }) => {
                       <div className="relative z-10">
                         <div className="flex justify-between items-start mb-3">
                           <div>
-                            <h4 className="text-xl font-black text-white group-hover:text-red-500 transition-colors">
+                            <p className="text-xl font-black text-white group-hover:text-red-500 transition-colors">
                               {tribute.name}
-                            </h4>
+                            </p>
 
                             <div className="flex items-center gap-2 mt-1">
                               <span className="text-[10px] font-black uppercase tracking-widest text-red-700 bg-red-950/20 px-2 py-0.5 rounded">

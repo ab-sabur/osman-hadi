@@ -87,13 +87,13 @@ const AchievementSection = ({ from = "" }) => {
                 <span className="text-red-600 font-black tracking-[0.3em] text-xs">
                   {item.year}
                 </span>
-                <h4 className="relative -top-2 text-2xl md:text-3xl font-black text-zinc-100 group-hover:text-white">
+                <p className="relative -top-2 text-2xl md:text-3xl font-black text-zinc-100 group-hover:text-white">
                   <span className="text-red-600 text-[10px] tracking-normal md:text-xs relative bottom-1">
                     {item.titleEnglish}
                   </span>
                   <br />
                   {item.title}
-                </h4>
+                </p>
                 <p className="text-zinc-500 text-sm md:text-base leading-relaxed group-hover:text-zinc-400">
                   {item.desc}
                 </p>

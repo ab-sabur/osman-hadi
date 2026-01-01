@@ -115,14 +115,14 @@ const AboutPage = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="p-6 bg-zinc-900/50 rounded-2xl border border-white/10">
                 <GraduationCap className="text-red-700 mb-2" />
-                <h4 className="font-bold">শিক্ষা</h4>
+                <p className="font-bold">শিক্ষা</p>
                 <p className="text-xs text-zinc-500">
                   রাষ্ট্রবিজ্ঞান বিভাগ, ঢাকা বিশ্ববিদ্যালয়
                 </p>
               </div>
               <div className="p-6 bg-zinc-900/50 rounded-2xl border border-white/10">
                 <Briefcase className="text-red-700 mb-2" />
-                <h4 className="font-bold">পেশা</h4>
+                <p className="font-bold">পেশা</p>
                 <p className="text-xs text-zinc-500">
                   প্রভাষক, ইউনিভার্সিটি অফ স্কলারস
                 </p>
@@ -307,9 +307,9 @@ const TimelineItem = ({ year, title, desc }) => (
     <span className="text-red-600 font-black text-xl md:text-2xl tracking-tighter block mb-1">
       {year}
     </span>
-    <h4 className="text-lg md:text-xl font-bold text-white mb-1 md:mb-2">
+    <p className="text-lg md:text-xl font-bold text-white mb-1 md:mb-2">
       {title}
-    </h4>
+    </p>
     <p className="text-zinc-500 leading-relaxed text-xs md:text-base">{desc}</p>
   </div>
 );

@@ -11,7 +11,7 @@ const VideoCategoryCards = () => {
       <div className="flex justify-between flex-wrap items-start gap-4 mb-6">
         <div>
           <h2 className="text-2xl md:text-4xl font-black tracking-নরমাল  italic text-white">
-            <span className="text-red-600 text-[10px] tracking-normal md:text-xs relative bottom-1">
+            <span className="text-red-500 text-[10px] tracking-normal md:text-xs relative bottom-1">
               Osman Hadi Video Archive
             </span>
             <br />
@@ -67,7 +67,7 @@ const VideoCategoryCards = () => {
                   <p className="text-xl font-black text-zinc-400 group-hover:text-white transition-colors duration-500 tracking-tighter leading-none">
                     {cat.label.split("(")[0]} {/* Bengali Part */}
                   </p>
-                  <p className="text-[10px] font-bold text-zinc-600 uppercase tracking-[0.2em]">
+                  <p className="text-[10px] font-bold text-zinc-400 uppercase tracking-[0.2em]">
                     {cat.label.split("(")[1]?.split(")")[0] || cat.id}{" "}
                     Collection
                   </p>

@@ -123,7 +123,7 @@ const VideoPlayerPage = async ({ params, searchParams }) => {
                   className={`flex items-center justify-center gap-2 p-4 rounded-xl border text-[10px] font-black uppercase tracking-widest transition-all ${
                     isActive
                       ? "bg-red-700 border-red-600 text-white"
-                      : "bg-zinc-950 border-white/10 text-zinc-500 hover:text-white"
+                      : "bg-zinc-950 border-white/10 text-zinc-400 hover:text-white"
                   }`}
                 >
                   {src.icon}
@@ -206,7 +206,7 @@ const VideoPlayerPage = async ({ params, searchParams }) => {
                     <span className="block text-white text-[10px] font-black tracking-widest uppercase opacity-80">
                       {formatDuration(video?.fetched_metadata?.duration)}
                     </span>
-                    <span className="block text-xs text-zinc-600 font-bold uppercase mt-1">
+                    <span className="block text-xs text-zinc-400 font-bold uppercase mt-1">
                       {formatUploadDate(video?.fetched_metadata?.upload_date)}
                     </span>
                   </div>
@@ -218,7 +218,7 @@ const VideoPlayerPage = async ({ params, searchParams }) => {
 
                 <div className="h-px w-32 bg-red-900/50" />
 
-                <p className="text-zinc-500 text-sm md:text-base font-medium leading-relaxed max-w-2xl">
+                <p className="text-zinc-400 text-sm md:text-base font-medium leading-relaxed max-w-2xl">
                   শহীদ শরীফ ওসমান বিন হাদি আর্কাইভ। এই ভিডিওটি ইনসাফ কায়েমের
                   লড়াইয়ের একটি অমর দলিল। হাদী ভাইয়ের প্রতিটি কথা আমাদের
                   পথপ্রদর্শক।

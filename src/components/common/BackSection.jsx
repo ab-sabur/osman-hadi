@@ -7,7 +7,7 @@ const BackSection = ({ links, current }) => {
       {/* 1. Removed line-clamp from the parent flex 
           2. Added min-w-0 to allow the flex child to shrink
       */}
-      <div className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-zinc-500 min-w-0 flex-1">
+      <div className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-zinc-400 min-w-0 flex-1">
         {links.map((link, i) => (
           <React.Fragment key={i}>
             {i !== 0 && <span className="shrink-0">/</span>}

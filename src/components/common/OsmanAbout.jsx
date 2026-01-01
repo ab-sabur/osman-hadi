@@ -30,15 +30,15 @@ const OsmanAboutSection = () => {
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-12 md:mb-20">
           <div className="max-w-2xl">
             <h2 className="text-2xl md:text-4xl font-black tracking-tighter leading-none italic">
-              <span className="text-red-600 text-[10px] tracking-normal md:text-xs relative bottom-2">
+              <span className="text-red-500 text-[10px] tracking-normal md:text-xs relative bottom-2">
                 Shaheed Osman Hadi Memorial Archive
               </span>
               <br />
               শহীদ ওসমান হাদি <br />{" "}
-              <span className="text-zinc-600 not-italic">স্মৃতি আর্কাইভ</span>
+              <span className="text-zinc-400 not-italic">স্মৃতি আর্কাইভ</span>
             </h2>
           </div>
-          <p className="text-zinc-500 text-lg md:text-xl font-medium max-w-sm border-l-2 border-red-900/30 pl-6">
+          <p className="text-zinc-400 text-lg md:text-xl font-medium max-w-sm border-l-2 border-red-900/30 pl-6">
             জুলাই বিপ্লবের বীর সেনানী, ইনকিলাব মঞ্চের মুখপাত্র এবং সার্বভৌমত্বের
             এক অকুতোভয় লড়াকুর সচিত্র জীবনগাথা।
           </p>
@@ -54,13 +54,13 @@ const OsmanAboutSection = () => {
               <div className="text-red-600 mb-8 group-hover:scale-110 transition-transform origin-left">
                 {item.icon}
               </div>
-              <div className="text-[10px] font-black uppercase tracking-widest text-zinc-600 mb-2 block">
+              <div className="text-[10px] font-black uppercase tracking-widest text-zinc-400 mb-2 block">
                 {item.label}
               </div>
               <p className="text-xl md:text-2xl font-black mb-4 group-hover:text-red-500 transition-colors">
                 {item.title}
               </p>
-              <p className="text-zinc-500 text-sm leading-relaxed">
+              <p className="text-zinc-400 text-sm leading-relaxed">
                 {item.desc}
               </p>
               {/* Corner Accent */}

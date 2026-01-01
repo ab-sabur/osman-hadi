@@ -50,7 +50,7 @@ const AboutPage = () => {
           <p className="text-zinc-400 text-base md:text-xl font-medium max-w-2xl mx-auto mb-8">
             বিপ্লবী জুলাই যোদ্ধা ও ইনকিলাব মঞ্চের মুখপাত্র
           </p>
-          <div className="flex flex-wrap justify-center gap-3 md:gap-4 text-zinc-500 font-black text-[9px] md:text-xs uppercase tracking-widest">
+          <div className="flex flex-wrap justify-center gap-3 md:gap-4 text-zinc-400 font-black text-[9px] md:text-xs uppercase tracking-widest">
             {["শিক্ষক", "বিপ্লবী", "শহীদ", "রাজনীতিবিদ"].map((tag) => (
               <span
                 key={tag}
@@ -99,7 +99,7 @@ const AboutPage = () => {
         <section className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="space-y-6 order-2 lg:order-1">
             <h2 className="text-2xl md:text-4xl font-black leading-tight">
-              <span className="text-red-600 text-[10px] tracking-normal md:text-xs relative bottom-1">
+              <span className="text-red-500 text-[10px] tracking-normal md:text-xs relative bottom-1">
                 Brief Biography
               </span>
               <br />
@@ -116,14 +116,14 @@ const AboutPage = () => {
               <div className="p-6 bg-zinc-900/50 rounded-2xl border border-white/10">
                 <GraduationCap className="text-red-700 mb-2" />
                 <p className="font-bold">শিক্ষা</p>
-                <p className="text-xs text-zinc-500">
+                <p className="text-xs text-zinc-400">
                   রাষ্ট্রবিজ্ঞান বিভাগ, ঢাকা বিশ্ববিদ্যালয়
                 </p>
               </div>
               <div className="p-6 bg-zinc-900/50 rounded-2xl border border-white/10">
                 <Briefcase className="text-red-700 mb-2" />
                 <p className="font-bold">পেশা</p>
-                <p className="text-xs text-zinc-500">
+                <p className="text-xs text-zinc-400">
                   প্রভাষক, ইউনিভার্সিটি অফ স্কলারস
                 </p>
               </div>
@@ -151,7 +151,7 @@ const AboutPage = () => {
             <h2 className="text-2xl md:text-4xl font-black tracking-tighter leading-none">
               বিপ্লবীর <br /> <span className="text-red-600">টাইমলাইন</span>
             </h2>
-            <p className="text-zinc-500 text-base md:text-lg leading-relaxed max-w-md">
+            <p className="text-zinc-400 text-base md:text-lg leading-relaxed max-w-md">
               নলছিটির নিভৃত গ্রাম থেকে শুরু হয়ে ঢাকা বিশ্ববিদ্যালয়ের রাজপথ,
               অদ্যাবধি ইনকিলাব মঞ্চের কণ্ঠস্বর।
             </p>
@@ -224,7 +224,7 @@ const AboutPage = () => {
         <section className="py-10">
           <div className="text-center mb-12 md:mb-16 space-y-4">
             <h2 className="text-2xl md:text-4xl font-black tracking-tighter">
-              <span className="text-red-600 text-[10px] tracking-normal md:text-xs relative bottom-1">
+              <span className="text-red-500 text-[10px] tracking-normal md:text-xs relative bottom-1">
                 Aims & Values
               </span>
               <br />
@@ -252,14 +252,14 @@ const AboutPage = () => {
 
         {/* 6. FINAL RESTING PLACE */}
         <section className="text-center space-y-8 md:space-y-12 bg-zinc-900/30 py-16 md:py-20 rounded-[2rem] md:rounded-[4rem] border border-white/10 px-6">
-          <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-zinc-900 border border-white/10 text-zinc-500 font-black text-[10px] uppercase tracking-widest">
+          <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-zinc-900 border border-white/10 text-zinc-400 font-black text-[10px] uppercase tracking-widest">
             <MapPin size={14} className="text-red-600" /> The Eternal Abode
           </div>
           <h2 className="text-2xl md:text-4xl font-black tracking-tighter">
             নজরুলের পাশে <br className="hidden md:block" />{" "}
             <span className="text-red-700">চিরনিদ্রায় এক বিপ্লবী</span>
           </h2>
-          <p className="text-zinc-500 text-base md:text-xl max-w-3xl mx-auto leading-relaxed">
+          <p className="text-zinc-400 text-base md:text-xl max-w-3xl mx-auto leading-relaxed">
             ২০শে ডিসেম্বর ২০২৫ তারিখে ঢাকা বিশ্ববিদ্যালয় কেন্দ্রীয় মসজিদ
             প্রাঙ্গণে জাতীয় কবি কাজী নজরুল ইসলামের সমাধিস্থলের পাশে সমাহিত করা
             হয়।
@@ -288,7 +288,7 @@ const DetailCard = ({ icon, label, value, sub }) => (
       {React.cloneElement(icon, { size: 28 })}
     </div>
     <div className="space-y-1 md:space-y-2">
-      <p className="text-xs text-zinc-600 font-black uppercase tracking-widest">
+      <p className="text-xs text-zinc-400 font-black uppercase tracking-widest">
         {label}
       </p>
       <p className="text-base md:text-xl font-black text-zinc-100 leading-tight">
@@ -310,7 +310,7 @@ const TimelineItem = ({ year, title, desc }) => (
     <p className="text-lg md:text-xl font-bold text-white mb-1 md:mb-2">
       {title}
     </p>
-    <p className="text-zinc-500 leading-relaxed text-xs md:text-base">{desc}</p>
+    <p className="text-zinc-400 leading-relaxed text-xs md:text-base">{desc}</p>
   </div>
 );
 
@@ -322,7 +322,7 @@ const PillarCard = ({ icon, title, desc }) => (
     <h3 className="text-lg md:text-xl font-black uppercase mb-2 md:mb-4 tracking-widest">
       {title}
     </h3>
-    <p className="text-zinc-500 text-xs md:text-sm leading-relaxed">{desc}</p>
+    <p className="text-zinc-400 text-xs md:text-sm leading-relaxed">{desc}</p>
   </div>
 );
 

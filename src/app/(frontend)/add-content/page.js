@@ -70,7 +70,7 @@ export default function FileRequestPage() {
           <h2 className="text-3xl font-black mb-4 uppercase tracking-tighter italic">
             ধন্যবাদ, আপনার অবদান চিরস্মরণীয়
           </h2>
-          <p className="text-zinc-500 text-lg mb-10 leading-relaxed">
+          <p className="text-zinc-400 text-lg mb-10 leading-relaxed">
             আপনার পাঠানো ফাইলটি আমাদের এডমিন প্যানেলে জমা হয়েছে। যাচাই বাছাই
             শেষে এটি আর্কাইভে যুক্ত করা হবে।
           </p>
@@ -86,7 +86,7 @@ export default function FileRequestPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#050000] text-white pb-32 pt-32 px-6 font-sans">
+    <div className="bg-[#050000] text-white pb-32 pt-32 px-6 font-sans">
       <div className="max-w-[1400px] mx-auto">
         <BackSection
           links={[{ path: "/", text: "", icon: <Home size={15} /> }]}
@@ -97,7 +97,7 @@ export default function FileRequestPage() {
           <h2 className="text-3xl md:text-5xl font-black tracking-tighter leading-none italic uppercase">
             আর্কাইভে <span className="text-red-700">যুক্ত করুন</span>
           </h2>
-          <p className="text-zinc-500 mt-6 max-w-2xl text-lg leading-relaxed italic">
+          <p className="text-zinc-400 mt-6 max-w-2xl text-lg leading-relaxed italic">
             ওসমান হাদী সম্পর্কিত বিরল ছবি, ভিডিও বা কোনো স্মৃতি সম্বলিত ভিডিও
             লিংক বা ডকুমেন্ট এখানে জমা দিতে পারেন।
           </p>
@@ -111,7 +111,7 @@ export default function FileRequestPage() {
           <div className="space-y-6">
             <div className="bg-zinc-950/50 p-8 rounded-[2.5rem] border border-white/10 space-y-6">
               <div className="space-y-2">
-                <label className="text-[10px] font-black uppercase tracking-widest text-zinc-500 ml-4">
+                <label className="text-[10px] font-black uppercase tracking-widest text-zinc-400 ml-4">
                   আপনার নাম
                 </label>
                 <div className="relative">
@@ -135,7 +135,7 @@ export default function FileRequestPage() {
               </div>
 
               <div className="space-y-2">
-                <label className="text-[10px] font-black uppercase tracking-widest text-zinc-500 ml-4">
+                <label className="text-[10px] font-black uppercase tracking-widest text-zinc-400 ml-4">
                   ইমেইল
                 </label>
                 <div className="relative">
@@ -172,7 +172,7 @@ export default function FileRequestPage() {
           <div className="bg-zinc-950 p-8 md:p-10 rounded-[3rem] border border-white/10 shadow-3xl space-y-6">
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-2 col-span-2">
-                <label className="text-[10px] font-black uppercase tracking-widest text-zinc-500 ml-4">
+                <label className="text-[10px] font-black uppercase tracking-widest text-zinc-400 ml-4">
                   কন্টেন্টের ধরন
                 </label>
                 <select
@@ -189,7 +189,7 @@ export default function FileRequestPage() {
               </div>
 
               <div className="space-y-2 col-span-2">
-                <label className="text-[10px] font-black uppercase tracking-widest text-zinc-500 ml-4">
+                <label className="text-[10px] font-black uppercase tracking-widest text-zinc-400 ml-4">
                   শিরোনাম (Title)
                 </label>
                 <div className="relative">
@@ -211,7 +211,7 @@ export default function FileRequestPage() {
               </div>
 
               <div className="space-y-2 col-span-2">
-                <label className="text-[10px] font-black uppercase tracking-widest text-zinc-500 ml-4">
+                <label className="text-[10px] font-black uppercase tracking-widest text-zinc-400 ml-4">
                   সোর্স লিংক (URL)
                 </label>
                 <div className="relative">
@@ -233,7 +233,7 @@ export default function FileRequestPage() {
               </div>
 
               <div className="space-y-2 col-span-2">
-                <label className="text-[10px] font-black uppercase tracking-widest text-zinc-500 ml-4">
+                <label className="text-[10px] font-black uppercase tracking-widest text-zinc-400 ml-4">
                   সংক্ষিপ্ত বর্ণনা
                 </label>
                 <textarea
@@ -249,7 +249,7 @@ export default function FileRequestPage() {
             </div>
 
             {error && (
-              <p className="text-red-600 text-[10px] font-bold uppercase tracking-widest text-center">
+              <p className="text-red-500 text-[10px] font-bold uppercase tracking-widest text-center">
                 {error}
               </p>
             )}

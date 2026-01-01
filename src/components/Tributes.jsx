@@ -75,12 +75,12 @@ const Tributes = ({ tributes, totalPages, currentPage }) => {
                                 {tribute.relation}
                               </span>
                               {tribute.position && (
-                                <span className="text-[10px] font-bold text-zinc-600 flex items-center gap-1">
+                                <span className="text-[10px] font-bold text-zinc-400 flex items-center gap-1">
                                   <Briefcase size={10} /> {tribute.position}
                                 </span>
                               )}
                               {/* Tribute Type */}
-                              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-white/5 bg-zinc-900/50 text-zinc-500 text-[8px] font-black uppercase tracking-widest">
+                              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-white/5 bg-zinc-900/50 text-zinc-400 text-[8px] font-black uppercase tracking-widest">
                                 <Tag size={10} className="text-red-900" />
                                 {tribute.tributeType || "স্মৃতিচারণ"}
                               </div>
@@ -93,7 +93,7 @@ const Tributes = ({ tributes, totalPages, currentPage }) => {
                         </p>
 
                         <div className="pt-3 border-t border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                          <div className="flex items-center gap-2 text-zinc-600">
+                          <div className="flex items-center gap-2 text-zinc-400">
                             <ShieldCheck size={14} className="text-red-900" />
                             <span className="text-[10px] font-bold uppercase tracking-tighter">
                               Verified Legacy
@@ -117,7 +117,7 @@ const Tributes = ({ tributes, totalPages, currentPage }) => {
           ) : (
             <div className="text-center py-32 border border-dashed border-white/20 rounded-[3rem]">
               <Heart className="mx-auto text-zinc-800 mb-6" size={40} />
-              <p className="text-zinc-600 font-bold uppercase tracking-widest text-xs italic">
+              <p className="text-zinc-400 font-bold uppercase tracking-widest text-xs italic">
                 এখনো কোনো শ্রদ্ধাঞ্জলি নেই।
               </p>
             </div>

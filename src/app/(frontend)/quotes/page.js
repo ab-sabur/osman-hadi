@@ -147,7 +147,7 @@ const QuotesPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#050000] text-white selection:bg-red-600/40 font-sans pb-32">
+    <div className="bg-[#050000] text-white selection:bg-red-600/40 font-sans pb-32">
       {/* HEADER SECTION */}
       <section className="relative pt-32 pb-20 px-6 overflow-hidden border-b border-white/10">
         <div className="absolute inset-0 z-0">
@@ -165,7 +165,7 @@ const QuotesPage = () => {
               বাণী
             </span>
           </h1>
-          <p className="text-zinc-500 text-base md:text-xl font-medium max-w-2xl mx-auto leading-relaxed">
+          <p className="text-zinc-400 text-base md:text-xl font-medium max-w-2xl mx-auto leading-relaxed">
             শহীদ শরীফ ওসমান বিন হাদীর বিপ্লবী চিন্তা ও দর্শনের পূর্ণাঙ্গ
             আর্কাইভ। তাঁর প্রতিটি শব্দ ইনসাফ কায়েমের লড়াইয়ের দলিল।
           </p>
@@ -198,7 +198,7 @@ const QuotesPage = () => {
                 </p>
 
                 {quote.context && (
-                  <p className="text-zinc-500 text-xs md:text-sm italic leading-relaxed mb-8 border-l-2 border-red-900/50 pl-4">
+                  <p className="text-zinc-400 text-xs md:text-sm italic leading-relaxed mb-8 border-l-2 border-red-900/50 pl-4">
                     {quote.context}
                   </p>
                 )}
@@ -210,13 +210,13 @@ const QuotesPage = () => {
                     {quote.category}
                   </span>
                   {quote.date && (
-                    <span className="text-[10px] text-zinc-600 font-bold block">
+                    <span className="text-[10px] text-zinc-400 font-bold block">
                       {quote.date}
                     </span>
                   )}
                 </div>
 
-                <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl md:rounded-2xl bg-zinc-900 flex items-center justify-center text-zinc-600 group-hover:bg-red-700 group-hover:text-white transition-all duration-500 group-hover:rotate-12">
+                <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl md:rounded-2xl bg-zinc-900 flex items-center justify-center text-zinc-400 group-hover:bg-red-700 group-hover:text-white transition-all duration-500 group-hover:rotate-12">
                   <ArrowUpRight size={20} />
                 </div>
               </div>
@@ -238,7 +238,7 @@ const QuotesPage = () => {
             <span className="text-red-700">কেয়ামত পর্যন্ত</span>
           </p>
           <div className="w-24 h-1 bg-red-700 mx-auto mb-12 rounded-full" />
-          <p className="text-zinc-500 text-lg md:text-xl max-w-2xl mx-auto mb-12 font-medium leading-relaxed">
+          <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto mb-12 font-medium leading-relaxed">
             শহীদ শরীফ ওসমান বিন হাদীর এই প্রতিটি বাক্য আগামীর ইনসাফ কায়েমের পথে
             আমাদের শক্তি জোগাবে।
           </p>

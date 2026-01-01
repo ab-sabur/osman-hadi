@@ -20,7 +20,7 @@ export default function NotFound() {
           পৃষ্ঠাটি <span className="text-red-700">পাওয়া যায়নি</span>
         </h2>
 
-        <p className="text-zinc-500 text-lg mb-12 max-w-md mx-auto leading-relaxed">
+        <p className="text-zinc-400 text-lg mb-12 max-w-md mx-auto leading-relaxed">
           দুঃখিত, আপনি যে পাতাটি খুঁজছেন তা সরিয়ে ফেলা হয়েছে অথবা বর্তমানে
           উপলব্ধ নেই।
         </p>

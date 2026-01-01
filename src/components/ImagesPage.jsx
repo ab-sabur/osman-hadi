@@ -39,7 +39,7 @@ const ImagesPage = ({ resolvedParams }) => {
                 Photo / Image Archive
               </span>
             </h1>
-            <p className="text-zinc-500 max-w-xl text-lg italic">
+            <p className="text-zinc-400 max-w-xl text-lg italic">
               &quot;জুলাই বিপ্লবের কণ্ঠস্বর শহীদ ওসমান হাদির বিপ্লবী জীবনের
               প্রতিটি মুহূর্তের চিত্র।&quot;
             </p>
@@ -47,7 +47,7 @@ const ImagesPage = ({ resolvedParams }) => {
 
           <div className="bg-zinc-950 border border-white/10 p-4 rounded-2xl flex items-center gap-6 shadow-2xl">
             <div className="flex flex-col">
-              <span className="text-[10px] font-black text-zinc-600 uppercase tracking-widest">
+              <span className="text-[10px] font-black text-zinc-400 uppercase tracking-widest">
                 Total Assets
               </span>
               <span className="text-2xl font-black text-red-600 tabular-nums">
@@ -56,7 +56,7 @@ const ImagesPage = ({ resolvedParams }) => {
             </div>
             <div className="w-px h-10 bg-white/5" />
             <div className="flex flex-col">
-              <span className="text-[10px] font-black text-zinc-600 uppercase tracking-widest">
+              <span className="text-[10px] font-black text-zinc-400 uppercase tracking-widest">
                 Page
               </span>
               <span className="text-2xl font-black text-white tabular-nums">

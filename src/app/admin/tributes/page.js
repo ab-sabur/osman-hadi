@@ -82,7 +82,7 @@ const TributesAdmin = () => {
               <Heart className="text-red-700" size={40} />
               Tributes <span className="text-zinc-800 not-italic">Archive</span>
             </h1>
-            <p className="text-zinc-500 text-[10px] font-black uppercase tracking-[0.3em] mt-2 italic">
+            <p className="text-zinc-400 text-[10px] font-black uppercase tracking-[0.3em] mt-2 italic">
               Public Memorial Moderation
             </p>
           </div>
@@ -100,7 +100,7 @@ const TributesAdmin = () => {
         {/* Tributes Feed */}
         <div className="space-y-6">
           {items.length === 0 && !loading && (
-            <div className="text-center py-32 border border-dashed border-white/10 rounded-[3rem] text-zinc-600 font-bold uppercase tracking-widest text-xs italic">
+            <div className="text-center py-32 border border-dashed border-white/10 rounded-[3rem] text-zinc-400 font-bold uppercase tracking-widest text-xs italic">
               No tributes submitted yet.
             </div>
           )}
@@ -126,10 +126,10 @@ const TributesAdmin = () => {
                     <div className="flex items-center gap-2 text-white font-black uppercase text-xs tracking-tight">
                       <User size={14} className="text-red-700" /> {it?.name}
                     </div>
-                    <div className="flex items-center gap-2 text-zinc-500 font-bold text-xs uppercase tracking-widest">
+                    <div className="flex items-center gap-2 text-zinc-400 font-bold text-xs uppercase tracking-widest">
                       <ShieldCheck size={14} /> {it?.relation}
                     </div>
-                    <div className="flex items-center gap-2 text-zinc-600 font-bold text-[10px] uppercase tracking-widest">
+                    <div className="flex items-center gap-2 text-zinc-400 font-bold text-[10px] uppercase tracking-widest">
                       <Clock size={12} /> {it?.createDate?.date} •{" "}
                       {it?.createDate?.formatedTime}
                     </div>
@@ -201,7 +201,7 @@ const TributesAdmin = () => {
                   <button
                     onClick={() => handleDelete(it?._id)}
                     title="Delete Tribute"
-                    className="w-14 h-14 rounded-2xl bg-zinc-900 text-zinc-600 flex items-center justify-center hover:bg-red-700 hover:text-white transition-all shadow-xl"
+                    className="w-14 h-14 rounded-2xl bg-zinc-900 text-zinc-400 flex items-center justify-center hover:bg-red-700 hover:text-white transition-all shadow-xl"
                   >
                     <Trash2 size={22} />
                   </button>

@@ -19,7 +19,7 @@ const PoetryVideo = () => {
             title="হাদির কবিতা সমূহ"
             sub="Hadi's Poetry"
           />
-          <p className="mt-6 md:mt-8 text-zinc-500 leading-relaxed text-base md:text-lg max-w-xl mx-auto lg:mx-0">
+          <p className="mt-6 md:mt-8 text-zinc-400 leading-relaxed text-base md:text-lg max-w-xl mx-auto lg:mx-0">
             তার প্রতিটি আবৃত্তি ছিল এক একটি আগ্নেয়াস্ত্র। ভিজ্যুয়াল এবং শব্দের
             মাধ্যমে তিনি ফুটিয়ে তুলতেন এক শোষিত জাতির দীর্ঘশ্বাস।
           </p>
@@ -72,10 +72,10 @@ const PoetryVideo = () => {
                     </div>
 
                     <div className="flex flex-col items-end">
-                      <span className="text-[8px] md:text-[10px] text-zinc-500 font-black mb-1 md:mb-2">
+                      <span className="text-[8px] md:text-[10px] text-zinc-400 font-black mb-1 md:mb-2">
                         {video.length || "0:00"}
                       </span>
-                      <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl md:rounded-2xl bg-zinc-900 flex items-center justify-center text-zinc-600 group-hover:bg-red-700 group-hover:text-white group-hover:rotate-[360deg] transition-all duration-700 shadow-xl">
+                      <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl md:rounded-2xl bg-zinc-900 flex items-center justify-center text-zinc-400 group-hover:bg-red-700 group-hover:text-white group-hover:rotate-[360deg] transition-all duration-700 shadow-xl">
                         <Play size={16} fill="currentColor" />
                       </div>
                     </div>

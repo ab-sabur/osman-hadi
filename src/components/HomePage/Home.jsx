@@ -24,7 +24,7 @@ import VideoCategoryCards from "../common/VideoCategoryCard";
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-[#050000] text-white selection:bg-red-600/40 selection:text-red-100 font-sans">
+    <main className="bg-[#050000] text-white selection:bg-red-600/40 selection:text-red-100 font-sans">
       {/* 2. HERO SECTION */}
       <header className="relative flex flex-col items-center justify-center overflow-hidden py-20 md:py-32 pt-32 md:pt-48">
         {/* Background Layer - First Component এর স্টাইল অনুযায়ী */}
@@ -108,7 +108,7 @@ const Home = () => {
       >
         <div className="mb-8 md:mb-12">
           <h2 className="text-2xl md:text-4xl font-black leading-tight">
-            <span className="text-red-600 text-[10px] md:text-xs relative -bottom-0">
+            <span className="text-red-500 text-[10px] md:text-xs relative -bottom-0">
               Multi-dimensional identity of Osman Hadi
             </span>
             <br />
@@ -125,7 +125,7 @@ const Home = () => {
               </div>
               <div>
                 <h3 className="text-xl md:text-3xl font-black mb-4">
-                  <span className="text-red-600 text-[10px] md:text-xs relative -bottom-0">
+                  <span className="text-red-500 text-[10px] md:text-xs relative -bottom-0">
                     Revolutionary and Coordinator
                   </span>
                   <br />
@@ -159,7 +159,7 @@ const Home = () => {
             </div>
             <div>
               <h3 className="text-xl md:text-3xl font-bold mb-2">
-                <span className="text-red-600 text-[10px] md:text-xs relative -bottom-0">
+                <span className="text-red-500 text-[10px] md:text-xs relative -bottom-0">
                   Poet and cultural activist
                 </span>
                 <br />
@@ -176,13 +176,13 @@ const Home = () => {
           <div className="md:col-span-1 bg-zinc-900/40 border border-white/10 rounded-[2rem] md:rounded-[2.5rem] p-8 hover:bg-zinc-800/60 transition-all flex flex-col justify-center">
             <Award className="text-red-600 mb-6" size={40} />
             <h3 className="text-lg md:text-xl font-bold mb-2">
-              <span className="text-red-600 text-[10px] md:text-xs relative -bottom-0">
+              <span className="text-red-500 text-[10px] md:text-xs relative -bottom-0">
                 Teaching profession
               </span>
               <br />
               শিক্ষকতা পেশা
             </h3>
-            <p className="text-zinc-500 text-xs md:text-sm leading-relaxed">
+            <p className="text-zinc-400 text-xs md:text-sm leading-relaxed">
               Shaheed Osman Hadi University of Scholars-এর ইংরেজি বিভাগে প্রভাষক
               হিসেবে কর্মরত ছিলেন। চিন্তাশীল লেখক হিসেবে তাঁর পরিচিতি ছিল অনন্য।
             </p>
@@ -255,7 +255,7 @@ const Home = () => {
           <div className="flex flex-wrap justify-between items-end gap-4 mb-6">
             <div className="space-y-3 self-start">
               <h2 className="text-2xl md:text-4xl font-black tracking-tighter">
-                <span className="text-red-600 text-[10px] tracking-normal md:text-xs relative bottom-1">
+                <span className="text-red-500 text-[10px] tracking-normal md:text-xs relative bottom-1">
                   Osman Hadi Photo Archive
                 </span>
                 <br />
@@ -307,7 +307,7 @@ const Home = () => {
                 size={48}
                 className="text-zinc-800 mb-4 group-hover:text-red-600 transition-colors"
               />
-              <p className="text-zinc-600 font-bold uppercase tracking-widest text-[10px]">
+              <p className="text-zinc-400 font-bold uppercase tracking-widest text-[10px]">
                 মোট ছবি (Total Images)
               </p>
               <div className="text-5xl font-black text-white mt-2">
@@ -390,7 +390,7 @@ const Home = () => {
 
       {/* 11. SECTION 03: POETIC RESISTANCE (Video Edition) */}
       <PoetryVideo />
-    </div>
+    </main>
   );
 };
 
@@ -404,7 +404,7 @@ const PillarCard = ({ icon, title, desc, color }) => (
       {icon}
     </div>
     <p className="text-2xl font-black mb-4 uppercase tracking-tight">{title}</p>
-    <p className="text-zinc-500 text-sm leading-relaxed font-medium">{desc}</p>
+    <p className="text-zinc-400 text-sm leading-relaxed font-medium">{desc}</p>
   </div>
 );
 
@@ -420,7 +420,7 @@ export const SectionHeader = ({ number, title, sub }) => (
       <h2 className="text-2xl md:text-4xl font-black tracking-tighter leading-none">
         {title}
       </h2>
-      <p className="text-red-600 text-[10px] font-black uppercase tracking-[0.5em] mt-3">
+      <p className="text-red-500 text-[10px] font-black uppercase tracking-[0.5em] mt-3">
         {sub}
       </p>
     </div>

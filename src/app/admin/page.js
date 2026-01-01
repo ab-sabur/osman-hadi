@@ -77,7 +77,7 @@ function DashboardCard({ href, title, icon, description, count, color }) {
       className={`group block p-8 bg-zinc-950 border border-white/10 rounded-[3rem] transition-all duration-500 ${color} hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(220,38,38,0.1)]`}
     >
       <div className="flex justify-between items-start mb-8">
-        <div className="w-16 h-16 bg-zinc-900 rounded-[1.5rem] flex items-center justify-center text-zinc-500 group-hover:text-red-600 group-hover:bg-red-600/10 transition-all duration-500">
+        <div className="w-16 h-16 bg-zinc-900 rounded-[1.5rem] flex items-center justify-center text-zinc-400 group-hover:text-red-600 group-hover:bg-red-600/10 transition-all duration-500">
           {icon}
         </div>
         <div className="text-[10px] font-black uppercase tracking-widest bg-zinc-900 px-4 py-2 rounded-full text-zinc-400 group-hover:text-white transition-colors">
@@ -88,11 +88,11 @@ function DashboardCard({ href, title, icon, description, count, color }) {
       <h2 className="text-3xl font-black tracking-tighter mb-2 group-hover:italic transition-all uppercase">
         {title}
       </h2>
-      <p className="text-zinc-500 text-sm font-medium leading-relaxed">
+      <p className="text-zinc-400 text-sm font-medium leading-relaxed">
         {description}
       </p>
 
-      <div className="mt-8 flex items-center gap-2 text-red-600 text-[10px] font-black uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all translate-y-2 group-hover:translate-y-0">
+      <div className="mt-8 flex items-center gap-2 text-red-500 text-[10px] font-black uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all translate-y-2 group-hover:translate-y-0">
         Open Module <ArrowUpRight size={14} />
       </div>
     </Link>

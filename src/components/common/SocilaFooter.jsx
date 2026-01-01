@@ -97,7 +97,7 @@ const SocialFooter = () => {
         <h2 className="text-xl md:text-2xl font-black tracking-tighter text-white uppercase">
           ওসমান হাদির সাথে <span className="text-red-600">সংযুক্ত হন</span>
         </h2>
-        <p className="text-[10px] md:text-xs text-zinc-500 font-bold uppercase tracking-[0.2em] mt-2">
+        <p className="text-[10px] md:text-xs text-zinc-400 font-bold uppercase tracking-[0.2em] mt-2">
           সোশ্যাল মিডিয়ায় ওসমান হাদীকে ফলো করুন
         </p>
       </div>
@@ -123,7 +123,7 @@ const SocialFooter = () => {
               }}
             >
               <div
-                className="w-12 h-12 rounded-full flex items-center justify-center text-zinc-500 transition-all duration-300 bg-zinc-900"
+                className="w-12 h-12 rounded-full flex items-center justify-center text-zinc-400 transition-all duration-300 bg-zinc-900"
                 style={{
                   background: isHovered ? social.color : "",
                   color: isHovered ? "#fff" : "",
@@ -147,7 +147,7 @@ const SocialFooter = () => {
                 )}
               </div>
               <span
-                className="text-[10px] font-black uppercase tracking-widest text-zinc-500 transition-colors duration-300 text-center leading-tight"
+                className="text-[10px] font-black uppercase tracking-widest text-zinc-400 transition-colors duration-300 text-center leading-tight"
                 style={{
                   color: isHovered
                     ? social.platform === "instagram"

@@ -24,7 +24,7 @@ export default function Error({ error, reset }) {
           কিছু একটা <br /> <span className="text-red-700">ভুল হয়েছে</span>
         </h2>
 
-        <p className="text-zinc-500 text-sm mb-12 bg-zinc-950 p-4 rounded-xl border border-white/5 font-mono">
+        <p className="text-zinc-400 text-sm mb-12 bg-zinc-950 p-4 rounded-xl border border-white/5 font-mono">
           Error Log: {error?.message || "Internal Server Configuration Issue"}
         </p>
 
@@ -38,7 +38,7 @@ export default function Error({ error, reset }) {
 
           <button
             onClick={() => (window.location.href = "/")}
-            className="flex items-center justify-center gap-3 text-zinc-500 hover:text-white font-black uppercase text-[9px] tracking-[0.3em] transition-colors"
+            className="flex items-center justify-center gap-3 text-zinc-400 hover:text-white font-black uppercase text-[9px] tracking-[0.3em] transition-colors"
           >
             <Home size={12} /> ফিরে যান
           </button>

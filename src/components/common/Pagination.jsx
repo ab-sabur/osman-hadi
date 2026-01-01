@@ -72,7 +72,7 @@ const Pagination = ({ currentPage, totalPages }) => {
                 className={`w-8 h-8 md:w-12 md:h-12 rounded-xl md:rounded-2xl flex items-center justify-center font-black text-xs md:text-sm transition-all border ${
                   isActive
                     ? "bg-red-700 border-red-600 text-white shadow-lg shadow-red-700/20"
-                    : "bg-zinc-950 border-white/10 text-zinc-500 hover:border-white/20"
+                    : "bg-zinc-950 border-white/10 text-zinc-400 hover:border-white/20"
                 }`}
               >
                 {/* On mobile, we might skip the leading zero to save space if needed */}

@@ -82,7 +82,7 @@ export default function TributeForm() {
               স্মৃতি ও <br />
               <span className="text-red-700 italic">শ্রদ্ধাঞ্জলি</span>
             </h2>
-            <p className="text-zinc-500 mt-8 max-w-md text-lg leading-relaxed lg:mx-0">
+            <p className="text-zinc-400 mt-8 max-w-md text-lg leading-relaxed lg:mx-0">
               আপনার প্রতিটি শব্দ আমাদের ইতিহাসের অংশ হয়ে থাকবে। শহীদের স্মরণে
               আপনার পবিত্র অনুভূতিগুলো এখানে ব্যক্ত করুন।
             </p>
@@ -99,13 +99,13 @@ export default function TributeForm() {
               <p className="text-3xl font-black mb-4 text-white uppercase tracking-tighter">
                 ধন্যবাদ!
               </p>
-              <p className="text-zinc-500 text-base mb-10 max-w-sm mx-auto">
+              <p className="text-zinc-400 text-base mb-10 max-w-sm mx-auto">
                 আপনার শ্রদ্ধাঞ্জলিটি সফলভাবে জমা হয়েছে। যাচাই শেষে এটি আর্কাইভে
                 প্রকাশিত হবে।
               </p>
               <button
                 onClick={() => setSubmitted(false)}
-                className="text-red-600 text-[10px] font-black uppercase tracking-[0.4em] hover:text-white transition-colors border border-red-600/20 px-8 py-3 rounded-full hover:bg-red-600/10"
+                className="text-red-500 text-[10px] font-black uppercase tracking-[0.4em] hover:text-white transition-colors border border-red-600/20 px-8 py-3 rounded-full hover:bg-red-600/10"
               >
                 আরেকটি লিখুন
               </button>
@@ -125,7 +125,7 @@ export default function TributeForm() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {/* Name */}
                 <div className="space-y-3">
-                  <label className="text-[10px] font-black uppercase tracking-[0.3em] text-zinc-500 ml-4">
+                  <label className="text-[10px] font-black uppercase tracking-[0.3em] text-zinc-400 ml-4">
                     আপনার নাম
                   </label>
                   <div className="relative">
@@ -148,7 +148,7 @@ export default function TributeForm() {
 
                 {/* Email */}
                 <div className="space-y-3">
-                  <label className="text-[10px] font-black uppercase tracking-[0.3em] text-zinc-500 ml-4">
+                  <label className="text-[10px] font-black uppercase tracking-[0.3em] text-zinc-400 ml-4">
                     ইমেইল (ঐচ্ছিক)
                   </label>
                   <div className="relative">
@@ -170,7 +170,7 @@ export default function TributeForm() {
 
                 {/* Relation */}
                 <div className="space-y-3">
-                  <label className="text-[10px] font-black uppercase tracking-[0.3em] text-zinc-500 ml-4">
+                  <label className="text-[10px] font-black uppercase tracking-[0.3em] text-zinc-400 ml-4">
                     পরিচয় / সম্পর্ক
                   </label>
                   <div className="relative">
@@ -195,7 +195,7 @@ export default function TributeForm() {
 
                 {/* Position */}
                 <div className="space-y-3">
-                  <label className="text-[10px] font-black uppercase tracking-[0.3em] text-zinc-500 ml-4">
+                  <label className="text-[10px] font-black uppercase tracking-[0.3em] text-zinc-400 ml-4">
                     অবস্থান / পদবী
                   </label>
                   <div className="relative">
@@ -218,7 +218,7 @@ export default function TributeForm() {
 
               {/* Tribute Type */}
               <div className="space-y-3">
-                <label className="text-[10px] font-black uppercase tracking-[0.3em] text-zinc-500 ml-4">
+                <label className="text-[10px] font-black uppercase tracking-[0.3em] text-zinc-400 ml-4">
                   বার্তার ধরন
                 </label>
                 <div className="relative">
@@ -243,7 +243,7 @@ export default function TributeForm() {
 
               {/* Message */}
               <div className="space-y-3">
-                <label className="text-[10px] font-black uppercase tracking-[0.3em] text-zinc-500 ml-4">
+                <label className="text-[10px] font-black uppercase tracking-[0.3em] text-zinc-400 ml-4">
                   আপনার বার্তা
                 </label>
                 <div className="relative">

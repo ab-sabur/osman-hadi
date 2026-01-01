@@ -85,7 +85,7 @@ const VideosPage = ({ resolvedParams }) => {
                 Video Memorial Archive
               </span>
             </h1>
-            <p className="hidden md:block text-zinc-500 max-w-xl text-lg mb-3">
+            <p className="hidden md:block text-zinc-400 max-w-xl text-lg mb-3">
               জুলাই বিপ্লবের বীর সেনানী ও ইনকিলাব মঞ্চের মুখপাত্র শহীদ ওসমান
               হাদির আন্দোলন, ঐতিহাসিক বক্তব্য এবং স্মৃতিবিজড়িত জীবনের দুর্লভ
               ভিডিও সংগ্রহশালা।
@@ -106,7 +106,7 @@ const VideosPage = ({ resolvedParams }) => {
             <div className="p-2 bg-zinc-900 rounded-xl group-hover:bg-red-700 transition-colors">
               <MonitorPlay
                 size={16}
-                className="text-zinc-500 group-hover:text-white"
+                className="text-zinc-400 group-hover:text-white"
               />
             </div>
             <div className="flex flex-col">
@@ -160,7 +160,7 @@ const VideosPage = ({ resolvedParams }) => {
                     <span className="text-[10px] font-black uppercase text-red-600 tracking-widest">
                       {video.category}
                     </span>
-                    <span className="text-[10px] text-zinc-500 font-bold uppercase">
+                    <span className="text-[10px] text-zinc-400 font-bold uppercase">
                       {formatUploadDate(video?.fetched_metadata?.upload_date)}
                     </span>
                   </div>
@@ -196,7 +196,7 @@ const VideosPage = ({ resolvedParams }) => {
             <p className="text-2xl font-black uppercase tracking-tighter mb-2">
               No Matches Found
             </p>
-            <p className="text-zinc-500 max-w-sm mx-auto text-sm leading-relaxed mb-10">
+            <p className="text-zinc-400 max-w-sm mx-auto text-sm leading-relaxed mb-10">
               The archive could not locate any files matching{" "}
               <span className="text-red-600 font-bold">
                 &quot;{searchQuery}&quot;

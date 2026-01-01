@@ -18,7 +18,7 @@ const Videos = () => {
   return (
     <Suspense
       fallback={
-        <div className="min-h-screen bg-black flex items-center justify-center text-zinc-500 uppercase tracking-widest text-xs">
+        <div className="min-h-screen bg-black flex items-center justify-center text-zinc-400 uppercase tracking-widest text-xs">
           Loading Archive...
         </div>
       }

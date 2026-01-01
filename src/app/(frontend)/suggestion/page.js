@@ -60,7 +60,7 @@ export default function ContactPage() {
           <h2 className="text-4xl font-black mb-4 tracking-tighter uppercase italic">
             সফল হয়েছে
           </h2>
-          <p className="text-zinc-500 text-lg mb-10 leading-relaxed font-medium">
+          <p className="text-zinc-400 text-lg mb-10 leading-relaxed font-medium">
             আপনার বার্তাটি সফলভাবে আমাদের আর্কাইভে জমা হয়েছে। আমাদের প্রতিনিধি
             শীঘ্রই আপনার সাথে যোগাযোগ করবেন।
           </p>
@@ -76,7 +76,7 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#050000] text-white pb-32 pt-32 px-6 overflow-hidden">
+    <div className="bg-[#050000] text-white pb-32 pt-32 px-6 overflow-hidden">
       <div className="max-w-[1400px] mx-auto relative">
         {/* Navigation */}
         <BackSection
@@ -91,7 +91,7 @@ export default function ContactPage() {
               <h2 className="text-3xl md:text-5xl font-black tracking-tighter leading-[0.9] italic uppercase">
                 পরামর্শ দিন /<br /> <span className="text-red-700">যোগাযোগ করুন</span>
               </h2>
-              <p className="text-zinc-500 mt-8 max-w-sm text-lg leading-relaxed font-medium italic">
+              <p className="text-zinc-400 mt-8 max-w-sm text-lg leading-relaxed font-medium italic">
                 আর্কাইভ সংক্রান্ত কোনো প্রশ্ন বা তথ্য শেয়ার করতে আমাদের সরাসরি
                 বার্তা পাঠান।
               </p>
@@ -105,7 +105,7 @@ export default function ContactPage() {
                 <div className="grid md:grid-cols-2 gap-6">
                   {/* Name Input */}
                   <div className="space-y-2">
-                    <label className="text-[10px] font-black uppercase tracking-widest text-zinc-500 ml-4">
+                    <label className="text-[10px] font-black uppercase tracking-widest text-zinc-400 ml-4">
                       আপনার নাম
                     </label>
                     <div className="relative">
@@ -128,7 +128,7 @@ export default function ContactPage() {
 
                   {/* Email Input */}
                   <div className="space-y-2">
-                    <label className="text-[10px] font-black uppercase tracking-widest text-zinc-500 ml-4">
+                    <label className="text-[10px] font-black uppercase tracking-widest text-zinc-400 ml-4">
                       ইমেইল
                     </label>
                     <div className="relative">
@@ -152,7 +152,7 @@ export default function ContactPage() {
 
                 {/* Subject Input */}
                 <div className="space-y-2">
-                  <label className="text-[10px] font-black uppercase tracking-widest text-zinc-500 ml-4">
+                  <label className="text-[10px] font-black uppercase tracking-widest text-zinc-400 ml-4">
                     বিষয় (Subject)
                   </label>
                   <div className="relative">
@@ -174,7 +174,7 @@ export default function ContactPage() {
 
                 {/* Message Input */}
                 <div className="space-y-2">
-                  <label className="text-[10px] font-black uppercase tracking-widest text-zinc-500 ml-4">
+                  <label className="text-[10px] font-black uppercase tracking-widest text-zinc-400 ml-4">
                     আপনার বার্তা
                   </label>
                   <div className="relative">
@@ -196,7 +196,7 @@ export default function ContactPage() {
                 </div>
 
                 {error && (
-                  <p className="text-red-600 text-[10px] font-black uppercase tracking-widest text-center">
+                  <p className="text-red-500 text-[10px] font-black uppercase tracking-widest text-center">
                     {error}
                   </p>
                 )}

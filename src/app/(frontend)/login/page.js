@@ -49,7 +49,7 @@ export default function LoginPage() {
         <h1 className="text-3xl font-black tracking-tighter uppercase mb-2">
           Admin <span className="text-red-700">Access</span>
         </h1>
-        <p className="text-zinc-500 text-[10px] font-black uppercase tracking-[0.3em]">
+        <p className="text-zinc-400 text-[10px] font-black uppercase tracking-[0.3em]">
           Official Legacy Archive
         </p>
       </div>
@@ -64,7 +64,7 @@ export default function LoginPage() {
             <div className="space-y-4">
               {/* Email Input */}
               <div className="space-y-2">
-                <label className="text-[10px] font-black uppercase tracking-widest text-zinc-500 ml-4 flex items-center gap-2">
+                <label className="text-[10px] font-black uppercase tracking-widest text-zinc-400 ml-4 flex items-center gap-2">
                   <Mail size={12} /> Email Address
                 </label>
                 <input
@@ -79,7 +79,7 @@ export default function LoginPage() {
 
               {/* Password Input */}
               <div className="space-y-2">
-                <label className="text-[10px] font-black uppercase tracking-widest text-zinc-500 ml-4 flex items-center gap-2">
+                <label className="text-[10px] font-black uppercase tracking-widest text-zinc-400 ml-4 flex items-center gap-2">
                   <Lock size={12} /> Password
                 </label>
                 <input
@@ -122,7 +122,7 @@ export default function LoginPage() {
         <div className="mt-10 text-center">
           <Link
             href="/"
-            className="text-[10px] font-black uppercase tracking-[0.3em] text-zinc-600 hover:text-red-500 transition-colors flex items-center justify-center gap-2 group"
+            className="text-[10px] font-black uppercase tracking-[0.3em] text-zinc-400 hover:text-red-500 transition-colors flex items-center justify-center gap-2 group"
           >
             <div className="w-6 h-px bg-zinc-800 group-hover:bg-red-900 transition-colors" />
             Back to site

@@ -80,7 +80,7 @@ const MessagesList = () => {
               <Inbox className="text-red-700" size={40} />
               Messages <span className="text-zinc-800 not-italic">Inbox</span>
             </h1>
-            <p className="text-zinc-500 text-[10px] font-black uppercase tracking-[0.3em] mt-2">
+            <p className="text-zinc-400 text-[10px] font-black uppercase tracking-[0.3em] mt-2">
               Visitor Suggestions & Contact Records
             </p>
           </div>
@@ -100,7 +100,7 @@ const MessagesList = () => {
           {items.length === 0 && !loading && (
             <div className="text-center py-32 border border-dashed border-white/10 rounded-[3rem]">
               <Mail className="mx-auto text-zinc-900 mb-4" size={48} />
-              <p className="text-zinc-600 font-bold uppercase tracking-widest text-xs italic">
+              <p className="text-zinc-400 font-bold uppercase tracking-widest text-xs italic">
                 No new messages in the archive.
               </p>
             </div>
@@ -127,10 +127,10 @@ const MessagesList = () => {
                     <div className="flex items-center gap-2 text-white font-black uppercase text-xs tracking-tight">
                       <User size={14} className="text-red-700" /> {it.name}
                     </div>
-                    <div className="flex items-center gap-2 text-zinc-500 font-bold text-xs">
+                    <div className="flex items-center gap-2 text-zinc-400 font-bold text-xs">
                       <Mail size={14} /> {it.email}
                     </div>
-                    <div className="flex items-center gap-2 text-zinc-600 font-bold text-[10px] uppercase tracking-widest">
+                    <div className="flex items-center gap-2 text-zinc-400 font-bold text-[10px] uppercase tracking-widest">
                       <Clock size={12} /> {it?.createDate?.date} •{" "}
                       {it?.createDate?.formatedTime}
                     </div>
@@ -167,7 +167,7 @@ const MessagesList = () => {
                   <button
                     onClick={() => handleDelete(it._id)}
                     title="Delete Message"
-                    className="w-12 h-12 rounded-2xl bg-zinc-900 text-zinc-600 flex items-center justify-center hover:bg-red-700 hover:text-white transition-all"
+                    className="w-12 h-12 rounded-2xl bg-zinc-900 text-zinc-400 flex items-center justify-center hover:bg-red-700 hover:text-white transition-all"
                   >
                     <Trash2 size={20} />
                   </button>

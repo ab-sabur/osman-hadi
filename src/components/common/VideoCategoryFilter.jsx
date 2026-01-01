@@ -44,7 +44,7 @@ const VideoCategoryFilter = ({ videoCategories, activeTab }) => {
             className={`px-6 flex-auto text-center border border-white/10 hover:border-red-700/20 py-3 rounded-xl text-xs font-black transition-all uppercase tracking-widest ${
               activeTab === cat.id
                 ? "bg-red-700 text-white shadow-lg"
-                : "text-zinc-500 hover:text-white hover:bg-white/5"
+                : "text-zinc-400 hover:text-white hover:bg-white/5"
             }`}
           >
             {cat.label}

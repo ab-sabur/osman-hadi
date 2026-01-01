@@ -28,7 +28,7 @@ const Footer = () => {
                 </p>
               </div>
             </Link>
-            <p className="text-zinc-500 max-w-md leading-relaxed text-lg">
+            <p className="text-zinc-400 max-w-md leading-relaxed text-lg">
               এই ওয়েবসাইটটি শহীদ শরীফ ওসমান বিন হাদির স্মৃতি এবং তার আদর্শকে
               ধারণ করে তৈরি একটি ডিজিটাল সংগ্রহশালা। তার দর্শন ছড়িয়ে পড়ুক
               প্রতিটি প্রান্তে।
@@ -36,9 +36,9 @@ const Footer = () => {
           </div>
 
           <div className="space-y-8">
-            <h6 className="font-black text-red-600 uppercase tracking-[0.4em] text-xs">
+            <p className="font-black text-red-600 uppercase tracking-[0.4em] text-xs">
               Navigation
-            </h6>
+            </p>
             <ul className="space-y-5 text-zinc-400 font-bold uppercase tracking-widest text-xs">
               <li>
                 <Link href="/" className="hover:text-red-500 transition-colors">
@@ -73,9 +73,9 @@ const Footer = () => {
           </div>
 
           <div className="space-y-8">
-            <h6 className="font-black text-red-600 uppercase tracking-[0.4em] text-xs">
+            <p className="font-black text-red-600 uppercase tracking-[0.4em] text-xs">
               CONTRIBUTE
-            </h6>
+            </p>
             <ul className="space-y-5 text-zinc-400 font-bold uppercase tracking-widest text-xs">
               <li>
                 <Link

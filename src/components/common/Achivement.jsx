@@ -51,13 +51,13 @@ const AchievementSection = ({ from = "" }) => {
       {/* Section Header */}
       <div className={`mb-10 md:mb-16`}>
         <h2 className="text-2xl md:text-4xl font-black tracking-tighter text-white">
-          <span className="text-red-600 text-[10px] tracking-normal md:text-xs relative bottom-1">
+          <span className="text-red-500 text-[10px] tracking-normal md:text-xs relative bottom-1">
             Osman Hadi Contributions and honors earned
           </span>
           <br />
           অবদান ও <span className="text-red-700">অর্জিত সম্মান</span>
         </h2>
-        <p className="text-zinc-500 mt-6 max-w-xl text-lg">
+        <p className="text-zinc-400 mt-6 max-w-xl text-lg">
           শৈশব থেকেই তিনি তাঁর মেধা ও বাগ্মিতার স্বাক্ষর রেখেছেন জাতীয় পর্যায়ে,
           যা পরবর্তীতে তাকে ইনকিলাব মঞ্চের নেতৃত্বে সহায়তা করে।
         </p>
@@ -88,13 +88,13 @@ const AchievementSection = ({ from = "" }) => {
                   {item.year}
                 </span>
                 <p className="relative -top-2 text-2xl md:text-3xl font-black text-zinc-100 group-hover:text-white">
-                  <span className="text-red-600 text-[10px] tracking-normal md:text-xs relative bottom-1">
+                  <span className="text-red-500 text-[10px] tracking-normal md:text-xs relative bottom-1">
                     {item.titleEnglish}
                   </span>
                   <br />
                   {item.title}
                 </p>
-                <p className="text-zinc-500 text-sm md:text-base leading-relaxed group-hover:text-zinc-400">
+                <p className="text-zinc-400 text-sm md:text-base leading-relaxed group-hover:text-zinc-400">
                   {item.desc}
                 </p>
               </div>

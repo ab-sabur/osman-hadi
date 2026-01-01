@@ -105,7 +105,7 @@ const FileRequestsAdmin = () => {
               <FolderOpen className="text-red-700" size={40} />
               Media <span className="text-zinc-800 not-italic">Requests</span>
             </h1>
-            <p className="text-zinc-500 text-[10px] font-black uppercase tracking-[0.3em] mt-2 italic">
+            <p className="text-zinc-400 text-[10px] font-black uppercase tracking-[0.3em] mt-2 italic">
               Contribution moderation queue
             </p>
           </div>
@@ -122,7 +122,7 @@ const FileRequestsAdmin = () => {
         {/* Requests List */}
         <div className="space-y-6">
           {items.length === 0 && !loading && (
-            <div className="text-center py-32 border border-dashed border-white/10 rounded-[3rem] text-zinc-600 font-bold uppercase tracking-widest text-xs">
+            <div className="text-center py-32 border border-dashed border-white/10 rounded-[3rem] text-zinc-400 font-bold uppercase tracking-widest text-xs">
               No content requests found.
             </div>
           )}
@@ -142,7 +142,7 @@ const FileRequestsAdmin = () => {
                       <User size={14} className="opacity-50" />{" "}
                       {it.contributor_name}
                     </div>
-                    <div className="flex items-center gap-2 text-zinc-500 font-bold text-xs">
+                    <div className="flex items-center gap-2 text-zinc-400 font-bold text-xs">
                       <Mail size={14} /> {it.contributor_email}
                     </div>
                     <div
@@ -193,7 +193,7 @@ const FileRequestsAdmin = () => {
                   </button>
                   <button
                     onClick={() => handleDelete(it._id)}
-                    className="w-14 h-14 rounded-2xl bg-zinc-900 flex items-center justify-center text-zinc-500 hover:bg-red-900 hover:text-white transition-all shadow-xl"
+                    className="w-14 h-14 rounded-2xl bg-zinc-900 flex items-center justify-center text-zinc-400 hover:bg-red-900 hover:text-white transition-all shadow-xl"
                   >
                     <Trash2 size={22} />
                   </button>

@@ -487,4 +487,56 @@ export const osmanarchiveImages = [
     title: "",
     url: "https://res.cloudinary.com/dkkvkfzwj/image/upload/v1766769157/archive-photo-19_pdwmtn.jpg",
   },
+  {
+    title: "",
+    url: "https://res.cloudinary.com/dkkvkfzwj/image/upload/v1767354971/606077026_122117730765060683_6827811557324924487_n_yhkltx.jpg",
+  },
+  {
+    title: "",
+    url: "https://res.cloudinary.com/dkkvkfzwj/image/upload/v1767354971/610676776_122174157680477538_7916575775752396313_n_h8cwvu.jpg",
+  },
+  {
+    title: "",
+    url: "https://res.cloudinary.com/dkkvkfzwj/image/upload/v1767354971/606067198_4147988468788803_5320476608654939021_n_zeg7mk.jpg",
+  },
+  {
+    title: "",
+    url: "https://res.cloudinary.com/dkkvkfzwj/image/upload/v1767354971/608543494_122205656804505408_9021913446420644131_n_ywnpry.jpg",
+  },
+  {
+    title: "",
+    url: "https://res.cloudinary.com/dkkvkfzwj/image/upload/v1767354971/607557015_1404278624652714_6044388201299594242_n_p15xsq.jpg",
+  },
+  {
+    title: "",
+    url: "https://res.cloudinary.com/dkkvkfzwj/image/upload/v1767354971/607959559_122205656576505408_2518150322691406671_n_a54kzr.jpg",
+  },
+  {
+    title: "",
+    url: "https://res.cloudinary.com/dkkvkfzwj/image/upload/v1767354971/605681654_122205656624505408_8800753377221207677_n_pceqy1.jpg",
+  },
+  {
+    title: "",
+    url: "https://res.cloudinary.com/dkkvkfzwj/image/upload/v1767354970/605651271_1204807631609726_7791218963239140106_n_kuzamd.jpg",
+  },
+  {
+    title: "",
+    url: "https://res.cloudinary.com/dkkvkfzwj/image/upload/v1767354970/605637823_122177995568891897_6718856275045267135_n_cyjhrb.jpg",
+  },
+  {
+    title: "",
+    url: "https://res.cloudinary.com/dkkvkfzwj/image/upload/v1767354970/578263720_122163453554891897_426493391196557923_n_kog5kc.jpg",
+  },
+  {
+    title: "",
+    url: "https://res.cloudinary.com/dkkvkfzwj/image/upload/v1767354969/606826509_1230098825664924_6211129623252320197_n_mpbj8t.jpg",
+  },
+  {
+    title: "",
+    url: "https://res.cloudinary.com/dkkvkfzwj/image/upload/v1767354969/606514258_122205656942505408_2962619206669594311_n_fgqvxh.jpg",
+  },
+  {
+    title: "",
+    url: "https://res.cloudinary.com/dkkvkfzwj/image/upload/v1767354969/605470503_122205656750505408_2497611648926725869_n_zbbozh.jpg",
+  },
 ];

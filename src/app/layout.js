@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "শহীদ ওসমান হাদি | Shaheed Osman Hadi Archive",
   description:
-    "Memorial Archive of Sharif Osman Hadi | ইনকিলাব মঞ্চের মুখপাত্র শরীফ ওসমান হাদির ছবি ও ভিডিওর ডিজিটাল সংগ্রহশালা",
+    "Memorial Archive of Sharif Osman Hadi. ইনকিলাব মঞ্চের মুখপাত্র শরীফ ওসমান হাদির ছবি ও ভিডিওর ডিজিটাল সংগ্রহশালা",
   alternates: {
     languages: {
       "x-default": "https://sharifosmanhadi.info",
@@ -26,6 +26,7 @@ export const metadata = {
       "bn-BD": "https://sharifosmanhadi.info",
     },
   },
+  keywords: ["Sharif Osman Hadi", "ওসমান হাদি", "Osman Hadi", "ইনকিলাব মঞ্চ"],
 };
 
 export default function RootLayout({ children }) {
@@ -49,7 +50,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           property="twitter:description"
-          content="Memorial Archive of Sharif Osman Hadi | ইনকিলাব মঞ্চের মুখপাত্র শরীফ ওসমান হাদির আর্কাইভ, জীবনী, ছবি ও ভিডিওর ডিজিটাল সংগ্রহশালা"
+          content="Memorial Archive of Sharif Osman Hadi. ইনকিলাব মঞ্চের মুখপাত্র শরীফ ওসমান হাদির আর্কাইভ, জীবনী, ছবি ও ভিডিওর ডিজিটাল সংগ্রহশালা।"
         />
         <meta
           property="twitter:image"
@@ -63,13 +64,9 @@ export default function RootLayout({ children }) {
         />
         <meta
           property="og:description"
-          content="Memorial Archive of Sharif Osman Hadi | ইনকিলাব মঞ্চের মুখপাত্র শরীফ ওসমান হাদির আর্কাইভ, জীবনী, ছবি ও ভিডিওর ডিজিটাল সংগ্রহশালা।"
+          content="Memorial Archive of Sharif Osman Hadi. ইনকিলাব মঞ্চের মুখপাত্র শরীফ ওসমান হাদির আর্কাইভ, জীবনী, ছবি ও ভিডিওর ডিজিটাল সংগ্রহশালা।"
         />
         <meta property="og:site_name" content="Shaheed Sharif Osman Hadi" />
-        <meta
-          name="keywords"
-          content="Sharif Osman Hadi, ওসমান হাদি, Osman Hadi Archive, ইনকিলাব মঞ্চ, Inqilab Moncho, জুলাই বিপ্লব, July Revolution, সার্বভৌমত্বের শহীদ, Martyr of Sovereignty, ইনসাফ, Insaaf, Biography, Memorial Archive"
-        />
         <meta name="author" content="Md Abdus Sabur" />
         <meta
           name="google-site-verification"
@@ -115,7 +112,7 @@ export default function RootLayout({ children }) {
             },
             image: "https://sharifosmanhadi.info/static/osman.webp",
             description:
-              "Memorial Archive of Shaheed Osman Hadi | ইনকিলাব মঞ্চের মুখপাত্র শহীদ ওসমান হাদির আর্কাইভ, জীবনী, ছবি ও ভিডিওর ডিজিটাল সংগ্রহশালা।",
+              "Memorial Archive of Shaheed Osman Hadi. ইনকিলাব মঞ্চের মুখপাত্র শহীদ ওসমান হাদির আর্কাইভ, জীবনী, ছবি ও ভিডিওর ডিজিটাল সংগ্রহশালা।",
             honorificPrefix: "Shaheed",
           })}
         </Script>

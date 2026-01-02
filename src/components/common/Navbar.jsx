@@ -25,13 +25,13 @@ const Navbar = () => {
   }, [mobileMenuOpen]);
 
   const navLinks = [
-    { name: "হোম", href: "/" },
-    { name: "জীবনী", href: "/bio" },
-    { name: "ছবি", href: "/gallery" },
-    { name: "ভিডিও", href: "/videos" },
-    { name: "উক্তি", href: "/quotes" },
-    { name: "যুক্ত করুন", href: "/add-content" },
-    { name: "পরামর্শ দিন", href: "/suggestion" },
+    { name: "হোম", name2: "Home", href: "/" },
+    { name: "জীবনী", name2: "Biography", href: "/bio" },
+    { name: "ছবি", name2: "Images", href: "/gallery" },
+    { name: "ভিডিও", name2: "Videos", href: "/videos" },
+    { name: "উক্তি", name2: "Quotes", href: "/quotes" },
+    { name: "যুক্ত করুন", name2: "Add Content", href: "/add-content" },
+    { name: "পরামর্শ দিন", name2: "Suggest US", href: "/suggestion" },
   ];
 
   return (
@@ -150,22 +150,22 @@ const Navbar = () => {
                     : "translateX(-20px)",
                   opacity: mobileMenuOpen ? 1 : 0,
                 }}
-                className={`text-lg text-center font-black uppercase tracking-widest transition-all duration-300 relative group ${
+                className={`text-md text-center transition-all duration-300 relative group ${
                   pathname === link.href
                     ? "text-red-500"
                     : "text-zinc-400 hover:text-white"
                 }`}
               >
-                {link.name}
+                {link.name2}
               </Link>
             ))}
 
             <Link
               href="/tributes"
               onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center justify-center text-center gap-2 bg-white text-black px-5 py-2 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-red-700 hover:text-white transition-all"
+              className="mt-3 flex items-center justify-center text-center gap-2 bg-white text-black px-5 py-2 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-red-700 hover:text-white transition-all"
             >
-              শ্রদ্ধাঞ্জলি <ArrowRight size={14} />
+              Tribute <ArrowRight size={14} />
             </Link>
           </div>
         </div>

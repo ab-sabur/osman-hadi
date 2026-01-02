@@ -108,17 +108,17 @@ const AboutPage = () => {
           <div className="space-y-6 order-2 lg:order-1">
             <h2 className="text-2xl md:text-4xl font-black leading-tight">
               <span className="text-red-500 text-[10px] tracking-normal md:text-xs relative bottom-1">
-                Brief Biography
+                Osman Hadi Biography
               </span>
               <br />
               জীবনবৃত্তান্ত ও কর্ম
             </h2>
             <p className="text-zinc-400 text-base md:text-lg leading-relaxed">
-              শরীফ ওসমান বিন হাদি, যিনি ওসমান গণি নামেও পরিচিত, ছিলেন একজন
-              বাংলাদেশি রাজনীতিবিদ, শিক্ষক ও সমাজকর্মী। তিনি ইনকিলাব মঞ্চের
-              মুখপাত্র এবং ২০২৪ সালের জুলাই গণঅভ্যুত্থানের অন্যতম সংগঠক হিসেবে
-              পরিচিত ছিলেন। তিনি ঢাকা বিশ্ববিদ্যালয়ের রাষ্ট্রবিজ্ঞান বিভাগ থেকে
-              স্নাতক ও স্নাতকোত্তর ডিগ্রি লাভ করেন।
+              <b>ওসমান হাদীর জীবনী:</b> শরীফ ওসমান বিন হাদি, যিনি ওসমান গণি
+              নামেও পরিচিত, ছিলেন একজন বাংলাদেশি রাজনীতিবিদ, শিক্ষক ও সমাজকর্মী।
+              তিনি ইনকিলাব মঞ্চের মুখপাত্র এবং ২০২৪ সালের জুলাই গণঅভ্যুত্থানের
+              অন্যতম সংগঠক হিসেবে পরিচিত ছিলেন। তিনি ঢাকা বিশ্ববিদ্যালয়ের
+              রাষ্ট্রবিজ্ঞান বিভাগ থেকে স্নাতক ও স্নাতকোত্তর ডিগ্রি লাভ করেন।
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="p-6 bg-zinc-900/50 rounded-2xl border border-white/10">
@@ -147,7 +147,7 @@ const AboutPage = () => {
                 এসে হয়তো আমার বুকটা বিদ্ধ করে দিয়েছে!&quot;
               </p>
               <p className="text-red-600 font-black text-xs tracking-widest">
-                — ওসমান হাদি
+                — Shaheed Sharif Osman Hadi
               </p>
             </div>
           </div>

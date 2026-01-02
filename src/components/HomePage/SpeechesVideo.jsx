@@ -66,7 +66,7 @@ const SpeechesVideo = () => {
           className="w-fit space-x-3 mt-2 p-5 border border-red-900/50 text-red-600 font-black hover:bg-red-700 hover:text-white transition-all uppercase tracking-[0.3em] text-xs rounded-2xl active:scale-95 flex items-center justify-center text-center"
         >
           <span className="group-hover:mr-1 transition-all">
-            হাদির বক্তৃতা সমূহ{" "}
+            হাদির সকল বক্তৃতা{" "}
           </span>
           <ArrowRight
             size={16}

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import SocialFooter from "./SocilaFooter";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -12,12 +13,16 @@ const Footer = () => {
               href="/"
               className="group flex items-center gap-3 relative z-[250]"
             >
-              <img
+              <Image
+                src="/static/hadi.jpg"
+                alt="Osman Hadi"
                 width={45}
                 height={45}
                 className="object-cover rounded-sm"
-                src="/static/hadi.jpg"
-                alt="Osman Hadi"
+                // Since this is likely a small logo/avatar in a navbar or header,
+                // priority ensures it's available immediately.
+                priority
+                quality={90}
               />
               <div>
                 <h3 className="text-lg text-white font-black tracking-tighter leading-none">
@@ -36,7 +41,7 @@ const Footer = () => {
           </div>
 
           <div className="space-y-8">
-            <p className="font-black text-red-600 uppercase tracking-[0.4em] text-xs">
+            <p className="font-black text-red-500 uppercasetext-sm">
               Navigation
             </p>
             <ul className="space-y-5 text-zinc-400 font-bold uppercase tracking-widest text-xs">
@@ -73,7 +78,7 @@ const Footer = () => {
           </div>
 
           <div className="space-y-8">
-            <p className="font-black text-red-600 uppercase tracking-[0.4em] text-xs">
+            <p className="font-black text-red-600 uppercase text-sm">
               CONTRIBUTE
             </p>
             <ul className="space-y-5 text-zinc-400 font-bold uppercase tracking-widest text-xs">

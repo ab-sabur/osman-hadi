@@ -29,7 +29,7 @@ const ScrollToTop = () => {
     <div className="fixed bottom-2 right-2 z-50">
       <button
         onClick={scrollToTop}
-        aria-label="Open Navigation Menu"
+        aria-label="Scroll to Top Menu"
         className={`group flex flex-col items-center gap-2 transition-all duration-300 ease-in-out ${
           isVisible ? "scale-100" : "scale-0"
         }`}

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Menu, X, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -48,12 +49,16 @@ const Navbar = () => {
             className="group flex items-center gap-3 relative z-[250]"
             onClick={() => setMobileMenuOpen(false)}
           >
-            <img
+            <Image
+              src="/static/hadi.jpg"
+              alt="Osman Hadi"
               width={45}
               height={45}
               className="object-cover rounded-sm"
-              src="/static/hadi.jpg"
-              alt="Osman Hadi"
+              // Since this is likely a small logo/avatar in a navbar or header,
+              // priority ensures it's available immediately.
+              priority
+              quality={90}
             />
             <div>
               <h3 className="text-lg text-white font-black tracking-tighter leading-none">
@@ -118,6 +123,7 @@ const Navbar = () => {
           <div className="w-10 h-10 invisible" /> {/* Spacer */}
           <button
             onClick={() => setMobileMenuOpen(false)}
+            aria-label="Close Navigation Menu"
             className="w-12 h-12 bg-white/5 border border-white/10 rounded-full flex items-center justify-center text-white hover:bg-red-700/20 transition-colors"
           >
             <X size={28} />

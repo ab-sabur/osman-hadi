@@ -4,6 +4,7 @@ import React from "react";
 import { SectionHeader } from "./Home";
 import kobita from "../../../public/videos/poetry.json";
 import { getThumbnailSrc } from "@/utils/getThumbnail";
+import Image from "next/image";
 
 const PoetryVideo = () => {
   return (
@@ -36,17 +37,21 @@ const PoetryVideo = () => {
                   className="group relative flex items-center justify-between gap-4 p-6 md:p-10 rounded-[1.5rem] md:rounded-[2.5rem] bg-zinc-950/50 border border-white/10 hover:border-red-700/50 transition-all duration-500 cursor-pointer overflow-hidden"
                 >
                   {/* Hover Image Reveal Logic */}
-                  <div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500 -z-10">
-                    <img
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500 -z-10 overflow-hidden">
+                    <Image
                       src={getThumbnailSrc(video)}
-                      className="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-700"
-                      alt="thumbnail"
+                      alt="Ambient background"
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw" // Adjust based on how much of the screen this card takes
+                      className="object-cover scale-110 group-hover:scale-100 transition-transform duration-700"
+                      // Since this is a low-opacity background, we can lower the quality to save data
+                      quality={40}
                     />
                   </div>
 
                   <div className="flex items-center gap-4 md:gap-8 z-10 min-w-0">
                     {/* The Index Number - Smaller on mobile */}
-                    <span className="text-zinc-800 font-black text-3xl md:text-5xl group-hover:text-red-700/40 transition-colors shrink-0">
+                    <span className="text-zinc-500 font-black text-3xl md:text-5xl group-hover:text-red-500 transition-colors shrink-0">
                       0{i + 1}
                     </span>
 
@@ -63,11 +68,16 @@ const PoetryVideo = () => {
                   {/* Right Side: Thumbnail & Play */}
                   <div className="flex items-center gap-3 md:gap-6 z-10 shrink-0">
                     {/* Hide thumbnail on small mobile, show on tablet+ */}
-                    <div className="hidden sm:block w-24 md:w-32 aspect-video rounded-lg md:rounded-xl overflow-hidden border border-white/10 transition-all duration-500 shadow-2xl">
-                      <img
+                    <div className="hidden sm:block relative w-24 md:w-32 aspect-video rounded-lg md:rounded-xl overflow-hidden border border-white/10 transition-all duration-500 shadow-2xl">
+                      <Image
                         src={getThumbnailSrc(video)}
-                        className="w-full h-full object-cover"
-                        alt={video.source_title}
+                        alt={video.source_title || "Video thumbnail"}
+                        fill
+                        sizes="(max-width: 768px) 96px, 128px"
+                        className="object-cover"
+                        // For small thumbnails, lower quality (60-75) is usually invisible to the eye
+                        // but saves significant bandwidth.
+                        quality={75}
                       />
                     </div>
 
@@ -91,7 +101,7 @@ const PoetryVideo = () => {
           <Link
             href={`/videos?category=Poetry`}
             rel="nofollow"
-            className="w-full sm:w-fit mx-auto lg:mx-0 mt-8 flex items-center justify-center gap-3 p-4 md:p-5 border border-red-900/50 text-red-600 font-black hover:bg-red-700 hover:text-white transition-all uppercase tracking-[0.2em] md:tracking-[0.3em] text-[10px] rounded-2xl active:scale-95 group"
+            className="w-full sm:w-fit mx-auto lg:mx-0 mt-8 flex items-center justify-center gap-3 p-4 md:p-5 border border-red-900/50 text-red-600 font-black hover:bg-red-700 hover:text-white transition-all uppercase tracking-[0.2em] md:tracking-[0.3em] text-xs rounded-2xl active:scale-95 group"
           >
             কবিতার ভিডিও গুলো দেখুন
             <ArrowRight

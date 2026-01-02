@@ -4,6 +4,7 @@ import { Play, ArrowRight, MonitorPlay } from "lucide-react";
 import speeches from "../../../public/videos/speeches.json";
 import Link from "next/link";
 import { getThumbnailSrc } from "@/utils/getThumbnail";
+import Image from "next/image";
 
 const SpeechesVideo = () => {
   return (
@@ -28,19 +29,29 @@ const SpeechesVideo = () => {
               className="group cursor-pointer"
             >
               <div className="aspect-video bg-zinc-950 overflow-hidden relative border border-white/10 group-hover:border-red-700 transition-all rounded-[2rem]">
-                <img
+                <Image
                   src={getThumbnailSrc(item)}
-                  className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-all duration-700"
                   alt={`Speech ${item.source_title}`}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover opacity-60 group-hover:opacity-100 transition-all duration-700"
+                  // Keep high-priority images fast if this is at the top of the page
+                  // priority={index < 4}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-90" />
-                <div className="absolute bottom-3 left-3">
+
+                {/* Overlay Gradient */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-90 pointer-events-none" />
+
+                {/* Text Content */}
+                <div className="absolute bottom-4 left-4 right-4">
                   <p className="text-lg font-black leading-tight line-clamp-1 md:line-clamp-2">
                     {item.source_title}
                   </p>
                 </div>
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-red-700 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all scale-75 group-hover:scale-100 shadow-2xl">
-                  <Play fill="white" size={24} />
+
+                {/* Play Button */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-red-700 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all scale-75 group-hover:scale-100 shadow-2xl pointer-events-none">
+                  <Play fill="white" size={24} className="ml-1" />
                 </div>
               </div>
             </Link>
@@ -52,7 +63,7 @@ const SpeechesVideo = () => {
         <Link
           href="/videos?category=Speeches"
           rel="nofollow"
-          className="w-fit space-x-3 mt-2 p-5 border border-red-900/50 text-red-600 font-black hover:bg-red-700 hover:text-white transition-all uppercase tracking-[0.3em] text-[10px] md:text-xs rounded-2xl active:scale-95 flex items-center justify-center text-center"
+          className="w-fit space-x-3 mt-2 p-5 border border-red-900/50 text-red-600 font-black hover:bg-red-700 hover:text-white transition-all uppercase tracking-[0.3em] text-xs rounded-2xl active:scale-95 flex items-center justify-center text-center"
         >
           <span className="group-hover:mr-1 transition-all">
             হাদির বক্তৃতা সমূহ{" "}

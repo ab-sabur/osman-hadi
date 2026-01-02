@@ -7,6 +7,7 @@ import Pagination from "@/components/common/Pagination";
 import ImageDownload from "@/components/common/ImageDownload";
 import BackSection from "./common/BackSection";
 import ImageGalleryModal from "./common/ImageModal";
+import Image from "next/image";
 const ITEMS_PER_PAGE = 24;
 
 const ImagesPage = ({ resolvedParams }) => {
@@ -79,18 +80,24 @@ const ImagesPage = ({ resolvedParams }) => {
                 <div className="cursor-pointer relative w-full h-full overflow-hidden bg-zinc-950 flex items-center justify-center group">
                   <div className="relative w-full h-full overflow-hidden bg-black group">
                     {/* The Background (Always Cover, blurs on hover) */}
-                    <img
+                    <Image
                       src={img.url}
-                      className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-40 blur-sm group-hover:blur-md transition-all duration-500"
-                      alt={`${img?.title}-${idx}`}
+                      alt={`${img?.title || "Background"}-${idx}`}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="absolute inset-0 object-cover opacity-100 group-hover:opacity-40 blur-sm group-hover:blur-md transition-all duration-500"
                     />
 
                     {/* The Foreground (Hidden Cover, becomes Contain on hover) */}
-                    <img
-                      src={img.url}
-                      alt="Gallery Image"
-                      className="relative w-full h-full object-contain transition-all duration-300 scale-0 scale-100"
-                    />
+                    <div className="relative w-full h-full transition-all duration-300 transform">
+                      <Image
+                        src={img.url}
+                        alt="Gallery Image"
+                        fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        className="object-contain"
+                      />
+                    </div>
                   </div>
                 </div>
 

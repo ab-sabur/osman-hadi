@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import AchievementSection from "@/components/common/Achivement";
 import Link from "next/link";
+import Image from "next/image";
 
 /**
  * ENHANCED BIODATA - SHAHEED OSMAN HADI MEMORIAL
@@ -26,12 +27,19 @@ const AboutPage = () => {
       {/* 1. CINEMATIC HERO HEADER - Height Free & Responsive */}
       <section className="relative flex flex-col items-center justify-center overflow-hidden pt-32 pb-48 md:pt-48">
         <div className="absolute inset-0 z-0">
+          {/* The Gradient Overlay - Keep z-10 to stay above the Image */}
           <div className="absolute inset-0 bg-gradient-to-t from-[#050000] via-black/60 to-transparent z-10" />
-          <img
+
+          <Image
             src="/static/osman.webp"
-            className="w-full h-full object-cover opacity-30 grayscale saturate-50"
             alt="Shaheed Osman Hadi"
+            fill
+            priority // Tells Next.js to load this immediately (improves LCP)
+            quality={90} // High quality for hero sections
+            sizes="100vw" // This spans the full width of the screen
+            className="object-cover opacity-30 grayscale saturate-50"
           />
+
           {/* Decorative Orbs */}
           <div className="absolute top-1/4 left-1/4 w-[200px] h-[200px] md:w-[400px] md:h-[400px] bg-red-900/10 blur-[80px] md:blur-[150px] rounded-full animate-pulse" />
           <div className="absolute bottom-1/4 right-1/4 w-[150px] h-[150px] md:w-[300px] md:h-[300px] bg-red-700/5 blur-[70px] md:blur-[120px] rounded-full delay-700 animate-pulse" />

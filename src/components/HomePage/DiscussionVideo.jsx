@@ -4,6 +4,8 @@ import Link from "next/link";
 import discussion from "../../../public/videos/discussion.json";
 import { getYouTubeID } from "@/utils/ytId";
 import { ArrowRight, Play } from "lucide-react";
+import Image from "next/image";
+import { getThumbnailSrc } from "@/utils/getThumbnail";
 
 const DiscussionVideo = () => {
   return (
@@ -19,31 +21,19 @@ const DiscussionVideo = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-12 mt-10 md:mt-16">
           {/* Main Featured Video */}
 
-          <FeaturedVideo
-            title={discussion?.length && discussion[0].source_title}
-            url={discussion?.length && discussion[0].yt_source_url}
-          />
+          <FeaturedVideo video={discussion?.length && discussion[0]} />
 
           {/* Sidebar Videos */}
           <div className="flex flex-col gap-4 md:gap-6">
-            <CompactVideo
-              title={discussion?.length && discussion[1].source_title}
-              url={discussion?.length && discussion[1].yt_source_url}
-            />
-            <CompactVideo
-              title={discussion?.length && discussion[2].source_title}
-              url={discussion?.length && discussion[2].yt_source_url}
-            />
-            <CompactVideo
-              title={discussion?.length && discussion[3].source_title}
-              url={discussion?.length && discussion[3].yt_source_url}
-            />
+            <CompactVideo video={discussion?.length && discussion[1]} />
+            <CompactVideo video={discussion?.length && discussion[2]} />
+            <CompactVideo video={discussion?.length && discussion[3]} />
 
             {/* View All Button */}
             <Link
               href={`/videos?category=Discussion`}
               rel="nofollow"
-              className="w-full space-x-3 mt-2 p-5 border border-red-900/50 text-red-600 font-black hover:bg-red-700 hover:text-white transition-all uppercase tracking-[0.3em] text-[10px] md:text-xs rounded-2xl active:scale-95 flex items-center justify-center text-center"
+              className="w-full space-x-3 mt-2 p-5 border border-red-900/50 text-red-600 font-black hover:bg-red-700 hover:text-white transition-all uppercase tracking-[0.3em] text-xs rounded-2xl active:scale-95 flex items-center justify-center text-center"
             >
               <span>হাদির আলোচনা সমূহ</span> <ArrowRight size={15} />
             </Link>
@@ -56,51 +46,58 @@ const DiscussionVideo = () => {
 
 export default DiscussionVideo;
 
-export const FeaturedVideo = ({ title, url }) => (
+export const FeaturedVideo = ({ video }) => (
   <Link
-    href={`/videos/${encodeURIComponent(title)}`}
+    href={`/videos/${encodeURIComponent(video?.source_title)}`}
     className="relative group cursor-pointer overflow-hidden rounded-[2rem] md:rounded-[3.5rem] bg-zinc-950 border border-white/10 hover:border-red-600 transition-all shadow-2xl flex flex-col"
   >
-    <div className="aspect-video relative overflow-hidden">
-      <img
-        src={`https://i.ytimg.com/vi/${getYouTubeID(url)}/hqdefault.jpg`}
-        className="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-all duration-1000 group-hover:scale-105"
-        alt={title}
+    <div className="aspect-video relative overflow-hidden group">
+      <Image
+        src={getThumbnailSrc(video)}
+        alt={video?.source_title || "Video Thumbnail"}
+        fill
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        className="object-cover opacity-70 group-hover:opacity-100 transition-all duration-1000 group-hover:scale-105"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent" />
 
-      {/* Responsive Play Button Size */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 md:w-24 md:h-24 bg-red-700 rounded-full flex items-center justify-center shadow-[0_0_50px_rgba(185,28,28,0.5)] scale-90 group-hover:scale-100 transition-all duration-500">
-        <Play fill="white" className="w-6 h-6 md:w-8 md:h-8" />
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent pointer-events-none" />
+
+      {/* Responsive Play Button */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 md:w-20 md:h-20 bg-red-700 rounded-full flex items-center justify-center shadow-[0_0_50px_rgba(185,28,28,0.5)] scale-90 group-hover:scale-100 transition-all duration-500 pointer-events-none">
+        <Play fill="white" className="w-6 h-6 md:w-8 md:h-8 ml-1" />{" "}
+        {/* ml-1 helps visually center play icons */}
       </div>
     </div>
 
     <div className="p-8 md:p-12">
       <p className="text-xl md:text-3xl font-black mb-4 leading-tight group-hover:text-red-500 transition-colors line-clamp-2 md:line-clamp-none">
-        {title}
+        {video?.source_title}
       </p>
     </div>
   </Link>
 );
 
-export const CompactVideo = ({ title, url }) => (
+export const CompactVideo = ({ video }) => (
   <Link
-    href={`/videos/${encodeURIComponent(title)}`}
+    href={`/videos/${encodeURIComponent(video?.source_title)}`}
     className="flex gap-4 md:gap-6 items-center p-4 md:p-6 bg-zinc-950 border border-white/10 rounded-2xl md:rounded-3xl hover:bg-red-950/20 hover:border-red-900/50 transition-all duration-300 group cursor-pointer shadow-xl"
   >
     {/* Thumbnail: Scales down on mobile */}
-    <div className="w-24 h-16 md:w-32 md:h-20 bg-black rounded-lg md:rounded-2xl overflow-hidden shrink-0 border border-white/10">
-      <img
-        src={`https://i.ytimg.com/vi/${getYouTubeID(url)}/hqdefault.jpg`}
-        className="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity"
+    <div className="w-24 h-16 md:w-32 md:h-20 bg-black rounded-lg md:rounded-2xl overflow-hidden shrink-0 border border-white/10 relative">
+      <Image
+        src={getThumbnailSrc(video)}
         alt="thumbnail"
+        fill
+        sizes="(max-width: 768px) 96px, 128px" // Matches your w-24 and w-32 exactly
+        className="object-cover opacity-70 group-hover:opacity-100 transition-opacity"
       />
     </div>
 
     <div className="flex-1 min-w-0">
       {/* min-w-0 is vital for line-clamp to work in flex */}
       <p className="font-black text-sm md:text-lg leading-tight line-clamp-2 group-hover:text-white transition-colors">
-        {title}
+        {video?.source_title}
       </p>
     </div>
 

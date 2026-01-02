@@ -21,6 +21,7 @@ import { osmanarchiveImages } from "../../../public/images/images";
 import AchievementSection from "../common/Achivement";
 import OsmanAboutSection from "../common/OsmanAbout";
 import VideoCategoryCards from "../common/VideoCategoryCard";
+import Image from "next/image";
 
 const Home = () => {
   return (
@@ -29,14 +30,20 @@ const Home = () => {
       <header className="relative flex flex-col items-center justify-center overflow-hidden py-20 md:py-32 pt-32 md:pt-48">
         {/* Background Layer - First Component এর স্টাইল অনুযায়ী */}
         <div className="absolute inset-0 z-0">
+          {/* The Gradient Overlay - Important: Keep z-10 to stay above the Image */}
           <div className="absolute inset-0 bg-gradient-to-t from-[#050000] via-black/60 to-transparent z-10" />
-          <img
+
+          <Image
             src="/static/osman.webp"
-            className="w-full h-full object-cover opacity-30 grayscale saturate-50"
             alt="Shaheed Osman Hadi"
+            fill
+            priority // High priority for Hero background
+            quality={85} // Balance between high quality and file size
+            sizes="100vw" // Since it's a full-screen background
+            className="object-cover opacity-30 grayscale saturate-50"
           />
 
-          {/* Decorative Orbs - First Component এর পজিশন অনুযায়ী */}
+          {/* Decorative Orbs - Positioned relative to the container */}
           <div className="absolute top-1/4 left-1/4 w-[200px] h-[200px] md:w-[400px] md:h-[400px] bg-red-900/10 blur-[80px] md:blur-[150px] rounded-full animate-pulse" />
           <div className="absolute bottom-1/4 right-1/4 w-[150px] h-[150px] md:w-[300px] md:h-[300px] bg-red-700/5 blur-[70px] md:blur-[120px] rounded-full delay-700 animate-pulse" />
         </div>
@@ -138,13 +145,18 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div className="relative mt-8 rounded-xl overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-700 aspect-video md:aspect-auto">
-              <img
+            <div className="relative mt-8 rounded-xl overflow-hidden transition-all duration-700 aspect-video md:aspect-[16/10] lg:h-[400px]">
+              <Image
                 src="/static/osman-hadi.jpg"
-                alt="Activity"
-                className="w-full h-full object-cover"
+                alt="Osman Hadi Activity"
+                fill
+                priority // If this is a main profile/activity image, load it immediately
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
+                className="object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
+
+              {/* Gradient Overlay - pointer-events-none ensures you can still interact with the image if needed */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent pointer-events-none" />
             </div>
           </div>
 
@@ -280,25 +292,30 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[200px] md:auto-rows-[150px]">
             {/* Main Featured Image */}
             <div className="md:col-span-6 md:row-span-4 relative group rounded-[2.5rem] overflow-hidden border border-white/10">
-              <img
+              <Image
                 src={osmanarchiveImages[0].url}
-                className="w-full h-full object-cover group-hover:grayscale-0 group-hover:scale-110 transition-all duration-1000"
                 alt="Main Archive"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover group-hover:grayscale-0 group-hover:scale-110 transition-all duration-1000"
+                priority // Added priority because this is likely above the fold
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-60 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-60 group-hover:opacity-100 transition-opacity pointer-events-none" />
             </div>
 
             {/* Top Right Vertical */}
             <div className="md:col-span-3 md:row-span-3 relative group rounded-[2.5rem] overflow-hidden border border-white/10">
-              <img
+              <Image
                 src={osmanarchiveImages[1].url}
-                className="w-full h-full object-cover group-hover:grayscale-0 transition-all duration-700"
                 alt="Portrait"
+                fill
+                sizes="(max-width: 768px) 100vw, 25vw"
+                className="object-cover group-hover:grayscale-0 transition-all duration-700"
               />
-              <div className="absolute inset-0 bg-red-700/20 opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute inset-0 bg-red-700/20 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
             </div>
 
-            {/* Middle Square */}
+            {/* Middle Square (Link Box) */}
             <Link
               href={`/gallery`}
               className="md:col-span-3 md:row-span-1 hover:border-red-500/40 relative group rounded-[2.5rem] overflow-hidden border border-white/10 bg-zinc-950 flex flex-col items-center justify-center p-8 text-center border-dashed border-zinc-800"
@@ -315,41 +332,51 @@ const Home = () => {
               </div>
             </Link>
 
+            {/* Middle Detail */}
             <div className="md:col-span-3 md:row-span-2 relative group rounded-[2.5rem] overflow-hidden border border-white/10">
-              <div className="absolute inset-0 bg-red-700 mix-blend-multiply opacity-20" />
-              <img
+              <Image
                 src={osmanarchiveImages[59].url}
-                className="w-full h-full object-cover object-top"
                 alt="Detail"
+                fill
+                sizes="(max-width: 768px) 100vw, 25vw"
+                className="object-cover object-top"
               />
+              <div className="absolute inset-0 bg-red-700 mix-blend-multiply opacity-20 pointer-events-none" />
             </div>
 
             {/* Bottom Wide */}
             <div className="md:col-span-6 md:row-span-3 relative group rounded-[2.5rem] overflow-hidden border border-white/10">
-              <img
+              <Image
                 src={osmanarchiveImages[2].url}
-                className="w-full h-full object-cover opacity-100 group-hover:opacity-100 transition-all"
                 alt="Wide Archive"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover opacity-100 group-hover:opacity-100 transition-all"
               />
             </div>
 
-            {/* Smallest Detail */}
+            {/* Small Detail 1 */}
             <div className="md:col-span-3 md:row-span-2 relative group rounded-[2.5rem] overflow-hidden border border-white/10">
-              <div className="absolute inset-0 bg-red-700 mix-blend-multiply opacity-20" />
-              <img
+              <Image
                 src={osmanarchiveImages[3].url}
-                className="w-full h-full object-cover object-top"
                 alt="Detail"
+                fill
+                sizes="(max-width: 768px) 100vw, 25vw"
+                className="object-cover object-top"
               />
+              <div className="absolute inset-0 bg-red-700 mix-blend-multiply opacity-20 pointer-events-none" />
             </div>
-            {/* Smallest Detail */}
+
+            {/* Small Detail 2 */}
             <div className="md:col-span-3 md:row-span-2 relative group rounded-[2.5rem] overflow-hidden border border-white/10">
-              <div className="absolute inset-0 bg-red-700 mix-blend-multiply opacity-20" />
-              <img
+              <Image
                 src={osmanarchiveImages[4].url}
-                className="w-full h-full object-cover object-top"
                 alt="Detail"
+                fill
+                sizes="(max-width: 768px) 100vw, 25vw"
+                className="object-cover object-top"
               />
+              <div className="absolute inset-0 bg-red-700 mix-blend-multiply opacity-20 pointer-events-none" />
             </div>
           </div>
         </div>
@@ -412,7 +439,7 @@ export const SectionHeader = ({ number, title, sub }) => (
   <div className="flex items-center gap-8">
     <span
       className="text-6xl md:text-9xl font-black text-transparent opacity-30 select-none"
-      style={{ WebkitTextStroke: "2px #991b1b" }}
+      style={{ WebkitTextStroke: "3px #ff0000" }}
     >
       {number}
     </span>

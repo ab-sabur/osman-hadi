@@ -1,4 +1,5 @@
 "use client";
+import { handleDownload } from "@/utils/imageDownload";
 import { Download } from "lucide-react";
 import React from "react";
 

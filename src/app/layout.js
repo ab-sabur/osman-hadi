@@ -40,6 +40,7 @@ export default function RootLayout({ children }) {
           content="https://sharifosmanhadi.info/static/osman.webp"
         />
         <link rel="apple-touch-icon" href="/static/apple-touch-icon.png" />
+        <link rel="preconnect" href="https://www.transparenttextures.com" />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://sharifosmanhadi.info/" />
         <meta
@@ -76,16 +77,17 @@ export default function RootLayout({ children }) {
         />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-Z92K7M592D"
-          strategy="beforeInteractive"
+          strategy="lazyOnload" // Use this for the best performance score
         />
-        <Script id="google-analytics" strategy="beforeInteractive">
+        <Script id="google-analytics" strategy="afterInteractive">
           {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-Z92K7M592D');
-        `}
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-Z92K7M592D');
+          `}
         </Script>
+
         <Script
           id="structured-data"
           type="application/ld+json"
@@ -122,7 +124,10 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
-        {children}
+
+        {/* FIX 2: Added <main> landmark for Accessibility and SEO */}
+        <main id="main-content">{children}</main>
+
         <Footer />
         <ScrollToTop />
       </body>

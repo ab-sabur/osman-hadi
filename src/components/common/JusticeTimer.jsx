@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Download, Scale, Languages, Clock } from "lucide-react";
 import { domToPng } from "modern-screenshot";
+import style from "./css/custom.module.css";
 
 const JusticeTimer = () => {
   const [lang, setLang] = useState("bn");
@@ -81,8 +82,8 @@ const JusticeTimer = () => {
     <>
       {/* --- SITE VERSION: FULLY RESPONSIVE --- */}
       <section className="w-full max-w-[1400px] mx-auto p-6">
-        <div className="w-full bg-zinc-950 rounded-[2.5rem] border border-white/10 p-6 flex flex-col items-center">
-          <div className="w-full flex justify-between items-center flex-col mb-10">
+        <div className="w-full bg-zinc-950 rounded-[2.5rem] border border-white/10 p-6 gap-4 flex flex-col items-center">
+          <div className="w-full flex justify-between items-center flex-col">
             <button
               onClick={() => setLang(lang === "bn" ? "en" : "bn")}
               className="ml-auto mb-4 text-zinc-500 text-xs uppercase font-bold px-3 py-1 border border-white/10 rounded-full"
@@ -96,8 +97,22 @@ const JusticeTimer = () => {
             </h2>
           </div>
 
+          <div className="text-2xl mx-auto">
+            {lang === "bn" ? (
+              <>
+                ১২ ডিসেম্বর, ২০২৫ এ ০২:২৫ PM{" "}
+                <span className="text-red-600">-</span> {currentBDTime}
+              </>
+            ) : (
+              <>
+                12 December 2025 at 02:25 pm{" "}
+                <span className="text-red-600">-</span> {currentBDTime}
+              </>
+            )}
+          </div>
+
           {/* This grid wraps on small screens for the website */}
-          <div className="flex flex-wrap justify-center items-center gap-4 md:gap-6">
+          <div className="flex flex-wrap justify-center items-center py-10 gap-4 md:gap-6">
             <TimeUnit
               value={formatNum(timeLeft.days)}
               label={lang === "bn" ? "দিন" : "Days"}
@@ -121,7 +136,13 @@ const JusticeTimer = () => {
             />
           </div>
 
-          <p className="mt-10 text-zinc-400">
+          <div className="p-4 rounded-lg bg-red-600 text-white mx-auto text-2xl">
+            {lang === "bn"
+              ? "ইনসাফ প্রতিষ্ঠা না হওয়া পর্যন্ত আমাদের সংগ্রাম চলবে"
+              : "Our struggle will continue until justice is established."}
+          </div>
+
+          <p className="text-zinc-400">
             {lang === "bn"
               ? "ডাউনলোড করে সোশাল মিডিয়া তে শেয়ার করুন"
               : "Download and share to social media"}
@@ -146,25 +167,32 @@ const JusticeTimer = () => {
       >
         <div
           ref={downloadRef}
-          style={{ width: "1300px", height: "850px" }}
-          className="bg-[#080808] p-6 flex flex-col justify-between items-center text-center border-[12px] border-red-900/20"
+          style={{ width: "1300px", height: "750px", zIndex: "10" }}
+          className={`${style.designBg} p-6 flex flex-col justify-between items-center text-center border-[12px] border-red-900/20`}
         >
-          <div className="space-y-4 pb-10">
-            <div className="flex justify-center items-center gap-3 text-red-500 font-black uppercase tracking-[0.4em] text-sm">
+          <div className="space-y-4">
+            <div className="flex justify-center items-center mb-6 gap-3 text-red-500 font-black uppercase tracking-[0.4em] text-sm">
               <Scale size={32} />{" "}
               {lang === "bn" ? "বিচারের দাবি" : "DEMAND FOR JUSTICE"}
             </div>
-            <h1 className="text-6xl font-black text-white leading-tight">
+            <div className="text-6xl font-black text-white leading-tight">
               {lang === "bn"
                 ? "শহীদ ওসমান হাদি হত্যার\nবিচারহীনতার সময়কাল"
                 : "Period of Impunity for the\nMurder of Martyr Osman Hadi"}
-            </h1>
+            </div>
           </div>
-
-          <div className="p-4 rounded-lg bg-red-600 text-white mx-auto mb-12 text-2xl">
-            {lang === "bn"
-              ? "ইনসাফ প্রতিষ্ঠা না হওয়া পর্যন্ত আমাদের সংগ্রাম চলবে"
-              : "Our struggle will continue until justice is established."}
+          <div className="text-2xl w-full">
+            {lang === "bn" ? (
+              <>
+                ১২ ডিসেম্বর, ২০২৫ এ ০২:২৫ PM{" "}
+                <span className="text-red-600">-</span> {currentBDTime}
+              </>
+            ) : (
+              <>
+                12 December 2025 at 02:25 pm{" "}
+                <span className="text-red-600">-</span> {currentBDTime}
+              </>
+            )}
           </div>
 
           {/* Always a straight line in download, never wraps */}
@@ -190,26 +218,18 @@ const JusticeTimer = () => {
               isLast
             />
           </div>
-          <div className="text-2xl w-full py-10">
-            {lang === "bn" ? (
-              <>
-                ১২ ডিসেম্বর, ২০২৫ এ ০২:২৫ PM{" "}
-                <span className="text-red-600">-</span> {currentBDTime}
-              </>
-            ) : (
-              <>
-                12 December 2025 at 02:25 pm{" "}
-                <span className="text-red-600">-</span> {currentBDTime}
-              </>
-            )}
-          </div>
 
+          <div className="p-4 rounded-lg bg-red-600 text-white mx-auto text-2xl">
+            {lang === "bn"
+              ? "ইনসাফ প্রতিষ্ঠা না হওয়া পর্যন্ত আমাদের সংগ্রাম চলবে"
+              : "Our struggle will continue until justice is established."}
+          </div>
           <div className="w-full flex justify-between items-end flex-wrap border-t border-white/10 pt-8">
             <div className="text-left">
-              <p className="text-zinc-400 text-lg">#JusticeForHadi</p>
+              <p className="text-zinc-400 text-xl">#JusticeForHadi</p>
             </div>
             <div className="text-right text-zinc-400">
-              <p className="text-lg">sharifosmanhadi.info</p>
+              <p className="text-xl">sharifosmanhadi.info</p>
             </div>
           </div>
         </div>
@@ -238,9 +258,7 @@ const TimeUnitHidden = ({ value, label, isLast, responsive }) => (
       </span>
     </div>
     <span
-      className={`${
-        responsive ? "text-[10px] md:text-xs" : "text-sm"
-      } font-black uppercase tracking-widest text-zinc-500`}
+      className={`text-md font-black uppercase tracking-widest text-zinc-500`}
     >
       {label}
     </span>
